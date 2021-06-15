@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}ЕКАД Южный{% endblock %}</title>
+  {#  Fonts      #}
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+  {% block stylesheets %}
+    {{ encore_entry_link_tags('app') }}
+  {% endblock %}
+
+  {% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+  {% endblock %}
+</head>
+<body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrap">
+          <a href="/" class="header__logo"><img src="{{ asset('build/logo.svg') }}" alt="logo"></a>
+          <nav class="header__menu">
+            <li><a href="#" class="header__navlink">О компании</a></li>
+            <li><a href="#" class="header__navlink">Инфраструктура</a></li>
+            <li><a href="#" class="header__navlink">Объекты в продаже</a></li>
+            <li><a href="#" class="header__navlink">Контактная информация</a></li>
+          </nav>
+          <a href="tel:73432269222" class="header__phone">+7 343 226 92 22</a>
+          <div class="header__callback button">Заказать звонок</div>
+        </div>
+      </div>
+    </header>
+{% block content %}{% endblock %}
+</body>
+</html>

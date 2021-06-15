@@ -1,0 +1,169 @@
+{% extends 'base.html.twig' %}
+{% block content %}
+  <section class="banner block" style="background-image: url('{{ asset('/build/banner.jpg') }}')">
+    <div class="container">
+      <div class="banner__wrap">
+        <h1 class="banner__title">Земельные участки промышленного назначения с построенной инфраструктурой от 0.3 до 25
+          гектар</h1>
+        <div class="banner__footer">
+          <span>Производственно-складские здания</span>
+          <span>от 1 000</span>
+          <span>до 150 000 м2</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="certificate block">
+    <div class="container">
+      <div class="block__wrap">
+        <div class="certificate__text">
+          <h2 class="certificate__title block__title">Индустриальный парк в Чкаловской районе Екатеринбурга</h2>
+          <div class="certificate__desc">Индустриальный парк «ЕКАД Южный» — действующий проект формата Greenfield,
+            направленный на комплексное развитие территории, предназначенной для размещения производственно-складских
+            объектов II-V класса опасности с санитарно-защитной зоной от 50 до 500 метров
+          </div>
+        </div>
+        <div class="certificate__img"></div>
+      </div>
+    </div>
+  </section>
+  <section class="youtube block">
+    <div class="container">
+      <iframe class="youtube__iframe" src="https://www.youtube.com/embed/sXLIkbsMHRA"
+              title="Индустриальный парк ЕКАД Южный, 2020г"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+    </div>
+  </section>
+  <section class="indicators block">
+    <div class="container">
+      <div class="block__wrap">
+        <div class="indicators__text">
+          <div class="block__title indicators__title">Технико-экономические показатели</div>
+          <div class="indicators__desc">Здесь какая-то информационная шляпа о том как же хорош этот проект. Да как вы
+            вообще раньше могли жить паскуды без этого проекта, не понятно.
+          </div>
+        </div>
+        <div class="indicators__info">
+          <div class="indicators__row">
+            <div class="indicators__item">
+              <div class="indicators__number">2 000 000</div>
+              <div class="indicators__unit">М2</div>
+              <div class="indicators__name">Общая площадь</div>
+            </div>
+          </div>
+          <div class="indicators__row">
+            <div class="indicators__item">
+              <div class="indicators__number">36</div>
+              <div class="indicators__unit"></div>
+              <div class="indicators__name">Резидентов</div>
+            </div>
+            <div class="indicators__item">
+              <div class="indicators__number">50</div>
+              <div class="indicators__unit">%</div>
+              <div class="indicators__name">Реализации проекта</div>
+            </div>
+            <div class="indicators__item">
+              <div class="indicators__number">11.5</div>
+              <div class="indicators__unit">Км</div>
+              <div class="indicators__name">Дорог</div>
+            </div>
+          </div>
+          <div class="indicators__row">
+            <div class="indicators__item">
+              <div class="indicators__number">80</div>
+              <div class="indicators__unit">%</div>
+              <div class="indicators__name">Застройки земельного<br> участка</div>
+            </div>
+            <div class="indicators__item">
+              <div class="indicators__number">500</div>
+              <div class="indicators__unit">М</div>
+              <div class="indicators__name">Согласованная санитарная<br> зона</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="infrastructure">
+    <div class="container">
+      <h2 class="block__title infrastructure__title">Инфраструктура парка</h2>
+      <div class="infrastructure__wrap">
+        <a href="#" class="infrastructure__item infrastructure__link">
+          <img src="{{ asset('/build/download.jpg') }}" class="infrastructure__img" alt="electricity">
+          <div class="infrastructure__box">
+            <span class="infrastructure__item-title">Электроснабжение</span>
+            <div class="infrastructure__item-desc">5 трансформаторных подстанций, с суммарной мощностью 20 мВт.5
+              трансформаторных подстанций, с суммарной мощностью 20 мВт.
+            </div>
+          </div>
+        </a>
+        <div class="infrastructure__item infrastructure__block">
+          <span class="infrastructure__block-number">
+            20<span class="infrastructure__block-digit">МВт</span>
+          </span>
+          <div class="infrastructure__block-text">суммарная мощностью электроэнергии для обеспечения комфортной работы
+            резидентов парка
+          </div>
+        </div>
+        <a href="#" class="infrastructure__item infrastructure__link">
+          <img src="{{ asset('/build/download.jpg') }}" class="infrastructure__img" alt="electricity">
+          <div class="infrastructure__box">
+            <span class="infrastructure__item-title">Электроснабжение</span>
+            <div class="infrastructure__item-desc">5 трансформаторных подстанций, с суммарной мощностью 20 мВт.5
+              трансформаторных подстанций, с суммарной мощностью 20 мВт.
+            </div>
+          </div>
+        </a>
+        <a href="#" class="infrastructure__item infrastructure__link">
+          <img src="{{ asset('/build/download.jpg') }}" class="infrastructure__img" alt="electricity">
+          <div class="infrastructure__box">
+            <span class="infrastructure__item-title">Электроснабжение</span>
+            <div class="infrastructure__item-desc">5 трансформаторных подстанций, с суммарной мощностью 20 мВт.5
+              трансформаторных подстанций, с суммарной мощностью 20 мВт.
+            </div>
+          </div>
+        </a>
+        <a href="#" class="infrastructure__item infrastructure__link">
+          <img src="{{ asset('/build/download.jpg') }}" class="infrastructure__img" alt="electricity">
+          <div class="infrastructure__box">
+            <span class="infrastructure__item-title">Электроснабжение</span>
+            <div class="infrastructure__item-desc">5 трансформаторных подстанций, с суммарной мощностью 20 мВт.5
+              трансформаторных подстанций, с суммарной мощностью 20 мВт.
+            </div>
+          </div>
+        </a>
+        <a href="#" class="infrastructure__item infrastructure__link">
+          <img src="{{ asset('/build/download.jpg') }}" class="infrastructure__img" alt="electricity">
+          <div class="infrastructure__box">
+            <span class="infrastructure__item-title">Электроснабжение</span>
+            <div class="infrastructure__item-desc">5 трансформаторных подстанций, с суммарной мощностью 20 мВт.5
+              трансформаторных подстанций, с суммарной мощностью 20 мВт.
+            </div>
+          </div>
+        </a>
+        <a href="#" class="infrastructure__item infrastructure__link">
+          <img src="{{ asset('/build/download.jpg') }}" class="infrastructure__img" alt="electricity">
+          <div class="infrastructure__box">
+            <span class="infrastructure__item-title">Электроснабжение</span>
+            <div class="infrastructure__item-desc">5 трансформаторных подстанций, с суммарной мощностью 20 мВт.5
+              трансформаторных подстанций, с суммарной мощностью 20 мВт.
+            </div>
+          </div>
+        </a>
+        <div class="infrastructure__item infrastructure__block">
+          <span class="infrastructure__block-number">
+            20 000<span class="infrastructure__block-digit">м3/ч</span>
+          </span>
+          <div class="infrastructure__block-text">Лимит газоснабжения. Точка подключения расположена на границе каждого
+            участка.
+          </div>
+        </div>
+      </div>
+      <div class="infrastructure__button-wrap">
+        <a href="#" class="infrastructure__button button">Узнать больше</a>
+      </div>
+    </div>
+  </section>
+{% endblock %}

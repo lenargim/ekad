@@ -1,0 +1,106 @@
+*
+  box-sizing: border-box
+  outline: none
+
+html
+  overflow-x: hidden
+
+body
+  font: normal normal 16px/1.5 "Roboto", sans-serif
+  margin: 0
+  width: 100%
+  height: 100%
+  padding: 0
+  min-width: 100%
+  background-color: $colorBg
+  color: #000
+
+main
+  min-height: 100vh
+
+header,
+footer,
+section
+  position: relative
+
+.container
+  width: 1564px
+  margin: 0 auto
+
+
+ul, li, p, h1, h2, h3
+  padding: 0
+  margin: 0
+ul, nav
+  list-style-type: none
+
+a
+  text-decoration: none
+
+input[type=search]::-ms-clear
+  display: none
+  width: 0
+  height: 0
+
+input[type=search]::-ms-reveal
+  display: none
+  width: 0
+  height: 0
+
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration
+  display: none
+
+input[type="number"]
+  -webkit-appearance: textfield
+  -moz-appearance: textfield
+  appearance: textfield
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+  -webkit-appearance: none
+
+textarea
+  resize: none
+  font-size: 16px
+
+main.main
+  overflow: hidden
+
+select
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+
+.img
+  overflow: hidden
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.hidden
+  display: none
+.button
+  display: inline-flex
+  border-radius: 5px
+  white-space: nowrap
+  font-size: 16px
+  line-height: 24px
+  padding: 11px 32px
+  cursor: pointer
+  transition: all 0.5s ease
+  background-color: transparent
+  &:hover
+    outline: none
+.block
+  margin-bottom: 124px
+  &__wrap
+    display: flex
+    align-items: flex-start
+    justify-content: flex-start
+  &__title
+    font: normal normal bold 48px/64px Manrope

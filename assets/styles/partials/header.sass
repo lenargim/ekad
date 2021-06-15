@@ -1,0 +1,51 @@
+.header
+  position: absolute
+  left: 0
+  top: 0
+  right: 0
+  z-index: 1
+  &__wrap
+    padding-top: 80px
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    color: #fff
+  &__logo
+    max-width: 164px
+    margin-right: 102px
+  &__menu
+    display: flex
+    align-items: center
+    justify-content: flex-start
+  li
+    margin-right: 40px
+    &:last-of-type
+      margin-right: 0
+  &__navlink
+    color: #fff
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      height: 2px
+      width: 0
+      background-color: $colorRed
+      left: 0
+      bottom: -12px
+      transition: width 0.3s ease
+    &:hover
+      &:after
+        width: 100%
+  &__phone
+    margin-left: auto
+    font-size: 26px
+    line-height: 34px
+    color: #fff
+  &__callback
+    color: $colorMain
+    overflow: hidden
+    box-shadow: 0 0 0 0 $colorMain inset, 0 0 0 2px $colorMain
+    margin-left: 63px
+    &:hover
+      box-shadow: 0 0 40px 40px $colorMain inset, 0 0 0 0
+      color: #000
