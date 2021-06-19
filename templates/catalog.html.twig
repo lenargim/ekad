@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+{% block content %}
+  <div class="page">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="/" class="breadcrumbs__link">Главная</a>
+        <a href="/catalog" class="breadcrumbs__link">Объекты в продаже</a>
+      </div>
+      <h1 class="title">Объекты в продаже</h1>
+    </div>
+    {{ include('partials/types.html.twig') }}
+    <section class="callback block">
+      <div class="container">
+        <div class="callback__wrap">
+          <div class="callback__title block__title">Задать вопрос специальсту</div>
+          <div class="callback__desc">Оставьте свои контактные данные и мы свяжемся с Вами, чтобы ответить на любые
+            вопросы
+          </div>
+          <form action="" class="callback__form">
+            <div class="labelwrap"><input type="text" class="input"><label class="label">Имя</label></div>
+            <div class="labelwrap"><input type="tel" class="input"><label class="label">Телефон</label></div>
+            <div class="callback__checkbox-wrap">
+              <input type="checkbox" class="checkbox callback__checkbox" id="form-checkbox">
+              <label for="form-checkbox" class="label-checkbox">Я соглашаюсь с условиями обработки и использования
+                персональных данных</label>
+              <span></span>
+            </div>
+            <input type="submit" class="callback__submit button" value="Отправить">
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+{% endblock %}

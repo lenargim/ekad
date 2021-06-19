@@ -6,7 +6,10 @@
  */
 
 // any CSS you import will output into a single css file (app.css in this case)
+import 'lightgallery.js/src/js/lightgallery';
+
+import './js/common.js';
+//import './js/lessees';
+
 import './styles/app.sass';
 
-// start the Stimulus application
-import './bootstrap';

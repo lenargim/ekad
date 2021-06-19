@@ -1,0 +1,66 @@
+.labelwrap
+  position: relative
+
+.input
+  cursor: text
+  will-change: opacity
+  outline: none
+  appearance: none
+  border-width: 0
+  line-height: 1px
+  width: 100%
+  padding: 10px
+  color: #000
+
+.label
+  transition: transform 0.1s ease, font-size 0.1s ease, color 0.1s ease
+  will-change: transform, font-size
+  position: absolute
+  max-width: 100%
+  overflow: hidden
+  font-size: 14px
+  line-height: 21px
+  text-overflow: ellipsis
+  white-space: nowrap
+  pointer-events: none
+  top: 0
+  left: 10px
+  z-index: 1
+.label_filled
+  font-size: 12px
+  transform: translateY(-20px)
+  color: #000
+.label-checkbox
+  position: relative
+  display: inline-block
+  box-sizing: border-box
+  padding-left: 30px
+  padding-right: 0.5em
+  &::before
+    content: ""
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translateY(-50%)
+    width: 20px
+    height: 20px
+    border: 1px solid $borderColor
+    border-radius: 2px
+
+  &::after
+    position: absolute
+    content: '\2713'
+    display: inline-block
+    color: $colorDark
+    font-size: 30px
+    line-height: 30px
+    transform: scale(0)
+    transition: transform 0.3s ease
+    left: 0
+    bottom: 0
+
+.checkbox
+  position: absolute
+  opacity: 0
+  &:checked + .label-checkbox::after
+    transform: scale(1)

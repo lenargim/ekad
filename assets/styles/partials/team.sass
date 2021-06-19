@@ -1,0 +1,44 @@
+.team
+  &__wrap
+    display: grid
+    grid-gap: 32px
+    grid-template-columns: repeat(3, 1fr)
+  &__item
+    position: relative
+    overflow: hidden
+    &.top
+      .team__text
+        bottom: unset
+        top: 32px
+      &:hover .team__text
+        top: -100%
+    &:after
+      content: ''
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      background-color: rgba(0,0,0,0.5)
+      transition: all 0.3s ease
+    &:hover
+      &:after
+        background-color: transparent
+      .team__text
+        bottom: -100%
+  &__text
+    position: absolute
+    left: 32px
+    right: 32px
+    bottom: 32px
+    color: #fff
+    font: normal normal bold 16px/24px Manrope
+    transition: all 0.3s ease
+    z-index: 1
+  &__name
+    font-size: 18px
+    padding-bottom: 1em
+  &__position
+    font: normal normal bold 15px/24px Manrope
+    font-style: italic
+    padding-bottom: 1em

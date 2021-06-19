@@ -16,21 +16,80 @@
   {% endblock %}
 </head>
 <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__wrap">
-          <a href="/" class="header__logo"><img src="{{ asset('build/logo.svg') }}" alt="logo"></a>
-          <nav class="header__menu">
-            <li><a href="#" class="header__navlink">О компании</a></li>
-            <li><a href="#" class="header__navlink">Инфраструктура</a></li>
-            <li><a href="#" class="header__navlink">Объекты в продаже</a></li>
-            <li><a href="#" class="header__navlink">Контактная информация</a></li>
-          </nav>
-          <a href="tel:73432269222" class="header__phone">+7 343 226 92 22</a>
-          <div class="header__callback button">Заказать звонок</div>
+<header class="header {% if app.request.pathinfo == '/' %}header_home{% endif %}">
+  <div class="container">
+    <div class="header__wrap">
+      <a href="/" class="header__logo"><img src="{{ asset('build/logo.svg') }}" alt="logo"></a>
+      <nav class="header__menu">
+        <li><a href="#" class="header__navlink">О компании</a></li>
+        <li><a href="#" class="header__navlink">Инфраструктура</a></li>
+        <li><a href="/catalog" class="header__navlink">Объекты в продаже</a></li>
+        <li><a href="#" class="header__navlink">Контактная информация</a></li>
+      </nav>
+      <a href="tel:73432269222" class="header__phone">+7 343 226 92 22</a>
+      <div class="header__callback button">Заказать звонок</div>
+    </div>
+  </div>
+</header>
+<main>
+  {% block content %}{% endblock %}
+</main>
+<footer class="footer">
+  <div class="container">
+    <form action="" class="footer__form">
+      <div class="footer__form-title">Задать вопрос специалисту</div>
+      <div class="footer__form-desc">Оставьте свои контактные данные и мы свяжемся с вами, чтобы ответить на любые
+        вопросы
+      </div>
+      <div class="footer__form-row">
+        <div class="labelwrap">
+          <input type="text" class="footer__form-input input">
+          <label class="label">Ваше имя</label>
+        </div>
+        <div class="labelwrap">
+          <input type="tel" class="footer__form-input input">
+          <label class="label">Телефон</label>
+        </div>
+        <input type="submit" class="footer__form-submit button" value="Заказть звонок">
+        <span class="footer__form-policy">Я соглашаюсь с <a href="#">условиями</a> обработки и использования персональных данных</span>
+      </div>
+    </form>
+    <div class="footer__box">
+      <div class="footer__col">
+        <a href="/" class="footer__logo"><img src="{{ asset('build/logo.svg') }}" alt="logo"></a>
+        <div class="footer__copy footer__stick">© «ЕКАД Южный» 2021</div>
+      </div>
+      <div class="footer__col">
+        <div class="footer__col-title">Объекты в продаже</div>
+        <a href="#" class="footer__col-link red">Производственно-складские здания по схеме Blue-to-Suit</a>
+        <a href="#" class="footer__col-link red">Земельные участки промышленного назначения</a>
+      </div>
+      <div class="footer__col">
+        <div class="footer__col-title">Контакты</div>
+        <div class="footer__col-text">
+          <a href="tel:73432269222">+7 343 226 92 22</a>
+          <a href="mailto:zayvki@gk-ktm.ru">zayvki@gk-ktm.ru</a>
+        </div>
+        <div class="footer__stick">Екатеринбург, ул. Бориса Ельцина, 1а, этаж 16, офис 16.4</div>
+      </div>
+      <div class="footer__col">
+        <div class="footer__socials">
+          <a href="#" class="footer__social">{{ source('@build'~asset('inst.svg')) }}</a>
+          <a href="#" class="footer__social">{{ source('@build'~asset('fb.svg')) }}</a>
+          <a href="#" class="footer__social">{{ source('@build'~asset('vk.svg')) }}</a>
+          <a href="#" class="footer__social">{{ source('@build'~asset('ok.svg')) }}</a>
+          <a href="#" class="footer__social">{{ source('@build'~asset('twitter.svg')) }}</a>
+          <a href="#" class="footer__social">{{ source('@build'~asset('tg.svg')) }}</a>
+        </div>
+        <div class="footer__stick footer__dev">
+          <span>Разработка сайта —</span>
+          <a href="#">
+            <img src="{{ asset('build/dev.svg') }}" alt="developer">
+          </a>
         </div>
       </div>
-    </header>
-{% block content %}{% endblock %}
+    </div>
+  </div>
+</footer>
 </body>
 </html>

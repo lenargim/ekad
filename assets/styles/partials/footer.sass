@@ -1,0 +1,82 @@
+.footer
+  background-color: $colorDark
+  padding: 93px 0 80px
+  color: #fff
+  &__form
+    border-bottom: $border
+    padding-bottom: 90px
+    &-title
+      font: normal normal bold 28px/32px Manrope
+      padding-bottom: 22px
+    &-desc
+      max-width: 627px
+      padding-bottom: 60px
+    &-row
+      display: flex
+      align-items: center
+      justify-content: flex-start
+    & .labelwrap
+      margin-right: 40px
+      border-bottom: $border
+      width: 367px
+      transition: all 0.3s ease
+      &:hover
+        .label
+          color: #000
+    &-input
+      background-color: transparent
+      font: normal normal normal 16px/24px Roboto
+    &-submit
+      color: $colorMain
+      box-shadow: 0 0 0 0 $colorMain inset, 0 0 0 2px $colorMain
+      margin: 0 85px 0 63px
+      border: none
+      &:hover
+        box-shadow: 0 0 40px 40px $colorMain inset, 0 0 0 0
+        color: #000
+    &-policy
+      max-width: 309px
+      a
+        color: $colorRed
+        text-decoration: underline
+  &__box
+    padding-top: 111px
+    display: grid
+    grid-gap: 116px
+    grid-template-columns: 1fr 1fr 1fr 367px
+  &__col
+    position: relative
+    &-title
+      font: normal normal bold 28px/32px Manrope
+      padding-bottom: 31px
+    &-link
+      display: block
+      margin-bottom: 1.5em
+      &:last-of-type
+        margin-bottom: 0
+      &.red
+        color: $colorRed
+        text-decoration: underline
+    &-text
+      display: flex
+      gap: 32px
+      align-items: flex-start
+      justify-content: flex-start
+      a
+        color: #fff
+        white-space: nowrap
+  &__stick
+    position: absolute
+    left: 0
+    bottom: 0
+    right: 0
+  &__socials
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__dev
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    a
+      margin-left: 7px

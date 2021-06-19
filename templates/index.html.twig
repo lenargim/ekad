@@ -1,6 +1,7 @@
 {% extends 'base.html.twig' %}
 {% block content %}
-  <section class="banner block" style="background-image: url('{{ asset('/build/banner.jpg') }}')">
+  <section class="banner block">
+    <img src="{{ asset('/build/banner.jpg') }}" alt="" class="banner__img">
     <div class="container">
       <div class="banner__wrap">
         <h1 class="banner__title">Земельные участки промышленного назначения с построенной инфраструктурой от 0.3 до 25
@@ -16,14 +17,18 @@
   <section class="certificate block">
     <div class="container">
       <div class="block__wrap">
-        <div class="certificate__text">
+        <div class="block__text">
           <h2 class="certificate__title block__title">Индустриальный парк в Чкаловской районе Екатеринбурга</h2>
           <div class="certificate__desc">Индустриальный парк «ЕКАД Южный» — действующий проект формата Greenfield,
             направленный на комплексное развитие территории, предназначенной для размещения производственно-складских
             объектов II-V класса опасности с санитарно-защитной зоной от 50 до 500 метров
           </div>
         </div>
-        <div class="certificate__img"></div>
+        <div class="certificate__img img" id="lightGallery">
+          <a href="{{ asset('build/certeficate-test.png') }}">
+            <img src="{{ asset('build/certeficate-test.png') }}" alt="certeficate">
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -39,8 +44,8 @@
   <section class="indicators block">
     <div class="container">
       <div class="block__wrap">
-        <div class="indicators__text">
-          <div class="block__title indicators__title">Технико-экономические показатели</div>
+        <div class="block__text">
+          <h2 class="block__title indicators__title">Технико-экономические показатели</h2>
           <div class="indicators__desc">Здесь какая-то информационная шляпа о том как же хорош этот проект. Да как вы
             вообще раньше могли жить паскуды без этого проекта, не понятно.
           </div>
@@ -56,7 +61,7 @@
           <div class="indicators__row">
             <div class="indicators__item">
               <div class="indicators__number">36</div>
-              <div class="indicators__unit"></div>
+              <div class="indicators__unit"><img src="{{ asset('build/people.svg') }}" alt=""></div>
               <div class="indicators__name">Резидентов</div>
             </div>
             <div class="indicators__item">
@@ -86,11 +91,12 @@
       </div>
     </div>
   </section>
-  <section class="infrastructure">
+  <section class="infrastructure block">
     <div class="container">
       <h2 class="block__title infrastructure__title">Инфраструктура парка</h2>
       <div class="infrastructure__wrap">
         <a href="#" class="infrastructure__item infrastructure__link">
+          <img src="{{ asset('build/el.svg') }}" alt="" class="infrastructure__svg">
           <img src="{{ asset('/build/download.jpg') }}" class="infrastructure__img" alt="electricity">
           <div class="infrastructure__box">
             <span class="infrastructure__item-title">Электроснабжение</span>
@@ -108,45 +114,50 @@
           </div>
         </div>
         <a href="#" class="infrastructure__item infrastructure__link">
+          <img src="{{ asset('build/pollution.svg') }}" alt="" class="infrastructure__svg">
           <img src="{{ asset('/build/download.jpg') }}" class="infrastructure__img" alt="electricity">
           <div class="infrastructure__box">
-            <span class="infrastructure__item-title">Электроснабжение</span>
+            <span class="infrastructure__item-title">Хозяйственно-бытовая канализация</span>
+            <div class="infrastructure__item-desc">Канализационные сети с подключением в центральную систему
+              водоотведения, объёмом 1000 м3/сутки.
+            </div>
+          </div>
+        </a>
+        <a href="#" class="infrastructure__item infrastructure__link">
+          <img src="{{ asset('build/water.svg') }}" alt="" class="infrastructure__svg">
+          <img src="{{ asset('/build/download.jpg') }}" class="infrastructure__img" alt="electricity">
+          <div class="infrastructure__box">
+            <span class="infrastructure__item-title">Хозяйственно-питьевое водоснабжение</span>
             <div class="infrastructure__item-desc">5 трансформаторных подстанций, с суммарной мощностью 20 мВт.5
               трансформаторных подстанций, с суммарной мощностью 20 мВт.
             </div>
           </div>
         </a>
         <a href="#" class="infrastructure__item infrastructure__link">
+          <img src="{{ asset('build/rain.svg') }}" alt="" class="infrastructure__svg">
           <img src="{{ asset('/build/download.jpg') }}" class="infrastructure__img" alt="electricity">
           <div class="infrastructure__box">
-            <span class="infrastructure__item-title">Электроснабжение</span>
+            <span class="infrastructure__item-title">Центральная дождевая канализация</span>
             <div class="infrastructure__item-desc">5 трансформаторных подстанций, с суммарной мощностью 20 мВт.5
               трансформаторных подстанций, с суммарной мощностью 20 мВт.
             </div>
           </div>
         </a>
         <a href="#" class="infrastructure__item infrastructure__link">
+          <img src="{{ asset('build/roads.svg') }}" alt="" class="infrastructure__svg">
           <img src="{{ asset('/build/download.jpg') }}" class="infrastructure__img" alt="electricity">
           <div class="infrastructure__box">
-            <span class="infrastructure__item-title">Электроснабжение</span>
+            <span class="infrastructure__item-title">Дороги</span>
             <div class="infrastructure__item-desc">5 трансформаторных подстанций, с суммарной мощностью 20 мВт.5
               трансформаторных подстанций, с суммарной мощностью 20 мВт.
             </div>
           </div>
         </a>
         <a href="#" class="infrastructure__item infrastructure__link">
+          <img src="{{ asset('build/Gas.svg') }}" alt="" class="infrastructure__svg">
           <img src="{{ asset('/build/download.jpg') }}" class="infrastructure__img" alt="electricity">
           <div class="infrastructure__box">
-            <span class="infrastructure__item-title">Электроснабжение</span>
-            <div class="infrastructure__item-desc">5 трансформаторных подстанций, с суммарной мощностью 20 мВт.5
-              трансформаторных подстанций, с суммарной мощностью 20 мВт.
-            </div>
-          </div>
-        </a>
-        <a href="#" class="infrastructure__item infrastructure__link">
-          <img src="{{ asset('/build/download.jpg') }}" class="infrastructure__img" alt="electricity">
-          <div class="infrastructure__box">
-            <span class="infrastructure__item-title">Электроснабжение</span>
+            <span class="infrastructure__item-title">Газопровод</span>
             <div class="infrastructure__item-desc">5 трансформаторных подстанций, с суммарной мощностью 20 мВт.5
               трансформаторных подстанций, с суммарной мощностью 20 мВт.
             </div>
@@ -163,6 +174,315 @@
       </div>
       <div class="infrastructure__button-wrap">
         <a href="#" class="infrastructure__button button">Узнать больше</a>
+      </div>
+    </div>
+  </section>
+  <section class="advantages block">
+    <div class="container">
+      <div class="block__wrap">
+        <div class="block__text">
+          <h2 class="block__title advantages__title">Преимущества для резидентов индустриального парка</h2>
+          <div class="advantages__desc">Содействие резидентам в размещении создаваемых ими объектов на территории
+            промышленного парка, включая вопросы землеустроительного характера, проектирования, строительства, ввода в
+            эксплуатацию объектов капитального строительства и технологическое присоединения к инженерным сетям.
+          </div>
+        </div>
+        <div class="advantages__box">
+          <div class="advantages__row">
+            <div class="advantages__item">
+              <div class="advantages__svg">{{ source('@build'~asset('ad1.svg')) }}</div>
+              <div class="advantages__name">Действующая инженерная инфраструктура</div>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__svg">{{ source('@build'~asset('ad2.svg')) }}</div>
+              <div class="advantages__name">Асфальтированные внутрипарковые дороги</div>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__svg">{{ source('@build'~asset('ad3.svg')) }}</div>
+              <div class="advantages__name">Тех присоединение к энергоносителям</div>
+            </div>
+          </div>
+          <div class="advantages__row">
+            <div class="advantages__item">
+              <div class="advantages__svg">{{ source('@build'~asset('ad4.svg')) }}</div>
+              <div class="advantages__name">Транспортная доступность (два съезда с ЕКАД)</div>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__svg">{{ source('@build'~asset('ad5.svg')) }}</div>
+              <div class="advantages__name">Точки подключения на границе участка</div>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__svg">{{ source('@build'~asset('ad6.svg')) }}</div>
+              <div class="advantages__name">Низкие тарифы на энергопотребление</div>
+            </div>
+          </div>
+          <div class="advantages__row">
+            <div class="advantages__item">
+              <div class="advantages__svg">{{ source('@build'~asset('ad7.svg')) }}</div>
+              <div class="advantages__name">Тех присоединение к энергоресурсам по доступным ценам</div>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__svg">{{ source('@build'~asset('ad8.svg')) }}</div>
+              <div class="advantages__name">Техприсоединение к сетям электроснабжения по ВН и СН</div>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__svg">{{ source('@build'~asset('ad9.svg')) }}</div>
+              <div class="advantages__name">Железнодорожные тупики</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="benefit block">
+    <div class="container">
+      <div class="block__text">
+        <h2 class="block__title benefit__title">Выгоды от приобретения объекта</h2>
+      </div>
+      <div class="benefit__wrap">
+        <div class="benefit__item">
+          <div class="benefit__icon"></div>
+          <div class="benefit__info">Высокая ликвидность приобретенного объекта отсутствие рисков связанных с
+            техприсоединением к энергоносителям не лимитированные объемы энергоносителей возможность приобретения
+            готового здания, построенного по требованиям заказчика
+          </div>
+        </div>
+        <div class="benefit__item">
+          <div class="benefit__icon"></div>
+          <div class="benefit__info">Возмещение НДС при приобретении построенного объекта Приобретенный объект может
+            быть залоговым имуществом Организация подъезда к объекту по асфальтированным дорогам
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ include('partials/types.html.twig') }}
+
+  <section class="activity block">
+    <div class="container">
+      <div class="block__wrap">
+        <div class="block__text">
+          <h2 class="block__title activity__title">Виды деятельности резидентов</h2>
+          <div class="activity__desc">Тщательно проработанное территориальное зонирование индустриального парка
+            позволяет
+            размещать компании и предприятия с различными видами деятельности.
+          </div>
+        </div>
+        <div class="activity__box">
+          <div class="activity__row">
+            <div class="activity__item">
+              <div class="activity__item-title">Сборочное и машиностроительное производство</div>
+              <div class="activity__item-desc">Предприятия обслуживающие нефте, газо и горнодобывающую отрасли,
+                изготавливающие медицинское оборудование, мебельные предприятия, и тд.
+              </div>
+            </div>
+          </div>
+          <div class="activity__row">
+            <div class="activity__item activity__item_half">
+              <div class="activity__item-title">Логистические комплексы</div>
+              <div class="activity__item-desc">Складские здания классов А и В, низко и средне температурные склады,
+                открытые площадки для хранения и перегрузки различных групп ТНП и продуктов питания, а так же продукции
+                НПЗ, металлургических и строительных предприятий
+              </div>
+            </div>
+            <div class="activity__item activity__item_half">
+              <div class="activity__item-title">Строительные предприятия</div>
+              <div class="activity__item-desc">Заводы изготавливающие строительные смеси, утеплители, гидроизоляцию,
+                кровельные и отделочные материалы, деревообрабатывающие предприятия и т.д.
+              </div>
+            </div>
+          </div>
+          <div class="activity__row">
+            <div class="activity__item activity__item_half">
+              <div class="activity__item-title">Пищевая промышленность</div>
+              <div class="activity__item-desc">Кейтеринговые компании, предприятия по изготовлению полуфабрикатов и
+                готовой продукции
+              </div>
+            </div>
+            <div class="activity__item activity__item_half">
+              <div class="activity__item-title">Тяжелая и легкая промышленность</div>
+              <div class="activity__item-desc">Предприятия с санитарно-защитной зоной до 500 метров</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="residents block">
+    <div class="container">
+      <div class="residents__wrap">
+        <h2 class="block__title residents__title">Резиденты индустриального парка</h2>
+        <div class="residents__box">
+          <img src="{{ asset('build/pulsar.svg') }}" alt="pulsar" class="residents__box-img">
+          <img src="{{ asset('build/ural.png') }}" alt="экопарк урал" class="residents__box-img">
+          <img src="{{ asset('build/RussianCrown.png') }}" alt="русская корона" class="residents__box-img">
+          <img src="{{ asset('build/magon.png') }}" alt="магон" class="residents__box-img">
+          <img src="{{ asset('build/resident5.png') }}" alt="" class="residents__box-img">
+          <img src="{{ asset('build/metalcity.png') }}" alt="металл сити" class="residents__box-img">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="block faq">
+    <div class="container">
+      <div class="faq__wrap">
+        <div class="faq__text">
+          <h2 class="block__title faq__title">Часто задаваемые вопросы</h2>
+          <div class="faq__text-question">Земельные участки в Индустриальном парке «ЕКАД:Южный» в собственности или в
+            аренде?
+          </div>
+          <div class="faq__desc">Все земельные участки поставлены на кадастровый учет, зарегистрировано право
+            собственности.
+          </div>
+        </div>
+        <div class="faq__box">
+          <div class="faq__item">
+            <div class="faq__item-question">
+              <div class="faq__item-arrow"><span></span></div>
+              <span>Каков максимальный процент застройки земельного участка?</span>
+            </div>
+            <div class="faq__item-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam
+              consequatur culpa, dolorem dolores earum fugiat id in laborum natus nobis odit optio, porro reprehenderit
+              rerum sed soluta ullam, voluptate? Accusamus accusantium ad error iste pariatur suscipit vel veritatis
+              voluptas!
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__item-question">
+              <div class="faq__item-arrow"><span></span></div>
+              <span>Какими энергоносителями и коммуникациями обеспечен объект?</span>
+            </div>
+            <div class="faq__item-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam
+              consequatur culpa, dolorem dolores earum fugiat id in laborum natus nobis odit optio, porro reprehenderit
+              rerum sed soluta ullam, voluptate? Accusamus accusantium ad error iste pariatur suscipit vel veritatis
+              voluptas!
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__item-question">
+              <div class="faq__item-arrow"><span></span></div>
+              <span>Кто строит индустриальный парк?</span>
+            </div>
+            <div class="faq__item-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam
+              consequatur culpa, dolorem dolores earum fugiat id in laborum natus nobis odit optio, porro reprehenderit
+              rerum sed soluta ullam, voluptate? Accusamus accusantium ad error iste pariatur suscipit vel veritatis
+              voluptas!
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__item-question">
+              <div class="faq__item-arrow"><span></span></div>
+              <span>Могу ли я купить только землю?</span>
+            </div>
+            <div class="faq__item-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam
+              consequatur culpa, dolorem dolores earum fugiat id in laborum natus nobis odit optio, porro reprehenderit
+              rerum sed soluta ullam, voluptate? Accusamus accusantium ad error iste pariatur suscipit vel veritatis
+              voluptas!
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__item-question">
+              <div class="faq__item-arrow"><span></span></div>
+              <span>Что такое Bluit-to-suit?</span>
+            </div>
+            <div class="faq__item-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam
+              consequatur culpa, dolorem dolores earum fugiat id in laborum natus nobis odit optio, porro reprehenderit
+              rerum sed soluta ullam, voluptate? Accusamus accusantium ad error iste pariatur suscipit vel veritatis
+              voluptas!
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__item-question">
+              <div class="faq__item-arrow"><span></span></div>
+              <span>Каковы сроки строительства объекта?</span>
+            </div>
+            <div class="faq__item-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam
+              consequatur culpa, dolorem dolores earum fugiat id in laborum natus nobis odit optio, porro reprehenderit
+              rerum sed soluta ullam, voluptate? Accusamus accusantium ad error iste pariatur suscipit vel veritatis
+              voluptas!
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__item-question">
+              <div class="faq__item-arrow"><span></span></div>
+              <span>Какие гарантии того, что объект будет построен в срок, указанный в договоре?</span>
+            </div>
+            <div class="faq__item-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam
+              consequatur culpa, dolorem dolores earum fugiat id in laborum natus nobis odit optio, porro reprehenderit
+              rerum sed soluta ullam, voluptate? Accusamus accusantium ad error iste pariatur suscipit vel veritatis
+              voluptas!
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__item-question">
+              <div class="faq__item-arrow"><span></span></div>
+              <span>Могу ли я изменить конфигурацию объекта?</span>
+            </div>
+            <div class="faq__item-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam
+              consequatur culpa, dolorem dolores earum fugiat id in laborum natus nobis odit optio, porro reprehenderit
+              rerum sed soluta ullam, voluptate? Accusamus accusantium ad error iste pariatur suscipit vel veritatis
+              voluptas!
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__item-question">
+              <div class="faq__item-arrow"><span></span></div>
+              <span>Что я получу при завершении строительства?</span>
+            </div>
+            <div class="faq__item-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam
+              consequatur culpa, dolorem dolores earum fugiat id in laborum natus nobis odit optio, porro reprehenderit
+              rerum sed soluta ullam, voluptate? Accusamus accusantium ad error iste pariatur suscipit vel veritatis
+              voluptas!
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__item-question">
+              <div class="faq__item-arrow"><span></span></div>
+              <span>Какое назначение земельных участков?</span>
+            </div>
+            <div class="faq__item-answer">
+              <p>Одно из явных преимуществ покупки участка зимой – это время, которого так не хватает в строительный
+                сезон. Зима, это отличная возможность: </p>
+              <p>+ сосредоточиться на проектной работе, продумать детали
+                производства и размещения на участке;</p>
+              <p>+ выбрать поставщиков и подрядчиков, в сезон довольно трудно найти
+                хороших специалистов;</p>
+              <p>+ оплатить материалы со скидкой;</p>
+              <p>+ оформить разрешительную документацию (ГПЗУ,
+                разрешение на строительство);</p>
+              <p>+ подготовить финансовую «подушку»;</p>
+              <p>+ последовательность расчетов: земля -
+                сети – стройка.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="price-block">
+    <div class="container">
+      <div class="price-block__wrap">
+        <h2 class="price-block__title block__title">Стоимость объекта</h2>
+        <div class="price-block__box">
+          <div class="price-block__item active">
+            <div class="price-block__item-icon"></div>
+            <div class="price-block__item-title">Первая и вторая очередь</div>
+            <div class="price-block__item-desc">от 12 600 000 ₽ за 1 га</div>
+            <a href="#" class="price-block__item-link button">Оставить заявку</a>
+          </div>
+          <div class="price-block__item">
+            <div class="price-block__item-icon"></div>
+            <div class="price-block__item-title">Первая линия ЕКАД</div>
+            <div class="price-block__item-desc">от 20 000 000 ₽ за 1 га.</div>
+            <a href="#" class="price-block__item-link button">Оставить заявку</a>
+          </div>
+          <div class="price-block__item">
+            <div class="price-block__item-icon"></div>
+            <div class="price-block__item-title">Производственно- складские здания</div>
+            <div class="price-block__item-desc">От 43 000 ₽ За м2</div>
+            <a href="#" class="price-block__item-link button">Оставить заявку</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>

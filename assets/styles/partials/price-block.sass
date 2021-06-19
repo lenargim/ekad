@@ -1,0 +1,58 @@
+.price-block
+  &__wrap
+    height: 100vh
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+  &__title
+    text-align: center
+    padding-bottom: 96px
+  &__box
+    width: 100%
+    display: grid
+    grid-gap: 32px
+    grid-template-columns: repeat(3, 1fr)
+  &__item
+    background-color: transparent
+    padding: 60px 30px 68px
+    text-align: center
+    transition: all 0.3s ease
+    &.active
+      background-color: #2C3338
+      color: #fff
+      .price-block__item-link
+        opacity: 1
+    &-icon
+      width: 100px
+      height: 100px
+      border-radius: 50%
+      border: 5px solid #000
+      position: relative
+      overflow: hidden
+      margin: 0 auto 30px
+      &:after
+        content: "icon"
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        font-size: 23px
+    &-title
+      max-width: 264px
+      font: normal normal bold 28px/32px Manrope
+      padding-bottom: 20px
+      border-bottom: $border
+      margin: 0 auto 26px
+    &-desc
+      font: normal normal bold 16px/24px Manrope
+      text-transform: uppercase
+      padding-bottom: 27px
+    &-link
+      color: $colorMain
+      box-shadow: 0 0 0 0 $colorMain inset, 0 0 0 2px $colorMain
+      margin: 0 auto
+      opacity: 0
+      &:hover
+        box-shadow: 0 0 40px 40px $colorMain inset, 0 0 0 0
+        color: #000

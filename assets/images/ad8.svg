@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="73" height="88.513" viewBox="0 0 73 88.513">
+    <defs>
+        <style>.a-red,.e{fill:none;}.a-red,.b{stroke:#d83824;stroke-width:3px;}.b{fill:#fff;}.c{fill:#d83824;}.d{stroke:none;}
+        </style>
+    </defs>
+    <g transform="translate(-404 -278.188)">
+        <path class="a-red"
+              d="M3648.5-3686.518v-6a2,2,0,0,1,2-2,2,2,0,0,1,2,2v6Zm-8,0v-6a2,2,0,0,1,2-2,2,2,0,0,1,2,2v6Zm-8,0v-6a2,2,0,0,1,2-2,2,2,0,0,1,2,2v6Z"
+              transform="translate(-3221 3974.208)"/>
+        <path class="a-red" d="M-3179,4022v41.6" transform="translate(3596 -3696.9)"/>
+        <path class="a-red" d="M-3179,4022v41.6" transform="translate(3605 -3696.9)"/>
+        <path class="b" d="M-.009-.311h26v4c0,1.1-1.428,2-3,2h-20c-1.572,0-3-.9-3-2Z"
+              transform="translate(408.509 319.411)"/>
+        <rect class="b" width="26" height="16.1" transform="translate(408.5 303)"/>
+        <rect class="b" width="26" height="10" transform="translate(408.5 287.689)"/>
+        <path class="a-red" d="M.275-.066h22v11a10.915,10.915,0,0,1-11,11,10.915,10.915,0,0,1-11-11Z"
+              transform="translate(452.225 301.755)"/>
+        <rect class="c" width="27" height="5" rx="2" transform="translate(450 299.188)"/>
+        <path class="a-red" d="M3648-3686.508v-6a2,2,0,0,1,2-2,2,2,0,0,1,2,2v6Zm-10,0v-6a2,2,0,0,1,2-2,2,2,0,0,1,2,2v6Z"
+              transform="translate(-3181.499 3986.708)"/>
+        <path class="a-red" d="M-3179,4022v43.512" transform="translate(3640 -3698.811)"/>
+        <path class="a-red" d="M-3179,4022v43.512" transform="translate(3645 -3698.811)"/>
+        <g class="b" transform="translate(461 315.188)">
+            <circle class="d" cx="2.5" cy="2.5" r="2.5"/>
+            <circle class="e" cx="2.5" cy="2.5" r="1"/>
+        </g>
+        <g class="a-red" transform="translate(404 296.189)">
+            <rect class="d" width="35" height="8" rx="3"/>
+            <rect class="e" x="1.5" y="1.5" width="32" height="5" rx="1.5"/>
+        </g>
+    </g>
+</svg>

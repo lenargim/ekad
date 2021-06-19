@@ -1,9 +1,16 @@
 .banner
-  background-repeat: no-repeat
-  background-position: left center
-  width: 100%
-  background-size: cover
   color: #FFFFFF
+  &__img
+    height: 100vh
+    object-fit: cover
+    position: absolute
+    left: 0
+    top: 0
+    bottom: 0
+    animation-name: slide
+    animation-duration: 16s
+    animation-iteration-count: infinite
+    animation-delay: 2s
   &__wrap
     height: 100vh
     padding-top: 260px
@@ -30,3 +37,10 @@
       width: 200px
     span:nth-of-type(2):after
       width: 100px
+@keyframes slide
+  0%
+    transform: translateX(0)
+  50%
+    transform: translateX(calc(100vw - 100%))
+  100%
+    transform: translateX(0)

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="61.464" height="95.294" viewBox="0 0 61.464 95.294">
+    <defs>
+        <style>.a-red{fill:none;stroke:#d83824;stroke-width:3px;}</style>
+    </defs>
+    <g transform="translate(-412.879 -259.879)">
+        <g transform="translate(-552.889 -3697.736)">
+            <rect class="a-red" width="40.461" height="40.461" rx="4" transform="translate(996.5 3959.736) rotate(45)"/>
+            <rect class="a-red" width="26.461" height="26.461" rx="4" transform="translate(996.5 3969.635) rotate(45)"/>
+        </g>
+        <line class="a-red" y2="38.173" transform="translate(441.5 317)"/>
+        <line class="a-red" y2="38.173" transform="translate(445.5 317)"/>
+    </g>
+</svg>

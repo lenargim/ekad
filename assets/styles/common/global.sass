@@ -77,6 +77,9 @@ select
 
 .img
   overflow: hidden
+  display: flex
+  align-items: center
+  justify-content: center
   img
     width: 100%
     height: 100%
@@ -94,6 +97,7 @@ select
   cursor: pointer
   transition: all 0.5s ease
   background-color: transparent
+  overflow: hidden
   &:hover
     outline: none
 .block
@@ -104,3 +108,49 @@ select
     justify-content: flex-start
   &__title
     font: normal normal bold 48px/64px Manrope
+  &__text
+    width: 42%
+    margin-right: 165px
+.breadcrumbs
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  padding-bottom: 45px
+  font-size: 13px
+  font-weight: 600
+  line-height: 16px
+  &__link
+    color: $colorDark
+    white-space: nowrap
+    display: block
+    margin-right: 56px
+    position: relative
+    &:before, &:after
+      content: ""
+      position: absolute
+      display: block
+    &:before
+      width: 24px
+      height: 1px
+      background-color: $colorDark
+      left: calc(100% + 16px)
+      top: calc(50% - 0px)
+    &:after
+      border: solid #008066
+      border-width: 0 1px 1px 0
+      left: calc(100% + 33px)
+      top: calc(50% - 3px)
+      padding: 3px
+      transform: rotate(-45deg)
+    &:last-of-type
+      margin-right: 0
+      color: #434343
+      &:before, &:after
+        content: unset
+.page
+  padding-top: 60px
+h1.title
+  font: normal normal bold 56px/64px Manrope
+  padding-bottom: 60px
+.map
+  height: 100vh

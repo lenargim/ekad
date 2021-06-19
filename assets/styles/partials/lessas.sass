@@ -1,0 +1,485 @@
+.lessees_block
+  margin-bottom: 80px
+
+.lessees_tabs
+  display: table
+  width: 100%
+  margin-bottom: 40px
+
+.lessees_tabs .lessees_tabs_item
+  display: table-cell
+  position: relative
+  user-select: none
+
+.lessees_tabs .lessees_tabs_item label
+  text-align: center
+  padding: 40px 20px
+  background: #fff
+  border-right: 1px solid #dedede
+  box-sizing: border-box
+  width: 100%
+  display: inline-block
+  cursor: pointer
+  transition: background 400ms
+  font-size: 1.42857143em
+
+.lessees_tabs .lessees_tabs_item label.checkedLabel
+  background: #00b385
+  color: #fff
+  border-right: 1px solid #00b385
+
+.lessees_tabs .lessees_tabs_item:last-of-type label
+  border-right: none
+
+.lessees_tabs .lessees_tabs_item .jq-checkbox
+  width: 40px
+  height: 20px
+  border-radius: 30px
+  background: #cecccc
+  box-shadow: inset 0 0 6px 1px rgba(0, 0, 0, 0.1)
+  pointer-events: none
+
+.lessees_tabs .lessees_tabs_item .jq-checkbox .jq-checkbox__div
+  background: #073a25
+  width: 20px
+  height: 20px
+  border-radius: 50%
+  position: relative
+  left: 0
+  transition: left 500ms
+  margin: 0
+
+.lessees_tabs .lessees_tabs_item .jq-checkbox.checked .jq-checkbox__div
+  background: #fff
+  left: 20px
+
+.lessees_map_container
+  position: relative
+  overflow: hidden
+  background-color: #fff
+
+.lessees_map_container h2
+  margin-bottom: 0
+  position: absolute
+  width: 100%
+  z-index: 2
+  left: 0
+  top: 30px
+  pointer-events: none
+  transform: translate(15%, 40px)
+  text-align: center
+  text-transform: uppercase
+
+.lessees_map_container h2 span
+  display: inline-block
+  padding: 5px 8px
+  background: #fff
+
+.lessees_map
+  width: 100%
+  position: relative
+  overflow: hidden
+
+.lessees_map.shops .lessees_map_cover
+  transform: translateY(-126px)
+
+.lessees_map .lessees_map_hidden
+  overflow: hidden
+  position: relative
+
+.lessees_map .lessees_map_hidden .lessees_filter_cover
+  position: absolute
+  top: 0
+  right: 20px
+  width: 250px
+  z-index: 2
+  font-size: 18px
+  padding: 20px
+  background: #fff
+
+.lessees_map .lessees_map_hidden .lessees_filter_cover .title
+  margin-top: 30px
+  margin-bottom: 13px
+  font-size: 18px
+  font-weight: bold
+  text-align: center
+
+.lessees_map .lessees_map_hidden .lessees_filter_cover .checkbox_cover
+  margin-bottom: 18px
+
+.lessees_map .lessees_map_hidden .lessees_filter_cover .checkbox_cover.checkbox_cover_zones input
+  display: none
+
+.lessees_map .lessees_map_hidden .lessees_filter_cover .checkbox_cover.checkbox_cover_zones input:checked + .icon
+  box-shadow: inset 0 0 0 3px #D12F33
+
+.lessees_map .lessees_map_hidden .lessees_filter_cover .checkbox_cover.checkbox_cover_zones label
+  display: flex
+  align-items: center
+
+.lessees_map .lessees_map_hidden .lessees_filter_cover .checkbox_cover.checkbox_cover_zones label .icon
+  height: 20px
+  min-width: 20px
+  margin-right: 10px
+  box-shadow: inset 0 0 0 5px #C4C4C4
+  transition: 300ms
+  border-radius: 20px
+
+.lessees_map .lessees_map_hidden .lessees_filter_cover .checkbox_cover.checkbox_free_zone
+  display: flex
+
+.lessees_map .lessees_map_hidden .lessees_filter_cover .checkbox_cover.checkbox_free_zone label
+  flex-grow: 1
+  text-align: center
+  height: 37px
+  overflow: hidden
+
+.lessees_map .lessees_map_hidden .lessees_filter_cover .checkbox_cover.checkbox_free_zone label:first-of-type
+  border-radius: 3px 0 0 3px
+  border-right: 1px solid #fff
+
+.lessees_map .lessees_map_hidden .lessees_filter_cover .checkbox_cover.checkbox_free_zone label:last-of-type
+  border-radius: 0 3px 3px 0
+
+.lessees_map .lessees_map_hidden .lessees_filter_cover .checkbox_cover.checkbox_free_zone input
+  display: none
+
+.lessees_map .lessees_map_hidden .lessees_filter_cover .checkbox_cover.checkbox_free_zone input:checked + span
+  background: #D12F33
+
+.lessees_map .lessees_map_hidden .lessees_filter_cover .checkbox_cover.checkbox_free_zone span
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 14px
+  background: #C4C4C4
+  color: #fff
+
+.lessees_map .lessees_map_hidden .lessees_filter_cover .checkbox_cover:first-of-type
+  margin-bottom: 60px
+
+.lessees_map .lessees_map_hidden .lessees_filter_cover .checkbox_cover label
+  position: relative
+  display: block
+  padding: 3px 0
+  cursor: pointer
+  font-weight: normal
+
+.lessees_map .lessees_map_hidden .lessees_filter_cover .checkbox_cover label:hover .jq-checkbox
+  background: #ffcdce
+
+.lessees_map .lessees_map_hidden .lessees_filter_cover .checkbox_cover .jq-checkbox__div
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background: #ccc
+
+.lessees_map .lessees_map_hidden .lessees_filter_cover .checkbox_cover .jq-checkbox
+  margin-right: 10px
+  background: #eaeaea
+  vertical-align: middle
+
+.lessees_map .lessees_map_hidden .lessees_filter_cover .checkbox_cover .jq-checkbox.checked + span
+  color: #ce3437
+
+.lessees_map .lessees_map_hidden .lessees_filter_cover .checkbox_cover span
+  display: inline-block
+  vertical-align: middle
+  transition: color 300ms
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+.lessees_map .lessees_map_hidden .lessees_filter_cover .checkbox_cover.checkbox_cover_zones
+  font-size: 14px
+
+.lessees_map .lessees_map_hidden .lessees_filter_cover .checkbox_cover.checkbox_cover_zones label
+  margin-bottom: 4px
+
+.lessees_map .lessees_map_hidden .lessees_filter_cover .checkbox_cover.checkbox_cover_zones .jq-checkbox
+  margin-right: 5px
+
+.lessees_map .lessees_map_hidden .lessees_filter_cover .checkbox_cover.checkbox_cover_zones span
+  display: inline
+
+.lessees_map .lessees_map_hidden .lessees_filter_cover .lessees_obj_info
+  width: 100%
+  padding: 13px 16px
+  border: 2px solid #d12f33
+  font-size: 16px
+  margin-top: 40px
+
+.lessees_map .lessees_map_hidden .lessees_filter_cover .lessees_obj_info .title
+  color: #000
+
+.lessees_map .lessees_map_hidden .lessees_filter_cover .lessees_obj_info > div
+  margin-bottom: 7px
+
+.lessees_map .lessees_map_hidden .lessees_filter_cover .lessees_obj_info > div span
+  font-weight: bold
+
+.lessees_map .lessees_map_hidden .lessees_filter_cover .lessees_obj_info > div:last-of-type
+  margin-bottom: 0
+
+.lessees_map .lessees_map_zoom
+  transform: scale(1)
+  transition: transform 600ms
+  display: block
+  background: #fff
+  position: relative
+  left: 0
+  top: 0
+  width: 100%
+  margin: 0 auto
+  height: 100%
+  max-width: 960px
+
+.lessees_map .lessees_map_cover
+  display: block
+  position: relative
+  cursor: move
+  background: #fff
+  min-height: 750px
+
+.lessees_map #lessees_map_svg
+  position: relative
+  z-index: 10
+
+.lessees_map #lessees_map_svg text
+  font-family: 'Play', sans-serif
+
+.lessees_map #lessees_map_svg svg
+  height: 800px
+
+.lessees_map #lessees_map_svg #plots rect,
+.lessees_map #lessees_map_svg #plots polygon
+  cursor: pointer
+  transition: fill 300ms, opacity 300ms
+
+.lessees_map #lessees_map_svg #plots rect.marked_busy,
+.lessees_map #lessees_map_svg #plots polygon.marked_busy
+  fill: #d1868e
+
+.lessees_map #lessees_map_svg #plots rect.marked_busy:hover,
+.lessees_map #lessees_map_svg #plots polygon.marked_busy:hover
+  fill: #d15554
+
+.lessees_map #lessees_map_svg #plots rect.marked_busy.selected,
+.lessees_map #lessees_map_svg #plots polygon.marked_busy.selected
+  fill: #D12F33
+
+.lessees_map #lessees_map_svg #plots rect.marked_free,
+.lessees_map #lessees_map_svg #plots polygon.marked_free
+  fill: #98d193
+
+.lessees_map #lessees_map_svg #plots rect.marked_free:hover,
+.lessees_map #lessees_map_svg #plots polygon.marked_free:hover
+  fill: #51d162
+
+.lessees_map #lessees_map_svg #plots rect.marked_free.selected,
+.lessees_map #lessees_map_svg #plots polygon.marked_free.selected
+  fill: #D12F33
+
+.lessees_map #lessees_map_svg #plots rect.selected,
+.lessees_map #lessees_map_svg #plots polygon.selected
+  fill: #D12F33
+
+.lessees_map #lessees_map_svg #places
+  pointer-events: none
+
+.lessees_map #lessees_map_svg #places > g
+  transform: translateY(-5%)
+  opacity: 0
+  transition: all 300ms
+
+.lessees_map #lessees_map_svg #places > g.active
+  opacity: 1
+  transform: translateY(0)
+  transition: opacity 300ms, transform 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275)
+
+.lessees_map .lessees_legend
+  position: absolute
+  bottom: 20px
+  left: 44px
+
+.lessees_map .lessees_legend .legend_item
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-top: 25px
+
+.lessees_map .lessees_legend .legend_item img
+  display: block
+  margin-right: 10px
+
+.lessees_map .lessees_infrastructure
+  position: absolute
+  width: 186px
+  left: 44px
+  top: 122px
+
+.lessees_map .lessees_infrastructure .title
+  margin-top: 30px
+  margin-bottom: 13px
+  font-size: 18px
+  font-weight: bold
+  text-align: center
+
+.lessees_map .lessees_infrastructure .lessees_infrastructure_item
+  display: block
+  height: 38px
+  width: 186px
+  position: relative
+  font-weight: normal
+  cursor: pointer
+  margin-bottom: 10px
+
+.lessees_map .lessees_infrastructure .lessees_infrastructure_item input
+  display: none
+
+.lessees_map .lessees_infrastructure .lessees_infrastructure_item input:checked + .item_content
+  color: #fff
+
+.lessees_map .lessees_infrastructure .lessees_infrastructure_item input:checked + .item_content.electro
+  background: #D12F33
+  border-color: #D12F33
+
+.lessees_map .lessees_infrastructure .lessees_infrastructure_item input:checked + .item_content.electro svg path
+  fill: #D12F33
+
+.lessees_map .lessees_infrastructure .lessees_infrastructure_item input:checked + .item_content.gas
+  background: #228B22
+  border-color: #228B22
+
+.lessees_map .lessees_infrastructure .lessees_infrastructure_item input:checked + .item_content.gas svg path
+  fill: #228B22
+
+.lessees_map .lessees_infrastructure .lessees_infrastructure_item input:checked + .item_content.waterfill
+  background: #4C9DE9
+  border-color: #4C9DE9
+
+.lessees_map .lessees_infrastructure .lessees_infrastructure_item input:checked + .item_content.waterfill svg path
+  fill: #4C9DE9
+
+.lessees_map .lessees_infrastructure .lessees_infrastructure_item input:checked + .item_content.waterout
+  background: #1F849A
+  border-color: #1F849A
+
+.lessees_map .lessees_infrastructure .lessees_infrastructure_item input:checked + .item_content.waterout svg path
+  fill: #1F849A
+
+.lessees_map .lessees_infrastructure .lessees_infrastructure_item input:checked + .item_content.raindrop
+  background: #F88C00
+  border-color: #F88C00
+
+.lessees_map .lessees_infrastructure .lessees_infrastructure_item input:checked + .item_content.raindrop svg path
+  fill: #F88C00
+
+.lessees_map .lessees_infrastructure .lessees_infrastructure_item .item_content
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  display: flex
+  border: 1px solid #C4C4C4
+  border-radius: 4px
+  justify-content: center
+  align-items: center
+  transition: 300ms
+  background: #fff
+
+.lessees_map .lessees_infrastructure .lessees_infrastructure_item .item_content svg path
+  fill: #C4C4C4
+
+.lessees_map .lessees_infrastructure .lessees_infrastructure_item .item_content .item_name
+  font-size: 14px
+
+.lessees_map .lessees_infrastructure .lessees_infrastructure_item .item_content .icon
+  position: absolute
+  right: -14px
+  top: 4px
+
+.lessees_map .lessees_map_zoom_btns
+  position: absolute
+  width: 118px
+  height: 49px
+  left: 44px
+  top: 42px
+  background: #fff
+  border-radius: 4px
+  overflow: hidden
+  display: flex
+
+.lessees_map .lessees_map_zoom_btns .plus,
+.lessees_map .lessees_map_zoom_btns .minus
+  position: relative
+  background: #B8B8B8
+  height: 49px
+  width: 59px
+  font-size: 29px
+  font-weight: bold
+  color: #ffffff
+  text-align: center
+  line-height: 43px
+  cursor: pointer
+  transition: background 300ms
+  user-select: none
+  display: flex
+  align-items: center
+  justify-content: center
+
+.lessees_map .lessees_map_zoom_btns .plus:hover,
+.lessees_map .lessees_map_zoom_btns .minus:hover
+  background: #D12F33
+
+.lessees_map .lessees_map_zoom_btns .plus:active,
+.lessees_map .lessees_map_zoom_btns .minus:active
+  background: #bd2a2d
+
+.lessees_map .lessees_map_abs
+  position: absolute
+  z-index: 20
+  background: #fff
+  border-radius: 0
+  padding: 25px 15px
+  width: 240px
+  opacity: 1
+  transition: box-shadow 300ms, opacity 300ms
+  box-shadow: 0 0 0 2px #009c6f
+
+.lessees_map .lessees_map_abs.loading
+  opacity: 0.2
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2)
+
+.lessees_map .lessees_map_abs .title
+  font-size: 1.42857143em
+  margin-bottom: 20px
+
+.lessees_map .lessees_map_abs p
+  padding: 0
+  font-size: 1.07142857em
+
+.lessees_map .lessees_map_abs .price
+  font-size: 1.07142857em
+  margin: 20px 0
+
+.lessees_map .lessees_map_abs a
+  font-size: 1.07142857em
+  color: #00b385
+  text-decoration: none
+
+.lesses_card
+  margin-bottom: 80px
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+  .lessees_map #lessees_map_svg svg
+    height: 800px

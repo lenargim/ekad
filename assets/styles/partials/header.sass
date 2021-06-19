@@ -1,11 +1,14 @@
 .header
-  position: absolute
-  left: 0
-  top: 0
-  right: 0
-  z-index: 1
+  background-color: $colorDark
+  &_home
+    position: absolute
+    left: 0
+    top: 0
+    right: 0
+    z-index: 1
+    background-color: transparent
   &__wrap
-    padding-top: 80px
+    padding: 80px 0
     display: flex
     align-items: center
     justify-content: flex-start
@@ -43,9 +46,8 @@
     color: #fff
   &__callback
     color: $colorMain
-    overflow: hidden
-    box-shadow: 0 0 0 0 $colorMain inset, 0 0 0 2px $colorMain
     margin-left: 63px
+    box-shadow: 0 0 0 0 $colorMain inset, 0 0 0 2px $colorMain
     &:hover
       box-shadow: 0 0 40px 40px $colorMain inset, 0 0 0 0
       color: #000

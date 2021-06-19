@@ -1,0 +1,1447 @@
+<div class="lessees_map_container block" id="section2"><h2><span>Cхема участков</span></h2>
+  <div class="lessees_map">
+    <div class="lessees_map_hidden">
+      <div class="lessees_filter_cover">
+        <div class="title">Зонирование</div>
+        <div class="checkbox_cover checkbox_cover_zones"><label> <input value="1" type="checkbox"
+                                                                        data-color="#AAAAC4">
+            <div class="icon"></div>
+            <span>ПК-1 Зона размещения промышленных и производственно-коммунальных предприятий II, III, IV и V классов вредности (СЗЗ до 500м).</span>
+          </label> <label> <input value="3" type="checkbox" data-color="#9C1454">
+            <div class="icon"></div>
+            <span>Ц-4 Зона крупных торговых центров, оптовой торговли, рынков и складских объектов. </span> </label>
+          <label> <input value="2" type="checkbox" data-color="#6E6E88">
+            <div class="icon"></div>
+            <span>ПК-1 Зона размещения пищевой промышленности и производственно-коммунальных предприятий IV и V классов вредности (СЗЗ до 100м).</span>
+          </label></div>
+        <div class="title">Участки</div>
+        <div class="checkbox_cover checkbox_free_zone"><label> <input id="free" type="checkbox"><span>Свободные</span>
+          </label> <label> <input id="busy" type="checkbox"><span>Занятные</span> </label></div>
+        <div class="lessees_obj_info">Выберите обьект, чтобы узнать информацию о нем</div>
+      </div>
+      <input id="mapData" name="mapData" type="hidden"
+             value="[{&quot;Id&quot;:89,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:5,&quot;ZoneId&quot;:null,&quot;Title&quot;:&quot;5.3&quot;,&quot;Area&quot;:&quot;0,37 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;Ц-2&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:90,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:6,&quot;ZoneId&quot;:null,&quot;Title&quot;:&quot;5.2&quot;,&quot;Area&quot;:&quot;0,41 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;Ц-2&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:91,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:36,&quot;ZoneId&quot;:null,&quot;Title&quot;:&quot;4.14&quot;,&quot;Area&quot;:&quot;0,72 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:null,&quot;Description&quot;:null},{&quot;Id&quot;:92,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:51,&quot;ZoneId&quot;:null,&quot;Title&quot;:&quot;5.1&quot;,&quot;Area&quot;:&quot;1,02 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:null,&quot;Description&quot;:null},{&quot;Id&quot;:93,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:55,&quot;ZoneId&quot;:null,&quot;Title&quot;:&quot;5.9&quot;,&quot;Area&quot;:&quot;0,15 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:null,&quot;Description&quot;:null},{&quot;Id&quot;:94,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:66,&quot;ZoneId&quot;:null,&quot;Title&quot;:&quot;4.12&quot;,&quot;Area&quot;:&quot;0,14&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;Ц-4&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:95,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:95,&quot;ZoneId&quot;:null,&quot;Title&quot;:&quot;3.1&quot;,&quot;Area&quot;:&quot;1 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:null,&quot;Description&quot;:null},{&quot;Id&quot;:96,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:0,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.28&quot;,&quot;Area&quot;:&quot;0,28 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:97,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:1,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.28&quot;,&quot;Area&quot;:&quot;0,42 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:98,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:2,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.38&quot;,&quot;Area&quot;:&quot;0,8 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:99,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:3,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.29&quot;,&quot;Area&quot;:&quot;0,64 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:100,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:4,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.20&quot;,&quot;Area&quot;:&quot;0,79 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:101,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:8,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;1.18&quot;,&quot;Area&quot;:&quot;0,71 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:102,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:9,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;1.17&quot;,&quot;Area&quot;:&quot;0,72 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:103,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:10,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;1.16&quot;,&quot;Area&quot;:&quot;0,23 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:104,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:11,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;1.13&quot;,&quot;Area&quot;:&quot;1,95 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:105,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:12,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;1.15&quot;,&quot;Area&quot;:&quot;1 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:106,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:13,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;1.14&quot;,&quot;Area&quot;:&quot;1,53 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:107,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:14,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.22&quot;,&quot;Area&quot;:&quot;1,66 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:108,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:15,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.44&quot;,&quot;Area&quot;:&quot;1,7 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:109,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:16,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.26&quot;,&quot;Area&quot;:&quot;0,69 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:110,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:17,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;1.7&quot;,&quot;Area&quot;:&quot;5,28 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:111,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:18,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;1.26&quot;,&quot;Area&quot;:&quot;2 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:112,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:19,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;1.10&quot;,&quot;Area&quot;:&quot;1 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:113,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:20,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;1.11&quot;,&quot;Area&quot;:&quot;1 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:114,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:21,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;1.2&quot;,&quot;Area&quot;:&quot;4.85 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:115,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:22,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;1.1&quot;,&quot;Area&quot;:&quot;6, 59 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:116,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:23,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;1.3&quot;,&quot;Area&quot;:&quot;3,25 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:null,&quot;Description&quot;:null},{&quot;Id&quot;:117,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:24,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;1.6&quot;,&quot;Area&quot;:&quot;4,84 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:118,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:25,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;1.4&quot;,&quot;Area&quot;:&quot;1,14 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:119,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:26,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;1.20&quot;,&quot;Area&quot;:&quot;11,8 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:120,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:27,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;1.21&quot;,&quot;Area&quot;:null,&quot;Proportions&quot;:&quot;0,9 га&quot;,&quot;Zones&quot;:null,&quot;Description&quot;:null},{&quot;Id&quot;:121,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:28,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;1.25&quot;,&quot;Area&quot;:&quot;2 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:122,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:29,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;1.27&quot;,&quot;Area&quot;:&quot;1,18 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:123,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:30,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;1.28&quot;,&quot;Area&quot;:&quot;0,9 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:124,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:31,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.27&quot;,&quot;Area&quot;:&quot;0,3 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:125,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:32,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;1.22&quot;,&quot;Area&quot;:&quot;1,29 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:126,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:33,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;1.23&quot;,&quot;Area&quot;:&quot;1 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:127,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:34,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;1.24&quot;,&quot;Area&quot;:&quot;1 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:128,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:37,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.29&quot;,&quot;Area&quot;:&quot;0,3 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:129,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:38,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.30&quot;,&quot;Area&quot;:&quot;0,3 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:130,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:39,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.31&quot;,&quot;Area&quot;:&quot;0,4 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:131,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:40,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.41&quot;,&quot;Area&quot;:&quot;0,39 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:132,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:41,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.42&quot;,&quot;Area&quot;:&quot;0,39 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:133,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:42,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.43&quot;,&quot;Area&quot;:&quot;0,50 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:134,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:43,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.36&quot;,&quot;Area&quot;:&quot;0,42 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:135,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:44,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.53&quot;,&quot;Area&quot;:&quot;0,96 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:136,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:67,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;1.5&quot;,&quot;Area&quot;:&quot;0,66 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:137,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:68,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.13&quot;,&quot;Area&quot;:&quot;1 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:138,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:69,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.1&quot;,&quot;Area&quot;:&quot;0,89 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:139,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:70,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.7&quot;,&quot;Area&quot;:&quot;1 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:140,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:71,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.10&quot;,&quot;Area&quot;:&quot;0,95&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:141,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:72,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.16&quot;,&quot;Area&quot;:&quot;1 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:142,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:73,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.19&quot;,&quot;Area&quot;:&quot;1,3 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:143,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:74,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.18&quot;,&quot;Area&quot;:&quot;0,67 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:144,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:75,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.8&quot;,&quot;Area&quot;:&quot;0,68&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:145,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:76,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.9&quot;,&quot;Area&quot;:&quot;0,67 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:146,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:77,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.15&quot;,&quot;Area&quot;:&quot;0,65&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:147,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:78,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.20&quot;,&quot;Area&quot;:&quot;0,73 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:148,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:79,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.14&quot;,&quot;Area&quot;:&quot;0,71 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:149,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:80,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.17&quot;,&quot;Area&quot;:&quot;0,7 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:150,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:81,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.24&quot;,&quot;Area&quot;:&quot;0,51 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:151,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:82,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.23&quot;,&quot;Area&quot;:&quot;0,73 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:152,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:83,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.21&quot;,&quot;Area&quot;:&quot;0,37&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:153,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:84,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.11&quot;,&quot;Area&quot;:&quot;0,59&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:154,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:85,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.12&quot;,&quot;Area&quot;:&quot;0,56&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:155,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:86,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.25&quot;,&quot;Area&quot;:&quot;0,47 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:156,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:87,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.6&quot;,&quot;Area&quot;:&quot;2,1 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:157,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:88,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.2&quot;,&quot;Area&quot;:&quot;1,11 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:158,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:89,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.40&quot;,&quot;Area&quot;:&quot;0,35 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:159,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:90,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;1.29&quot;,&quot;Area&quot;:&quot;3,04 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:160,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:91,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.5&quot;,&quot;Area&quot;:&quot;1 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:161,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:92,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.12&quot;,&quot;Area&quot;:&quot;0,84 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:162,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:93,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.5&quot;,&quot;Area&quot;:&quot;1,5 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:163,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:94,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.2&quot;,&quot;Area&quot;:&quot;1,46 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:164,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:96,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.3&quot;,&quot;Area&quot;:&quot;1 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:165,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:97,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.9&quot;,&quot;Area&quot;:&quot;0,95 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:166,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:98,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.8&quot;,&quot;Area&quot;:&quot;0,53 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:167,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:99,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.27&quot;,&quot;Area&quot;:&quot;0,96 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:168,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:100,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.26&quot;,&quot;Area&quot;:&quot;1 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:169,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:101,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.25&quot;,&quot;Area&quot;:&quot;1 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:170,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:102,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.24&quot;,&quot;Area&quot;:&quot;1 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:171,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:103,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.23&quot;,&quot;Area&quot;:&quot;1 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:172,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:104,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.10&quot;,&quot;Area&quot;:&quot;0,45 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:173,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:105,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.6&quot;,&quot;Area&quot;:&quot;0,40&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:174,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:106,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.4&quot;,&quot;Area&quot;:&quot;0.41 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:175,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:107,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.15&quot;,&quot;Area&quot;:&quot;0,25 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:176,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:108,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.48&quot;,&quot;Area&quot;:&quot;0,76 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:177,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:109,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.47&quot;,&quot;Area&quot;:&quot;1,88 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:178,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:110,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.46&quot;,&quot;Area&quot;:&quot;2,07 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:179,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:111,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.45&quot;,&quot;Area&quot;:&quot;1,66 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:180,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:112,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.44&quot;,&quot;Area&quot;:&quot;1,83 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:181,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:113,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.43&quot;,&quot;Area&quot;:&quot;1,24 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:182,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:114,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.42&quot;,&quot;Area&quot;:&quot;1,88 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:183,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:115,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.37&quot;,&quot;Area&quot;:&quot;1,94 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:184,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:116,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.39&quot;,&quot;Area&quot;:&quot;0,67 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:185,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:117,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.30&quot;,&quot;Area&quot;:&quot;0,57 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:186,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:118,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.21&quot;,&quot;Area&quot;:&quot;0,97 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:187,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:119,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.17&quot;,&quot;Area&quot;:&quot;0,51 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:188,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:120,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.19&quot;,&quot;Area&quot;:&quot;0,73 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:189,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:121,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.49&quot;,&quot;Area&quot;:&quot;0,86 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:190,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:122,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.50&quot;,&quot;Area&quot;:&quot;0,86 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:191,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:123,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.51&quot;,&quot;Area&quot;:&quot;0,61 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:192,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:124,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.52&quot;,&quot;Area&quot;:&quot;0,38 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:193,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:125,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.13&quot;,&quot;Area&quot;:&quot;0,76 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:null,&quot;Description&quot;:null},{&quot;Id&quot;:194,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:126,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.18&quot;,&quot;Area&quot;:&quot;0,51 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:195,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:127,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.14&quot;,&quot;Area&quot;:&quot;0,96 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:196,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:128,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.41&quot;,&quot;Area&quot;:&quot;0,88 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:197,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:132,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.16&quot;,&quot;Area&quot;:&quot;1,83 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:198,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:133,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.22&quot;,&quot;Area&quot;:&quot;1,9 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:199,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:134,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;1.19&quot;,&quot;Area&quot;:&quot;2,8 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:200,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:136,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.11&quot;,&quot;Area&quot;:&quot;2,58 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:201,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:137,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.7&quot;,&quot;Area&quot;:&quot;1,5 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:202,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:138,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.36&quot;,&quot;Area&quot;:&quot;1,03 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:203,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:139,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.35&quot;,&quot;Area&quot;:&quot;1,09 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:204,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:140,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.34&quot;,&quot;Area&quot;:&quot;1,11 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:205,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:141,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.33&quot;,&quot;Area&quot;:&quot;1,13 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:206,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:142,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.32&quot;,&quot;Area&quot;:&quot;1,15 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:207,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:143,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.31&quot;,&quot;Area&quot;:&quot;1,73 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:208,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:144,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.3&quot;,&quot;Area&quot;:&quot;0,97 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:209,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:145,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.4&quot;,&quot;Area&quot;:&quot;1,03&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:210,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:146,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;1.9&quot;,&quot;Area&quot;:&quot;1,78 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:211,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:147,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;1.8&quot;,&quot;Area&quot;:&quot;2,79 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:212,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:148,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;1.12&quot;,&quot;Area&quot;:&quot;2,4 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:213,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:149,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.37&quot;,&quot;Area&quot;:&quot;0,43 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:214,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:150,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.39&quot;,&quot;Area&quot;:&quot;0,36 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:215,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:151,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.38&quot;,&quot;Area&quot;:&quot;0,39 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:216,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:153,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.35&quot;,&quot;Area&quot;:&quot;0,54 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:217,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:154,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.34&quot;,&quot;Area&quot;:&quot;0,55  га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:218,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:155,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.34&quot;,&quot;Area&quot;:&quot;0,55  га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:219,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:156,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;2.32&quot;,&quot;Area&quot;:&quot;0,68 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:220,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:157,&quot;ZoneId&quot;:1,&quot;Title&quot;:&quot;3.40&quot;,&quot;Area&quot;:&quot;0,66 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:221,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:7,&quot;ZoneId&quot;:2,&quot;Title&quot;:&quot;5.6&quot;,&quot;Area&quot;:&quot;1,15 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:222,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:52,&quot;ZoneId&quot;:2,&quot;Title&quot;:&quot;5.4&quot;,&quot;Area&quot;:&quot;3,62 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:223,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:53,&quot;ZoneId&quot;:2,&quot;Title&quot;:&quot;5.5&quot;,&quot;Area&quot;:&quot;3,83 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:224,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:54,&quot;ZoneId&quot;:2,&quot;Title&quot;:&quot;5.8&quot;,&quot;Area&quot;:&quot;0,58 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:225,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:56,&quot;ZoneId&quot;:2,&quot;Title&quot;:&quot;5.10&quot;,&quot;Area&quot;:&quot;2,37 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:226,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:57,&quot;ZoneId&quot;:2,&quot;Title&quot;:&quot;5.16&quot;,&quot;Area&quot;:&quot;1,59 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:227,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:58,&quot;ZoneId&quot;:2,&quot;Title&quot;:&quot;5.14&quot;,&quot;Area&quot;:&quot;1,15 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:228,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:59,&quot;ZoneId&quot;:2,&quot;Title&quot;:&quot;5.11&quot;,&quot;Area&quot;:&quot;1 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:229,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:60,&quot;ZoneId&quot;:2,&quot;Title&quot;:&quot;5.12&quot;,&quot;Area&quot;:&quot;2,56 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:230,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:61,&quot;ZoneId&quot;:2,&quot;Title&quot;:&quot;5.13&quot;,&quot;Area&quot;:&quot;1,83 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:231,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:62,&quot;ZoneId&quot;:2,&quot;Title&quot;:&quot;5.17&quot;,&quot;Area&quot;:&quot;4,11 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:232,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:63,&quot;ZoneId&quot;:2,&quot;Title&quot;:&quot;5.18&quot;,&quot;Area&quot;:&quot;1,29 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:233,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:64,&quot;ZoneId&quot;:2,&quot;Title&quot;:&quot;5.15&quot;,&quot;Area&quot;:&quot;0,55 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:234,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:65,&quot;ZoneId&quot;:2,&quot;Title&quot;:&quot;5.7&quot;,&quot;Area&quot;:&quot;0,57 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;ПК-1&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:235,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:35,&quot;ZoneId&quot;:3,&quot;Title&quot;:&quot;4.13&quot;,&quot;Area&quot;:&quot;9,62 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;Ц-4&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:236,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:45,&quot;ZoneId&quot;:3,&quot;Title&quot;:&quot;4.11&quot;,&quot;Area&quot;:&quot;1,24 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;Ц-4&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:237,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:46,&quot;ZoneId&quot;:3,&quot;Title&quot;:&quot;4.10&quot;,&quot;Area&quot;:&quot;3 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;Ц-4&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:238,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:47,&quot;ZoneId&quot;:3,&quot;Title&quot;:&quot;4.1&quot;,&quot;Area&quot;:&quot;1,19 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;Ц-4&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:239,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:48,&quot;ZoneId&quot;:3,&quot;Title&quot;:&quot;4.3&quot;,&quot;Area&quot;:&quot;1,2 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;Ц-4&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:240,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:49,&quot;ZoneId&quot;:3,&quot;Title&quot;:&quot;4.5&quot;,&quot;Area&quot;:&quot;4,78 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;Ц-4&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:241,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:50,&quot;ZoneId&quot;:3,&quot;Title&quot;:&quot;4.9&quot;,&quot;Area&quot;:&quot;4,37 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;Ц-4&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:242,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:129,&quot;ZoneId&quot;:3,&quot;Title&quot;:&quot;4.6&quot;,&quot;Area&quot;:&quot;1,89 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;Ц-4&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:243,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:130,&quot;ZoneId&quot;:3,&quot;Title&quot;:&quot;4.8&quot;,&quot;Area&quot;:&quot;2,57 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;Ц-4&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:244,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:131,&quot;ZoneId&quot;:3,&quot;Title&quot;:&quot;4.4&quot;,&quot;Area&quot;:&quot;1,96 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;Ц-4&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:245,&quot;IsBusy&quot;:true,&quot;PlotId&quot;:135,&quot;ZoneId&quot;:3,&quot;Title&quot;:&quot;4.2&quot;,&quot;Area&quot;:&quot;12,5 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;Ц-4&quot;,&quot;Description&quot;:null},{&quot;Id&quot;:246,&quot;IsBusy&quot;:false,&quot;PlotId&quot;:152,&quot;ZoneId&quot;:3,&quot;Title&quot;:&quot;4.7&quot;,&quot;Area&quot;:&quot;5,04 га&quot;,&quot;Proportions&quot;:null,&quot;Zones&quot;:&quot;Ц-4&quot;,&quot;Description&quot;:null}]">
+      <div class="map_container_height">
+        <div class="lessees_map_zoom">
+          <div id="lessees_map_cover" class="lessees_map_cover">
+            <div id="lessees_map_svg">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                   viewBox="0 0 989.99 922.09">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      stroke-width: 0.3px;
+                    }
+
+                    .cls-1, .cls-3, .cls-41 {
+                      stroke: #000;
+                    }
+
+                    .cls-1, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-22, .cls-23, .cls-24, .cls-25, .cls-26, .cls-27, .cls-28, .cls-29, .cls-30, .cls-31, .cls-32, .cls-33, .cls-34, .cls-35, .cls-36, .cls-37, .cls-38, .cls-39, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                    }
+
+                    .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-2, .cls-20, .cls-21, .cls-22, .cls-23, .cls-24, .cls-25, .cls-26, .cls-27, .cls-28, .cls-29, .cls-3, .cls-30, .cls-31, .cls-32, .cls-34, .cls-35, .cls-36, .cls-37, .cls-38, .cls-39, .cls-4, .cls-41, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+                      fill: none;
+                    }
+
+                    .cls-2 {
+                      stroke: #ea5e86;
+                      stroke-dasharray: 4.2;
+                    }
+
+                    .cls-2, .cls-3, .cls-4, .cls-41 {
+                      stroke-miterlimit: 10;
+                    }
+
+                    .cls-3 {
+                      stroke-width: 2px;
+                      stroke-dasharray: 18.6;
+                    }
+
+                    .cls-4 {
+                      stroke: #afafaf;
+                    }
+
+                    .cls-16, .cls-24, .cls-25, .cls-5 {
+                      stroke: #ab919e;
+                    }
+
+                    .cls-5, .cls-6 {
+                      stroke-width: 6px;
+                    }
+
+                    .cls-6 {
+                      stroke: url(#Безымянный_градиент_120);
+                    }
+
+                    .cls-25, .cls-7 {
+                      stroke-width: 8px;
+                    }
+
+                    .cls-7 {
+                      stroke: url(#Безымянный_градиент_122);
+                    }
+
+                    .cls-38, .cls-8 {
+                      stroke: #eddfe6;
+                    }
+
+                    .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-22, .cls-26, .cls-27, .cls-28, .cls-29, .cls-30, .cls-31, .cls-32, .cls-33, .cls-34, .cls-35, .cls-36, .cls-37, .cls-8, .cls-9 {
+                      stroke-width: 4px;
+                    }
+
+                    .cls-9 {
+                      stroke: url(#Новый_образец_градиентной_зал_3);
+                    }
+
+                    .cls-10 {
+                      stroke: url(#Безымянный_градиент_124);
+                    }
+
+                    .cls-11 {
+                      stroke: url(#Безымянный_градиент_75);
+                    }
+
+                    .cls-12 {
+                      stroke: url(#Безымянный_градиент_77);
+                    }
+
+                    .cls-13 {
+                      stroke: url(#Новый_образец_градиентной_залив);
+                    }
+
+                    .cls-14 {
+                      stroke: url(#Безымянный_градиент_67);
+                    }
+
+                    .cls-15 {
+                      stroke: url(#Безымянный_градиент_85);
+                    }
+
+                    .cls-17 {
+                      stroke: url(#Безымянный_градиент_80);
+                    }
+
+                    .cls-18 {
+                      stroke: url(#Безымянный_градиент_79);
+                    }
+
+                    .cls-19 {
+                      stroke: url(#Безымянный_градиент_148);
+                    }
+
+                    .cls-20 {
+                      stroke: url(#Безымянный_градиент_87);
+                    }
+
+                    .cls-21 {
+                      stroke: url(#Безымянный_градиент_86);
+                    }
+
+                    .cls-22 {
+                      stroke: url(#Безымянный_градиент_142);
+                    }
+
+                    .cls-23 {
+                      stroke-width: 3px;
+                      stroke: url(#Новый_образец_градиентной_зал_3-2);
+                    }
+
+                    .cls-24 {
+                      stroke-width: 9px;
+                    }
+
+                    .cls-26 {
+                      stroke: url(#Новый_образец_градиентной_зал_3-3);
+                    }
+
+                    .cls-27 {
+                      stroke: url(#Безымянный_градиент_206);
+                    }
+
+                    .cls-28 {
+                      stroke: url(#Новый_образец_градиентной_зал_3-4);
+                    }
+
+                    .cls-29 {
+                      stroke: url(#Новый_образец_градиентной_зал_3-5);
+                    }
+
+                    .cls-30 {
+                      stroke: url(#Новый_образец_градиентной_зал_3-6);
+                    }
+
+                    .cls-31 {
+                      stroke: url(#Новый_образец_градиентной_зал_3-7);
+                    }
+
+                    .cls-32 {
+                      stroke: url(#Новый_образец_градиентной_зал_3-8);
+                    }
+
+                    .cls-33 {
+                      fill: url(#Новый_образец_градиентной_зал_2);
+                      stroke: url(#Новый_образец_градиентной_зал_3-9);
+                    }
+
+                    .cls-34 {
+                      stroke: url(#Новый_образец_градиентной_зал_3-10);
+                    }
+
+                    .cls-35 {
+                      stroke: url(#Новый_образец_градиентной_зал_3-11);
+                    }
+
+                    .cls-36 {
+                      stroke: url(#Безымянный_градиент_131);
+                    }
+
+                    .cls-37 {
+                      stroke: url(#Безымянный_градиент_138);
+                    }
+
+                    .cls-38, .cls-39 {
+                      stroke-width: 5px;
+                    }
+
+                    .cls-39 {
+                      stroke: url(#Новый_образец_градиентной_зал_3-12);
+                    }
+
+                    .cls-40 {
+                      fill: #dcddd8;
+                    }
+
+                    .cls-41 {
+                      stroke-width: 1.61px;
+                    }
+
+                    .cls-42, .cls-43, .cls-44, .cls-45, .cls-46, .cls-47, .cls-48, .cls-49, .cls-50, .cls-51, .cls-52, .cls-55 {
+                      isolation: isolate;
+                    }
+
+                    .cls-42 {
+                      font-size: 12.11px;
+                    }
+
+                    .cls-43 {
+                      font-size: 12.11px;
+                    }
+
+                    .cls-44 {
+                      font-size: 12.11px;
+                    }
+
+                    .cls-45 {
+                      font-size: 12.07px;
+                    }
+
+                    .cls-46 {
+                      font-size: 12.15px;
+                    }
+
+                    .cls-47 {
+                      font-size: 16.15px;
+                    }
+
+                    .cls-48 {
+                      font-size: 16.15px;
+                    }
+
+                    .cls-49 {
+                      font-size: 12.14px;
+                    }
+
+                    .cls-50 {
+                      font-size: 12.11px;
+                      fill: #999;
+                    }
+
+                    .cls-51 {
+                      font-size: 12.11px;
+                    }
+
+                    .cls-52, .cls-54 {
+                      font-size: 5px;
+                    }
+
+                    .cls-52, .cls-53, .cls-54, .cls-55 {
+                      font-weight: 700;
+                    }
+
+                    .cls-53 {
+                      font-size: 4.43px;
+                    }
+
+                    .cls-55 {
+                      font-size: 6px;
+                      fill: #fcfcfc;
+                    }
+
+                    .cls-54 {
+                      font-size: 4.43px;
+                    }
+
+                    .cls-56 {
+                      font-size: 6px;
+                      fill: #fcfcfc;
+                    }
+
+                    .cls-57 {
+                      fill: #4c9de9;
+                    }
+
+                    .cls-58 {
+                      fill: #fff;
+                    }
+
+                    .cls-59 {
+                      clip-path: url(#clip-path);
+                    }
+
+                    .cls-60 {
+                      fill: #1f849a;
+                    }
+
+                    .cls-61 {
+                      fill: #f88c00;
+                    }
+
+                    .cls-62 {
+                      fill: #d12f33;
+                    }
+
+                    .cls-63 {
+                      fill: #228b22;
+                    }
+                  </style>
+                  <linearGradient id="Безымянный_градиент_120" x1="291.44" y1="1.5" x2="291.44" y2="704.25"
+                                  gradientUnits="userSpaceOnUse">
+                    <stop offset="0.93" stop-color="#eddfe6"></stop>
+                    <stop offset="1" stop-color="#a9909c"></stop>
+                  </linearGradient>
+                  <linearGradient id="Безымянный_градиент_122" x1="347.37" y1="239.23" x2="347.37" y2="733.71"
+                                  gradientUnits="userSpaceOnUse">
+                    <stop offset="0.89" stop-color="#eddfe6"></stop>
+                    <stop offset="1" stop-color="#a9909c"></stop>
+                  </linearGradient>
+                  <linearGradient id="Новый_образец_градиентной_зал_3" x1="544.29" y1="730.43" x2="563.09" y2="749.23"
+                                  gradientUnits="userSpaceOnUse">
+                    <stop offset="0.17" stop-color="#e5c6b9"></stop>
+                    <stop offset="0.67" stop-color="#eddfe6"></stop>
+                  </linearGradient>
+                  <linearGradient id="Безымянный_градиент_124" x1="464.18" y1="484.32" x2="464.18" y2="760.89"
+                                  gradientUnits="userSpaceOnUse">
+                    <stop offset="0.87" stop-color="#eddfe6"></stop>
+                    <stop offset="1" stop-color="#a9909c"></stop>
+                  </linearGradient>
+                  <linearGradient id="Безымянный_градиент_75" x1="270.31" y1="137.2" x2="314.84" y2="137.2"
+                                  gradientUnits="userSpaceOnUse">
+                    <stop offset="0.83" stop-color="#eddfe6"></stop>
+                    <stop offset="0.94" stop-color="#a9909c"></stop>
+                  </linearGradient>
+                  <linearGradient id="Безымянный_градиент_77" x1="298.26" y1="153.08" x2="340.73" y2="153.08"
+                                  gradientUnits="userSpaceOnUse">
+                    <stop offset="0.13" stop-color="#eddfe6"></stop>
+                    <stop offset="1" stop-color="#a9909c"></stop>
+                  </linearGradient>
+                  <linearGradient id="Новый_образец_градиентной_залив" x1="330.49" y1="43.66" x2="289.68" y2="114.33"
+                                  gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#eddfe6"></stop>
+                    <stop offset="1" stop-color="#a9909c"></stop>
+                  </linearGradient>
+                  <linearGradient id="Безымянный_градиент_67" x1="367.59" y1="148.44" x2="344.39" y2="161.83"
+                                  gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#caadb8"></stop>
+                    <stop offset="0.27" stop-color="#a9909c"></stop>
+                  </linearGradient>
+                  <linearGradient id="Безымянный_градиент_85" x1="580.57" y1="519.75" x2="603.1" y2="500.85"
+                                  gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#eddfe6"></stop>
+                    <stop offset="0.7" stop-color="#a9909c"></stop>
+                  </linearGradient>
+                  <linearGradient id="Безымянный_градиент_80" x1="551.68" y1="461.14" x2="571.73" y2="461.14"
+                                  gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#eddfe6"></stop>
+                    <stop offset="0.88" stop-color="#a9909c"></stop>
+                  </linearGradient>
+                  <linearGradient id="Безымянный_градиент_79" x1="523.8" y1="381.7" x2="549.96" y2="377.09"
+                                  gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#eddfe6"></stop>
+                    <stop offset="0.71" stop-color="#a9909c"></stop>
+                  </linearGradient>
+                  <linearGradient id="Безымянный_градиент_148" x1="546.19" y1="626.34" x2="758.75" y2="769.71"
+                                  gradientUnits="userSpaceOnUse">
+                    <stop offset="0.84" stop-color="#eddfe6"></stop>
+                    <stop offset="0.93" stop-color="#a9909c"></stop>
+                  </linearGradient>
+                  <linearGradient id="Безымянный_градиент_87" x1="820.78" y1="398.53" x2="866.05" y2="436.52"
+                                  gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#eddfe6"></stop>
+                    <stop offset="0.68" stop-color="#a9909c"></stop>
+                  </linearGradient>
+                  <linearGradient id="Безымянный_градиент_86" x1="834.14" y1="407.36" x2="726.49" y2="407.36"
+                                  gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#eddfe6"></stop>
+                    <stop offset="0.69" stop-color="#aa919d"></stop>
+                    <stop offset="1" stop-color="#a9909c"></stop>
+                  </linearGradient>
+                  <linearGradient id="Безымянный_градиент_142" x1="606.48" y1="643.19" x2="592.14" y2="645.72"
+                                  gradientUnits="userSpaceOnUse">
+                    <stop offset="0.1" stop-color="#eddfe6"></stop>
+                    <stop offset="0.64" stop-color="#a9909c"></stop>
+                  </linearGradient>
+                  <linearGradient id="Новый_образец_градиентной_зал_3-2" x1="246.72" y1="569.16" x2="301.05"
+                                  y2="569.16" xlink:href="#Новый_образец_градиентной_зал_3"></linearGradient>
+                  <linearGradient id="Новый_образец_градиентной_зал_3-3" x1="696.06" y1="734.55" x2="663.26"
+                                  y2="734.55" xlink:href="#Новый_образец_градиентной_зал_3"></linearGradient>
+                  <linearGradient id="Безымянный_градиент_206" x1="768.45" y1="786.75" x2="768.45" y2="833.39"
+                                  gradientUnits="userSpaceOnUse">
+                    <stop offset="0.17" stop-color="#e5c6b9"></stop>
+                    <stop offset="0.67" stop-color="#ab919e"></stop>
+                  </linearGradient>
+                  <linearGradient id="Новый_образец_градиентной_зал_3-4" x1="722.55" y1="778.06" x2="706.12"
+                                  y2="775.16" xlink:href="#Новый_образец_градиентной_зал_3"></linearGradient>
+                  <linearGradient id="Новый_образец_градиентной_зал_3-5" x1="547.45" y1="658.07" x2="570.44"
+                                  y2="681.05" xlink:href="#Новый_образец_градиентной_зал_3"></linearGradient>
+                  <linearGradient id="Новый_образец_градиентной_зал_3-6" x1="532.2" y1="630.97" x2="578.95"
+                                  y2="630.97" xlink:href="#Новый_образец_градиентной_зал_3"></linearGradient>
+                  <linearGradient id="Новый_образец_градиентной_зал_3-7" x1="530.96" y1="592.81" x2="575.81"
+                                  y2="592.81" xlink:href="#Новый_образец_градиентной_зал_3"></linearGradient>
+                  <linearGradient id="Новый_образец_градиентной_зал_3-8" x1="208.76" y1="552.31" x2="268.29"
+                                  y2="552.31" xlink:href="#Новый_образец_градиентной_зал_3"></linearGradient>
+                  <linearGradient id="Новый_образец_градиентной_зал_2" x1="293.23" y1="322.41" x2="320.34" y2="322.41"
+                                  gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#eddfe6"></stop>
+                    <stop offset="1" stop-color="#c4a79c"></stop>
+                  </linearGradient>
+                  <linearGradient id="Новый_образец_градиентной_зал_3-9" x1="291.23" y1="322.41" x2="322.34"
+                                  y2="322.41" xlink:href="#Новый_образец_градиентной_зал_3"></linearGradient>
+                  <linearGradient id="Новый_образец_градиентной_зал_3-10" x1="312.39" y1="364.97" x2="356.29"
+                                  y2="364.97" xlink:href="#Новый_образец_градиентной_зал_3"></linearGradient>
+                  <linearGradient id="Новый_образец_градиентной_зал_3-11" x1="290.58" y1="398.37" x2="372.32"
+                                  y2="398.37" xlink:href="#Новый_образец_градиентной_зал_3"></linearGradient>
+                  <linearGradient id="Безымянный_градиент_131" x1="590.92" y1="723.04" x2="619.12" y2="728.01"
+                                  gradientUnits="userSpaceOnUse">
+                    <stop offset="0.35" stop-color="#eddfe6"></stop>
+                    <stop offset="0.58" stop-color="#a9909c"></stop>
+                  </linearGradient>
+                  <linearGradient id="Безымянный_градиент_138" x1="603.69" y1="721.26" x2="586.85" y2="674.99"
+                                  gradientUnits="userSpaceOnUse">
+                    <stop offset="0.41" stop-color="#eddfe6"></stop>
+                    <stop offset="0.62" stop-color="#a9909c"></stop>
+                  </linearGradient>
+                  <linearGradient id="Новый_образец_градиентной_зал_3-12" x1="306.18" y1="451.12" x2="412.21"
+                                  y2="451.12" xlink:href="#Новый_образец_градиентной_зал_3"></linearGradient>
+                </defs>
+                <g id="Слой_2" data-name="Слой 2">
+                  <g id="Рабочая_зона" data-name="Рабочая зона">
+                    <g id="plots">
+                      <polygon id="obj_0" class="cls-1"
+                               points="541.75 704.6 547.54 712.91 534.04 722.41 531.22 718.7 528.02 714.01 532.4 711.13 541.75 704.6"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_1" class="cls-1"
+                               points="255.14 491.46 252.17 493.09 247.87 499.48 246.53 516.4 259.3 514.47 255.14 491.46"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_2" class="cls-1"
+                               points="275.18 506.9 259.3 514.47 262.42 534.95 283.4 524.05 280.67 517.59 279.63 515.51 275.18 506.9"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_3" class="cls-1"
+                               points="264.64 486.56 275.18 506.9 259.3 514.47 255.14 491.46 264.64 486.56"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_4" class="cls-1"
+                               points="261.08 479.59 244.75 447.68 241.34 489.98 261.08 479.59" fill="#f2f2f2"
+                               style=""></polygon>
+                      <polygon id="obj_5" class="cls-1"
+                               points="638.9 622.29 631.55 614.8 618.49 623.86 625.13 633.3 638.9 622.29"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_6" class="cls-1"
+                               points="625.13 633.3 618.49 623.86 606.91 631.87 609.62 645.39 625.13 633.3"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_7" class="cls-1"
+                               points="661.83 711.58 680.53 727.46 665.25 745.27 648.48 730.88 646.69 729.24 661.83 711.58"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_8" class="cls-1"
+                               points="396.15 600.7 404.31 600.56 420.79 599.96 421.23 614.95 401.94 615.84 396.44 609.31 396.15 600.7"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_9" class="cls-1"
+                               points="403.57 578.59 420.05 578.14 420.79 599.96 404.31 600.56 403.57 578.59"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_10" class="cls-1"
+                               points="403.42 571.32 417.67 570.87 419.84 570.82 419.9 573.1 420.05 578.14 403.57 578.59 403.42 571.32"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_11" class="cls-1"
+                               points="334.4 600.7 361.56 582.6 384.72 617.18 372.85 625.05 362.9 618.81 334.4 600.7"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_12" class="cls-1"
+                               points="377.3 572.06 403.42 571.32 403.57 578.59 404.31 600.56 396.15 600.7 377.3 572.06"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_13" class="cls-1"
+                               points="361.56 582.6 377.3 572.06 396.15 600.7 396.44 609.31 384.72 617.18 361.56 582.6"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_14" class="cls-1"
+                               points="532.26 678.63 542.79 693.32 510.29 715.88 508.8 713.66 507.76 679.52 523.94 679.07 532.26 678.63"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_15" class="cls-1"
+                               points="595.78 733.1 600.83 731.32 617.16 780.75 616.71 782.68 585.69 773.77 595.78 733.1"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_16" class="cls-1"
+                               points="519.49 720.19 530.03 735.03 527.65 743.94 505.98 738.15 505.39 733.55 510.73 729.84 509.1 727.46 514.3 723.75 519.49 720.19"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_17" class="cls-1"
+                               points="375.07 565.08 354.29 533.91 386.35 512.54 380.04 503.07 348.58 524.2 306.9 552.08 313.47 567.16 322.6 599.69 375.07 565.08"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_18" class="cls-1"
+                               points="433.4 611.09 457.89 610.35 459.08 650.87 434.59 651.62 433.58 617.11 433.4 611.09"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_19" class="cls-1"
+                               points="393.92 523.82 418.41 523.08 419.01 543.41 394.51 544.15 393.92 523.82"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_20" class="cls-1"
+                               points="394.51 544.15 419.01 543.41 419.6 563.75 395.11 564.49 394.51 544.15"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_21" class="cls-1"
+                               points="283.17 567.54 299.44 556.83 300.41 559.74 303.18 569.86 312.31 603.45 310.06 604.29 248.46 624.72 249.95 626.38 245.05 620.89 241.04 616.59 261.98 586.79 270.48 577.85 283.17 567.54"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_22" class="cls-1"
+                               points="241.04 616.59 245.05 620.89 249.95 626.38 250.09 626.68 257.67 635.44 261.38 642.26 266.13 654.88 267.16 664.38 270.13 681.89 265.98 687.83 263.31 689.91 244.16 689.76 225.75 684.27 203.19 671.5 206.61 666.75 224.12 640.63 241.04 616.59"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_23" class="cls-1"
+                               points="248.46 624.72 298.53 608.11 312.31 603.45 319.65 629.42 314.4 631.45 291.4 639.37 279.93 643.15 274.88 641.82 273.55 641.52 272.95 642.26 272.51 643.3 269.24 642.26 268.06 641.97 265.68 641.08 264.94 640.78 263.75 640.78 262.56 641.08 261.38 642.26 257.67 635.44 250.09 626.68 248.46 624.72"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_24" class="cls-1"
+                               points="280.1 643.21 319.65 629.42 321.9 636.79 324.9 655.79 324.16 672.45 322.82 680.86 317.93 695.85 317.78 696.44 313.77 695.1 304.27 692.14 290.76 689.91 287.65 689.91 288.09 688.72 290.76 677 279.34 675.07 275.77 674.62 277.55 667.79 278.3 665.57 280.08 659.04 281.56 655.62 282.75 652.8 283.19 651.32 283.64 649.98 284.23 646.87 284.23 646.57 284.38 644.94 284.23 644.49 280.1 643.21"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_25" class="cls-1"
+                               points="262.56 641.08 263.75 640.78 264.94 640.78 265.68 641.08 268.06 641.97 269.24 642.26 272.51 643.3 272.95 642.26 273.55 641.52 274.88 641.82 279.93 643.15 284.23 644.49 284.38 644.94 284.23 646.57 283.64 649.98 283.19 651.32 282.75 652.8 281.56 655.62 280.08 659.04 278.3 665.57 277.55 667.79 275.77 674.62 272.36 686.5 270.58 687.68 268.06 689.91 263.31 689.91 265.98 687.83 270.13 681.89 267.16 664.38 266.13 654.88 261.38 642.26 262.56 641.08"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_26" class="cls-1"
+                               points="391.84 649.54 400.96 644.77 405.65 644.58 421.83 644.2 422.58 667.89 423.16 679.96 417.58 695.89 412.58 711.08 408.14 724.6 376.27 714.66 374.48 714.1 325.71 698.7 330.52 683.64 335.29 668.98 337.82 658 336.63 653.4 332.62 638.55 339.02 638.55 361.77 638.34 373.29 638.26 391.84 649.54"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_27" class="cls-1"
+                               points="429.4 480.77 439.64 470.98 453.59 467.86 454.18 490.13 429.69 490.87 429.4 480.77"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_28" class="cls-1"
+                               points="432.07 570.42 456.71 569.68 457.89 610.35 433.4 611.09 432.07 570.42"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_29" class="cls-1"
+                               points="434.59 651.62 459.08 650.87 459.97 681 435.48 681.75 434.99 665.15 434.59 651.62"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_30" class="cls-1"
+                               points="435.48 681.75 459.97 681 460.42 693.17 432.07 692.14 435.48 681.75"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_31" class="cls-1"
+                               points="528.1 714.1 534.04 722.41 530.03 735.03 519.49 720.19 528.1 714.1"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_32" class="cls-1"
+                               points="429.84 496.36 454.33 495.62 455.22 522.04 430.73 522.78 429.84 496.36"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_33" class="cls-1"
+                               points="430.73 522.78 442.12 522.43 455.22 522.04 455.82 542.22 431.32 542.97 430.73 522.78"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_34" class="cls-1"
+                               points="431.32 542.97 455.82 542.22 456.41 562.56 431.92 563.3 431.32 542.97"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_35" class="cls-1"
+                               points="486.1 355.5 499.31 367.97 517.71 385.34 527.06 395.58 535.23 405.82 539.23 411.46 554.52 458.21 554.08 465.63 549.33 471.87 539.08 478.25 533.29 477.51 525.73 470.68 517.41 464.6 508.8 459.55 499.16 455.25 489.66 451.98 488.92 451.83 488.77 447.08 486.1 355.5"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_36" class="cls-1"
+                               points="545.02 487.75 560.01 478.25 563.28 492.35 565.65 506.6 563.57 507.94 559.12 506.6 554.82 504.38 551.4 500.81 544.58 490.42 545.02 487.75"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_37" class="cls-1"
+                               points="541.75 704.6 554.08 696 559.86 704.31 547.54 712.91 541.75 704.6"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_38" class="cls-1"
+                               points="554.08 696 566.39 687.53 572.18 695.85 559.86 704.31 554.08 696" fill="#f2f2f2"
+                               style=""></polygon>
+                      <polygon id="obj_39" class="cls-1"
+                               points="566.39 687.53 581.24 677 585.39 689.61 573.22 697.33 566.39 687.53"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_40" class="cls-1"
+                               points="578.12 757.89 565.21 754.18 568.77 739.93 581.68 743.64 578.12 757.89"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_41" class="cls-1"
+                               points="581.68 743.64 568.77 739.93 572.33 725.53 585.25 729.24 581.68 743.64"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_42" class="cls-1"
+                               points="585.25 729.24 572.33 725.53 576.19 708.76 588.21 708.61 588.36 716.63 585.25 729.24"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_43" class="cls-1"
+                               points="573.22 697.33 585.39 689.61 588.21 697.78 588.21 708.61 576.19 708.76 573.22 697.33"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_44" class="cls-1"
+                               points="204.53 635.29 217.74 641.82 220.26 643.3 212.99 654.43 213.43 654.73 207.2 663.64 206.75 663.49 198.59 674.92 193.99 673.28 195.18 669.72 193.1 669.28 204.53 635.29"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_45" class="cls-1"
+                               points="427.62 423.19 452.25 422.59 453.14 448.42 434.44 449.01 428.21 442.04 427.62 423.19"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_46" class="cls-1"
+                               points="411.88 396.47 429.1 380.44 450.32 360.55 452.25 422.59 427.62 423.19 427.32 413.69 411.88 396.47"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_47" class="cls-1"
+                               points="274.14 181.4 294.03 174.12 305.9 183.77 310.65 194.61 298.93 198.02 273.25 192.82 274.14 181.4"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_48" class="cls-1"
+                               points="306.8 184.51 319.56 189.12 340.04 194.75 347.17 204.25 349.25 207.07 353.55 212.57 356.52 216.28 351.17 213.46 320.89 205.89 310.36 198.47 307.98 195.35 310.65 194.61 305.81 183.7 306.8 184.51"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_49" class="cls-1"
+                               points="364.38 309.94 405.8 272.98 387.39 252.94 385.02 250.56 377.45 241.66 335 277.87 364.38 309.94"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_50" class="cls-1"
+                               points="396.94 345.47 429.1 380.44 450.32 360.55 449.29 322.4 436.39 310.61 396.94 345.47"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_51" class="cls-1"
+                               points="605.28 592.24 630.37 613.62 631.55 614.8 606.91 631.87 606.61 627.66 605.28 592.24"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_52" class="cls-1"
+                               points="647.14 631.13 668.66 665.27 671.04 670.02 621.91 686.2 613.3 660.37 612.86 658.87 617.52 655.16 615.96 652.93 647.14 631.13"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_53" class="cls-1"
+                               points="621.91 686.2 671.04 670.02 680.68 689.76 661.83 711.58 646.69 729.24 632.45 716.03 631.26 714.55 621.91 686.2"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_54" class="cls-1"
+                               points="686.32 720.78 692.41 713.81 680.68 689.76 671.18 700.6 686.32 720.78"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_55" class="cls-1"
+                               points="659.46 752.1 667.77 759.23 660.94 767.09 656.93 754.92 659.46 752.1"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_56" class="cls-1"
+                               points="667.77 759.23 715.12 800.04 712.6 810.43 685.58 803.75 667.47 786.98 660.94 767.09 667.77 759.23"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_57" class="cls-1"
+                               points="748.37 785.79 740.8 810.28 711.4 784.83 726.63 767.22 748.37 785.79"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_58" class="cls-1"
+                               points="721.8 763.08 706.46 780.7 687.86 764.75 703.05 746.89 721.8 763.08"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_59" class="cls-1"
+                               points="703.05 746.89 687.86 764.75 671.4 750.41 686.65 732.83 703.05 746.89"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_60" class="cls-1"
+                               points="699.85 717.57 704.28 721.08 745.99 735.03 721.8 763.08 703.25 747.05 686.65 732.83 699.85 717.57"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_61" class="cls-1"
+                               points="738.87 717.22 745.7 720.34 752.23 723.9 758.46 728.2 772.41 744.09 745.99 735.03 704.28 721.08 699.85 717.57 710.19 705.5 738.87 717.22"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_62" class="cls-1"
+                               points="745.99 735.03 772.41 744.09 780.28 763.23 776.87 784.01 769.29 781.64 766.33 791.28 748.37 785.79 721.8 763.08 745.99 735.03"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_63" class="cls-1"
+                               points="748.37 785.79 766.33 791.28 769.74 792.32 769.44 793.36 763.21 813.7 760.54 822.31 760.39 822.46 754.9 819.49 747.92 815.33 740.8 810.28 741.84 807.02 748.37 785.79"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_64" class="cls-1"
+                               points="725.06 796.78 728.92 800.19 734.56 805.24 735.01 805.53 740.8 810.28 741.24 810.73 747.92 815.33 754.9 819.49 759.94 822.16 721.2 812.51 725.06 796.78"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_65" class="cls-1"
+                               points="680.53 727.61 686.32 720.78 671.18 700.6 661.83 711.58 680.53 727.46 680.53 727.61"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_66" class="cls-1"
+                               points="434.74 460.14 453.29 459.55 453.44 462.22 443.2 464.3 434.89 464.6 434.74 460.14"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_67" class="cls-1"
+                               points="275.77 674.62 279.34 675.07 290.76 677 288.09 688.72 287.65 689.91 268.06 689.91 270.58 687.68 272.36 686.5 275.77 674.62"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_68" class="cls-1"
+                               points="505.69 612.13 530.18 611.69 530.77 629.8 530.77 632.02 506.28 632.62 505.69 612.13"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_69" class="cls-1"
+                               points="501.68 477.66 505.24 479.29 516.52 486.71 518.6 488.35 526.91 495.17 527.8 496.21 533.15 502.59 502.27 502.59 501.68 480.77 501.68 477.66"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_70" class="cls-1"
+                               points="529.14 571.46 529.58 591.35 505.09 591.65 504.5 570.87 529.14 571.46"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_71" class="cls-1"
+                               points="505.24 596.7 505.09 591.65 509.4 591.5 529.58 591.35 530.18 611.69 505.69 612.13 505.24 596.7"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_72" class="cls-1"
+                               points="506.28 632.62 530.77 632.02 531.51 652.21 507.02 652.95 506.28 632.62"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_73" class="cls-1"
+                               points="507.02 652.95 531.51 652.21 532.26 678.63 523.94 679.07 507.76 679.52 507.02 652.95"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_74" class="cls-1"
+                               points="552.44 634.99 558.23 634.69 570.85 633.06 571.44 637.37 573.96 650.87 553.04 651.62 552.44 634.99"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_75" class="cls-1"
+                               points="548.43 589.57 529.44 590.17 529.14 571.46 547.84 571.91 548.43 589.57"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_76" class="cls-1"
+                               points="547.84 571.91 565.65 572.36 567.43 574.14 568.03 588.98 548.43 589.57 547.84 571.91"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_77" class="cls-1"
+                               points="550.96 628.61 549.92 610.95 568.77 610.5 569.36 621.93 569.96 626.68 557.64 628.31 550.96 628.61"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_78" class="cls-1"
+                               points="532.11 672.1 531.51 652.21 550.07 651.62 550.66 671.06 532.11 672.1"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_79" class="cls-1"
+                               points="530.18 611.69 549.92 610.95 550.96 628.61 530.77 629.8 530.18 611.69"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_80" class="cls-1"
+                               points="552.44 634.99 553.04 651.62 531.51 652.21 530.92 636.18 552.44 634.99"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_81" class="cls-1"
+                               points="557.04 668.98 556.89 663.19 576.19 659.33 578.57 668.24 563.87 678.63 557.04 668.98"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_82" class="cls-1"
+                               points="532.11 672.1 550.66 671.06 558.53 682.19 542.79 693.32 532.26 678.63 532.11 672.1"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_83" class="cls-1"
+                               points="576.19 659.33 556.89 663.19 556.6 651.47 573.96 650.87 576.19 659.33"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_84" class="cls-1"
+                               points="549.47 596.1 549.92 610.95 530.18 611.69 529.73 596.7 549.47 596.1"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_85" class="cls-1"
+                               points="568.6 595.4 568.77 610.5 549.92 610.95 549.47 596.1 568.6 595.4" fill="#f2f2f2"
+                               style=""></polygon>
+                      <line class="cls-1" x1="549.47" y1="596.1" x2="549.92" y2="610.95"></line>
+                      <polygon id="obj_86" class="cls-1"
+                               points="524.39 755.81 527.65 743.94 505.98 738.15 507.76 750.62 524.39 755.81"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_87" class="cls-1"
+                               points="535.82 517.88 543.68 517.73 566.84 553.06 567.14 563.3 565.36 565.23 536.12 564.64 535.82 517.88"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_88" class="cls-1"
+                               points="502.27 502.59 533.15 502.59 535.67 505.71 536.26 506.45 543.68 517.73 502.72 518.33 502.27 502.59"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_89" class="cls-1"
+                               points="575 770.65 578.12 757.89 565.21 754.18 561.94 766.94 575 770.65" fill="#f2f2f2"
+                               style=""></polygon>
+                      <polygon id="obj_90" class="cls-1"
+                               points="460.42 693.17 461.75 739.04 459.38 739.04 459.38 740.23 443.35 735.63 420.05 728.35 432.07 692.14 460.42 693.17"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_91" class="cls-1"
+                               points="535.97 548.61 536.12 564.64 504.2 563.75 503.76 548.61 535.97 548.61"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_92" class="cls-1"
+                               points="305.16 352.83 321.34 372.13 309.47 382.81 292.55 364.11 305.16 352.83"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_93" class="cls-1"
+                               points="291.65 308.3 303.23 321.07 288.24 334.57 271.02 373.76 273.69 324.63 291.65 308.3"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_94" class="cls-1"
+                               points="273.69 324.63 263.75 324.63 265.48 293.25 265.56 289.97 265.69 287.48 283.94 288.71 291.65 308.3 273.69 324.63"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_95" class="cls-1"
+                               points="297.77 288.5 265.69 286.5 266.56 272.2 267.23 262.12 271.02 258.71 297.77 288.5"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_96" class="cls-1"
+                               points="297.59 289.75 315.7 309.79 303.23 321.07 291.65 308.3 283.94 288.71 297.59 289.75"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_97" class="cls-1"
+                               points="334.55 330.57 318.52 345.26 303.53 329.53 320.15 314.68 334.55 330.57"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_98" class="cls-1"
+                               points="303.53 329.53 316.29 342.89 305.16 352.83 292.84 339.18 303.53 329.53"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_99" class="cls-1"
+                               points="368.99 368.86 385.16 386.82 370.32 400.03 354.29 382.22 368.99 368.86"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_100" class="cls-1"
+                               points="354.29 382.22 370.32 400.03 354.88 413.98 338.71 396.17 354.29 382.22"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_101" class="cls-1"
+                               points="338.71 396.17 354.88 413.98 339.3 427.94 323.27 410.12 338.71 396.17"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_102" class="cls-1"
+                               points="323.27 410.12 339.3 427.94 323.71 441.89 307.69 424.07 323.27 410.12"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_103" class="cls-1"
+                               points="307.69 424.07 323.71 441.89 308.13 455.84 292.25 438.18 307.69 424.07"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_104" class="cls-1"
+                               points="264.02 410.58 257.62 410.25 259.32 381.27 265.46 381.58 264.02 410.58"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_105" class="cls-1"
+                               points="265.46 381.58 259.32 381.27 261.2 354.2 266.93 354.52 265.46 381.58"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_106" class="cls-1"
+                               points="266.93 354.52 261.2 354.2 263.75 324.63 268.56 324.63 266.93 354.52"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_107" class="cls-1"
+                               points="264.02 410.58 263.6 422.89 263.6 427.04 263.75 429.72 256.77 430.16 257.62 410.25 264.02 410.58"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_108" class="cls-1"
+                               points="406.09 412.2 410.84 420.22 414.7 437.29 415.15 449.61 392.73 424.82 406.09 412.2"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_109" class="cls-1"
+                               points="392.73 424.82 415.15 449.61 415.89 474.1 411.73 476.92 377.45 439.07 392.73 424.82"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_110" class="cls-1"
+                               points="377.45 439.07 411.73 476.92 398.23 485.97 394.07 488.64 362.16 453.17 377.45 439.07"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_111" class="cls-1"
+                               points="362.16 453.17 394.07 488.64 375.96 494.73 347.02 467.42 362.16 453.17"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_112" class="cls-1"
+                               points="347.02 467.42 375.96 494.73 360.82 501.11 320.45 492.06 347.02 467.42"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_113" class="cls-1"
+                               points="320.45 492.06 367.06 502.44 361.42 505.41 355.18 507.94 346.57 510.16 337.07 510.76 329.06 510.01 322.97 508.68 318.52 507.05 313.77 504.97 309.47 502.44 320.45 492.06"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_114" class="cls-1"
+                               points="295.07 523.67 311.69 523.82 328.61 532.28 352.21 516.55 351.62 514.02 346.13 515.21 339 515.65 332.32 515.51 326.83 514.62 320.75 513.13 313.62 510.46 309.62 508.23 305.16 505.56 301.9 503.19 297.89 499.77 296.11 497.55 284.83 503.48 291.06 515.21 295.07 523.67"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_115" class="cls-1"
+                               points="259.3 514.47 266.13 560.18 258.7 561.97 236 563 241.93 541.18 245.05 529.76 245.35 528.72 245.49 527.83 245.64 526.64 245.79 525.6 246.53 516.4 259.3 514.47"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_116" class="cls-1"
+                               points="273.1 529.46 280.23 553.36 266.13 560.18 262.42 534.95 273.1 529.46"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_117" class="cls-1"
+                               points="272.51 479.88 281.56 475.28 286.16 484.19 291.8 492.95 296.11 497.55 284.83 503.48 272.51 479.88"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_118" class="cls-1"
+                               points="266.13 443.07 269.99 452.43 271.02 454.5 281.56 475.28 272.51 479.88 261.52 459.25 257.37 445.89 256.48 433.43 256.63 431.5 263.9 430.9 266.13 443.07"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_119" class="cls-1"
+                               points="325.5 377.17 336.48 389.34 324.75 399.88 313.77 387.71 325.5 377.17"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_120" class="cls-1"
+                               points="353.7 351.79 364.68 363.96 348.06 378.81 337.22 366.63 353.7 351.79"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_121" class="cls-1"
+                               points="254.25 565.53 253.66 562.11 236 563 230.35 580.37 248.46 585.86 251.43 581.56 254.4 577.85 254.7 571.76 254.4 568.35 254.25 565.53"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_122" class="cls-1"
+                               points="230.35 580.37 248.46 585.86 243.86 592.54 248.46 595.66 240.3 607.38 223.38 600.85 230.35 580.37"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_123" class="cls-1"
+                               points="223.38 600.85 240.3 607.38 228.13 624.9 217.29 619.11 223.38 600.85"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_124" class="cls-1"
+                               points="217.29 619.11 228.13 624.9 216.85 641.37 210.76 638.4 217.29 619.11"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_125" class="cls-1"
+                               points="305.16 352.83 321.34 372.13 332.77 361.74 318.52 345.26 316.29 342.89 305.16 352.83"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_126" class="cls-1"
+                               points="325.5 377.17 336.48 389.34 348.06 378.81 337.22 366.63 325.5 377.17"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_127" class="cls-1"
+                               points="334.55 330.57 349.25 346.89 332.77 361.74 318.52 345.26 334.55 330.57"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_128" class="cls-1"
+                               points="311.69 523.82 328.61 532.28 304.87 548.16 298.19 532.13 296.85 528.87 295.22 525.45 294.48 523.67 311.69 523.82"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_129" class="cls-1"
+                               points="374.92 355.65 391.99 340.06 364.38 309.94 347.17 324.78 374.92 355.65"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_130" class="cls-1"
+                               points="429.1 380.44 391.99 340.06 374.92 355.65 411.88 396.47 429.1 380.44"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_131" class="cls-1"
+                               points="317.93 292.42 335 277.87 364.38 309.94 347.17 324.78 317.93 292.42"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_132" class="cls-1"
+                               points="324.75 399.88 313.77 387.71 268.5 425.56 268.65 429.27 289.58 427.79 291.65 427.64 293.29 427.49 294.33 427.49 324.75 399.88"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_133" class="cls-1"
+                               points="268.8 430.46 289.73 428.97 292.84 428.68 287.8 433.28 292.25 438.18 308.13 455.84 292.69 469.79 286.9 474.84 275.48 452.57 271.17 443.37 268.95 434.17 268.8 430.46"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_134" class="cls-1"
+                               points="421.23 614.95 401.94 615.84 396.44 609.31 372.85 625.05 372.99 628.76 373.29 638.26 391.84 649.54 401.05 645.08 422.12 644.34 421.23 614.95"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_135" class="cls-1"
+                               points="273.25 192.82 298.93 198.02 307.98 195.35 310.36 198.47 320.89 205.89 351.17 213.46 356.52 216.28 366.61 229.19 377.45 241.66 317.93 292.42 285.12 256.06 273.99 243.59 270.58 233.79 272.51 203.96 273.25 192.82"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_136" class="cls-1"
+                               points="292.55 364.11 313.77 387.71 268.5 425.56 268.8 416.36 269.39 406.71 269.99 393.94 275.92 385.19 292.55 364.11"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_137" class="cls-1"
+                               points="292.84 339.18 305.16 352.83 292.55 364.11 275.92 385.19 269.99 393.94 270.43 385.04 271.02 373.76 288.24 334.57 292.84 339.18"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_138" class="cls-1"
+                               points="385.16 386.82 401.94 405.37 402.23 405.82 387.84 419.33 370.32 400.03 385.16 386.82"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_139" class="cls-1"
+                               points="370.32 400.03 387.84 419.33 372.55 433.57 354.88 413.98 370.32 400.03"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_140" class="cls-1"
+                               points="354.88 413.98 372.55 433.57 357.26 447.82 339.3 427.94 354.88 413.98"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_141" class="cls-1"
+                               points="339.3 427.94 357.26 447.82 341.97 462.07 323.71 441.89 339.3 427.94"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_142" class="cls-1"
+                               points="323.71 441.89 341.97 462.07 326.68 476.32 308.13 455.84 323.71 441.89"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_143" class="cls-1"
+                               points="308.13 455.84 326.68 476.32 303.53 497.99 293.88 487.45 286.9 474.84 308.13 455.84"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_144" class="cls-1"
+                               points="502.72 518.33 535.82 517.88 535.97 532.72 503.16 533.02 502.72 518.33"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_145" class="cls-1"
+                               points="535.97 532.72 535.97 548.61 503.76 548.61 503.16 533.02 535.97 532.72"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_146" class="cls-1"
+                               points="417 479.07 418.41 523.08 393.92 523.82 386.35 512.54 380.04 503.07 409.83 483.39 417 479.07"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_147" class="cls-1"
+                               points="386.35 512.54 393.92 523.82 395.11 564.49 375.07 565.08 354.29 533.91 386.35 512.54"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_148" class="cls-1"
+                               points="334.4 600.7 372.85 625.05 373.29 638.26 332.62 638.55 330.25 629.5 329.21 625.94 324.16 607.53 334.4 600.7"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_149" class="cls-1"
+                               points="566.25 749.87 554.52 746.9 549.62 763.23 561.94 766.94 566.25 749.87"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_150" class="cls-1"
+                               points="559.42 730.88 570.25 733.7 572.33 725.53 574.26 717.22 564.32 714.85 559.42 730.88"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_151" class="cls-1"
+                               points="554.52 746.9 566.25 749.87 570.25 733.7 559.42 730.88 554.52 746.9"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_152" class="cls-1"
+                               points="396.94 345.47 436.39 310.61 417.34 292.42 405.8 272.98 364.38 309.94 396.94 345.47"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_153" class="cls-1"
+                               points="558.53 713.36 553.63 708.76 559.86 704.31 566.1 700 572.18 695.85 573.22 697.33 576.19 708.76 574.26 717.22 558.53 713.36"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_154" class="cls-1"
+                               points="534.04 722.41 533.29 724.49 553.63 729.54 558.53 713.36 553.63 708.76 534.04 722.41"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_155" class="cls-1"
+                               points="553.63 729.54 548.73 745.57 528.69 740.08 530.03 735.03 533.29 724.49 553.63 729.54"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_156" class="cls-1"
+                               points="528.69 740.08 548.73 745.57 543.83 761.6 524.39 755.81 528.69 740.08"
+                               fill="#f2f2f2" style=""></polygon>
+                      <polygon id="obj_157" class="cls-1"
+                               points="273.1 529.46 280.23 553.36 294.21 545.52 283.4 523.97 273.1 529.46"
+                               fill="#f2f2f2" style=""></polygon>
+                    </g>
+                    <g id="Дороги">
+                      <g id="ЖД_пути" data-name="ЖД пути">
+                        <g id="Дополнительные">
+                          <path class="cls-2"
+                                d="M254.05,593.53c11.21-12.87,2.2-46.81-3-77.13-.81-4.76-1.53-9.44-2.06-13.93"></path>
+                          <path class="cls-2" d="M293.9,314.68l-12.27,12a58.79,58.79,0,0,0-8.15,15l-4.12,14"></path>
+                          <path class="cls-2"
+                                d="M297.58,345.26l-11.25,12.25c-2.91,3.87-9.7,13.13-11.25,16.56l-7.16,13.32"></path>
+                          <path class="cls-2"
+                                d="M403.15,486.56l-4.5,1.52a114,114,0,0,0-12.37,6.63l-1.25.91c-29.8,15.58-36.48,24.07-73.49,11.28-13-8-20.32-20.24-27.23-32.06-10.76-18.4-18.18-32.95-18.18-48.84l6.07-132.26"></path>
+                          <path class="cls-2" d="M295.71,368.27c-3.41,3.86-26.69,23.56-28.78,41.43"></path>
+                          <polyline class="cls-2"
+                                    points="258.42 559.01 257.81 550.29 254.01 526.73 251.06 515.97"></polyline>
+                          <path class="cls-2"
+                                d="M315.58,390.39l-23.81,19.73c-17.12,15.88-18.12,25.68-12.25,47.71l1.27,3.77,4.74,15.32"></path>
+                          <path class="cls-2"
+                                d="M286.21,503.33l23.46,9.47a91,91,0,0,0,20.51,4.92l7.22,0a54.47,54.47,0,0,0,13.06-3c3.26-1.28,4.35-2.27,7-3.81l9.63-5.66"></path>
+                          <path class="cls-2"
+                                d="M310.52,502.29l20.56,4.13c4.17.61,17-.44,21.13-1.09L362.69,503a44,44,0,0,0,9.07-3.1L387.84,493l7.27-3.2"></path>
+                          <path class="cls-2"
+                                d="M324,489.75l25.6,5.71c2,.44,7.22,1.65,9.26,1.83l2.33.26c6.43.71,10.18.07,15.63-1.22L388,492.87"></path>
+                          <path class="cls-2"
+                                d="M672.59,667.42l18.31,38.92c2.11,4.19,9.28,13.17,13,16l32.2,22.94,5.89,4.6"></path>
+                        </g>
+                        <g id="Основные">
+                          <path class="cls-3"
+                                d="M590.32,571.31c-6.66-8.08,18.07,19.68,21.5,22.7s18.27,16,21.49,18.58S650,629,659.45,645s23.62,46.33,49.36,57.13,38.65,14.63,51.07,24.72,27.35,23.52,24.52,51.88-16.25,113-16.25,113"></path>
+                          <path id="_Контур_" data-name="<Контур>" class="cls-3"
+                                d="M167.33,730.47s11.51-29.57,20-42c4.47-6.63,38.18-54.55,58.53-83.43l15.45-21.94,11.5-12.51s12.92-7.57,28.87-18l120.61-78.52s51-26.14,92.85,4.34c9.79,6.36,22.91,22.21,34.52,40.37s40,51.47,40,51.47"></path>
+                          <path class="cls-3" d="M163.65,728.83,220.58,567a212,212,0,0,0,9.36-46.64L273.63,3"></path>
+                          <path class="cls-3"
+                                d="M589.19,569.05l19.59,10.64A107.25,107.25,0,0,0,630.5,588l20.4,5.84,13.47,2.39a68.74,68.74,0,0,0,26.81-.54l2.92-.64A76.91,76.91,0,0,0,715,585.08l8.46-6.23c5.27-5.12,10.17-10.33,13.49-16.72l4.77-8.74a63,63,0,0,0,6.51-32.18l-.16-2.33a64.26,64.26,0,0,0-7.57-26.21l-3-5.13a53.72,53.72,0,0,0-3.75-5.49L712.15,455,696.9,437l-28.11-35.22"></path>
+                          <line class="cls-3" x1="244.2" y1="607.38" x2="300.05" y2="568.61"></line>
+                          <path class="cls-3"
+                                d="M701.46,403.87h0a60.45,60.45,0,0,0-2.32,8,50.13,50.13,0,0,0,4,32.3l.25.53"></path>
+                        </g>
+                      </g>
+                      <g id="ВЛЭП_широкая" data-name="ВЛЭП широкая">
+                        <line class="cls-4" x1="484.75" y1="827.76" x2="476.27" y2="429.91"></line>
+                        <line class="cls-4" x1="488.69" y1="827.76" x2="480.21" y2="429.91"></line>
+                        <line class="cls-4" x1="492.62" y1="827.76" x2="484.14" y2="429.91"></line>
+                        <line class="cls-4" x1="466.38" y1="827.76" x2="453.97" y2="259.64"></line>
+                        <line class="cls-4" x1="470.42" y1="827.76" x2="457.9" y2="259.64"></line>
+                        <line class="cls-4" x1="474.25" y1="827.76" x2="461.84" y2="259.64"></line>
+                        <line class="cls-4" x1="474.46" y1="360.57" x2="472.64" y2="259.64"></line>
+                        <line class="cls-4" x1="478.39" y1="360.57" x2="476.58" y2="259.64"></line>
+                        <line class="cls-4" x1="482.33" y1="360.57" x2="480.51" y2="259.64"></line>
+                      </g>
+                      <g id="Дороги-2" data-name="Дороги">
+                        <path class="cls-5"
+                              d="M27.56,624.54c2.63.5,101.48,32,107.78,34,4,1.29,9.89,3,9.89,3l31.5,10.59,14.58,5.42,30.89,10.93c19.17,6.81,18.8,7.69,34.78,7.69,15.14,0,13.6-.45,30-.85a42.62,42.62,0,0,1,5.05.18l.69.06a39.9,39.9,0,0,1,8.1,1.59l110.48,33.95,86.79,27.56,80.34,25.53L602,790.32l46.73,12.11,55.2,14,28.26,7.06L795.1,840s15.24,3.94,21.09,9.09c10.8,9.48,24.73,21.29,24.73,21.29"></path>
+                        <path class="cls-6"
+                              d="M287.24,4.5,282.9,24.08l-1.82,15-4.33,47.33-12,151.49-8.37,106.89L251,430.51s-1.11,14.54,5.15,27.05S284.23,514,284.23,514l8.17,17.36,7.66,16.55,4,9.21a51.68,51.68,0,0,1,2.21,6.26l24.49,86.87a33,33,0,0,1,1,12.67,60,60,0,0,1-2,10c-5.05,16.68-9.12,28.33-9.12,28.33"></path>
+                        <path class="cls-7"
+                              d="M265.43,243.23l3.53,4.16c3.4,4,132,146.45,136,150.93S420.38,416,420.88,431s8.35,232,8.35,232,.61,14.23-1.71,21.8-13.12,42.23-13.92,44.86"></path>
+                        <path class="cls-8"
+                              d="M316,598.06c.51,1.52,4.34,6.85,8.19,5,5-2.46,46.11-30.57,46.11-30.57,3.13-2.22,6.11-4.15,10.05-4.25,6.35-.1,38.62-1,38.62-1,3.13-.1,5.82-3.32,6.73-6.25"></path>
+                        <line class="cls-9" x1="546.92" y1="762.56" x2="560.45" y2="717.09"></line>
+                        <path class="cls-8"
+                              d="M425.91,559.8c0,1.82.71,6.85,7.67,6.85s18.37-.5,18.37-.5l41.18,1,73,1.42s6.86.81,7,7.47,2,38.76,2.35,43.5,6.72,35.12,9.85,48.55c.65,2.48,7.21,21.89,9,30.83,1.5,7.6-.35,16.56-.68,20.4l-1,4.94c0,.13-.9,5.43-.93,5.56-1.4,4.63-7.42,25.95-9.94,38.26l-1.17,4.5a3.3,3.3,0,0,1-4.12,2.32L549.31,767a3.53,3.53,0,0,1-2.39-4.4"></path>
+                        <path class="cls-8" d="M502,719.26c2.43,7,9.7,1.68,9.7,1.68s69.7-48.46,73-50.88"></path>
+                        <path class="cls-10"
+                              d="M502.21,758.89l1.73-8.27a15.1,15.1,0,0,0,.08-5l-.88-4.89a24.86,24.86,0,0,1-.65-4.93l-4.72-170-2.4-74.16c-.09-3.49-2.95-5.27-6.44-5.27h-7.24l-6.6.25a14.42,14.42,0,0,0-4.49.91l-11.39,4.31a6.82,6.82,0,0,1-3,.86c-5.27.22-20.88.87-25.64.87-5.75,0-6.33-4.17-6.33-5.28"></path>
+                        <path class="cls-8"
+                              d="M423.29,447.57c.1,2.72,2.12,6.56,8.17,6.06s33.31-.71,33.31-.71,46.73,1.21,71,33.71l9,12.72,28.46,44s7.57,11.91,13.93,17.06,17.36,15.44,39.66,21.59,33.41,8.48,33.41,8.48,43.6,11.41,70.65-27.55,3.73-72.16-4.54-82.46-55-65.4-55-65.4l-21.9-26.54"></path>
+                        <path class="cls-8"
+                              d="M531.88,481.88c1.82,2.33,5.45,4.45,10.2,1.22s11.4-7.07,12.71-7.88c2.22-1.41,9.09-9.69,5.76-19.58s-22-68.83-22-68.83-8.88-20.08-20.79-29.27S482.9,331.7,482.9,331.7s-21.94-6.93-23.75-8.25-34.92-32.15-37.44-34.87-8.29-15.82-10.81-19.25-24.21-27.33-25.42-29-25.2-33.16-26.42-34.67-14.67-19.85-15.58-21.17S330.51,167,328.9,165c-4.85-5.86-20.18-17.89-34.09-15-14.09,2.92-17.36,4.24-17.36,4.24s-6,1.54-6.27,5.68"></path>
+                        <path class="cls-11"
+                              d="M272.34,142.1c-.41,3.93,3.69,13.08,11,10.76s16.45-6.36,16.45-6.36,20.09-9.38,10.5-25.33"></path>
+                        <path class="cls-12" d="M300.26,146.81c6.35-1.11,23.33-4.61,38.47,13.56"></path>
+                        <path class="cls-13"
+                              d="M284,19.13c-.81,3.94-.41,6.36,3.33,10s20.38,19.48,20.38,19.48l31.19,31s18,15.14,8.38,39.56c-2.83,7.37-15.55,22-27.15,9.49"></path>
+                        <path class="cls-14"
+                              d="M347.79,118.14c-1.41,6.26-6.86,23.72-4.64,32.81s8.68,19.37,8.68,19.37,8.78,16.35,12.72,21.6"></path>
+                        <path class="cls-8"
+                              d="M687.62,434.39a75.52,75.52,0,0,0-12.82-7.11c-3.33-1.31-63.89-23.82-68.33-24.93s-30.28-3.73-28,26.35l6.86,22.5s12.82,40.47,13.83,44.41,6.36,24.53,6.36,41.48-.81,26.24-.81,26.24-1.51,8.38,2.83,11.61"></path>
+                        <path class="cls-15"
+                              d="M605.36,546.18c-.71-5-1.72-16.25-5.75-24.23s-13-28.66-14.13-31.08-7.17-16.45-7.17-16.45"></path>
+                        <path class="cls-16"
+                              d="M572.66,453.63c-2-8.58-6.1-31.09,2.22-43.91,8.18-12.61,20.77-24.68,50.26-13.62"></path>
+                        <path class="cls-17" d="M553.68,475.83s18.17-8.28,15.85-29.37"></path>
+                        <path class="cls-18" d="M522.3,361.68c6.56,5.35,23.61,21.6,29.16,35.43"></path>
+                        <path class="cls-16"
+                              d="M552.07,395.69c-2.22-6.15-3.94-12-10.2-21s-12.31-23.82-22.4-32.5"></path>
+                        <path class="cls-19"
+                              d="M721.8,820.92c-3-.91-5.88-2.37-4.47-7.72s5.36-13.49-1.71-19.54-82.51-68.94-82.51-68.94-6-5.39-9.77-16.69-15.69-47.51-15.69-47.51-5.14-22.45-5.85-29.61-.68-18.42-.88-21.14-1-16.6-1.27-18.32c-.61-10.69-16.11-19.08-26-2.12"></path>
+                        <path class="cls-8" d="M598.27,586.62c-.94-4.42-12.94-18.67-33.66-18.07"></path>
+                        <path class="cls-8"
+                              d="M604.49,646.14c1.15,6.68,6.78,7,10.53,3.63,2-1.83,20.65-16.8,27.9-22.92a23.62,23.62,0,0,1,5.55-3.5l10.88-4.91,15.24-7.57,14.64-6.36,19.07-9.08s15.85-8.58,20.49-13.32,27.05-23.22,26.34-63.18c-.4-12.92-3.33-27-24.22-53-4.94-6.46.71-10.3,4.44-11.31s43.91-6.35,43.91-6.35l10.29-1.42s7-3.63,8.88-8.58"></path>
+                        <path class="cls-8" d="M799.74,435l12.62-25.73a74.53,74.53,0,0,1,13.83-15.44"></path>
+                        <path class="cls-20" d="M862.22,438c-6.46-.3-30.18-1.81-36-18.47s.7-26,6.25-31.49"></path>
+                        <path class="cls-21"
+                              d="M832.14,388c-4.44,3.64-9.39,6.87-11.2,8.18s-18.77,17.36-33.11,23.31-42.18,8.68-59.34,6.36"></path>
+                        <path class="cls-16"
+                              d="M558.23,404.07c-5.05-15.44-30.08-93.76-30.69-95.17s-7.67-9.69-15.44-12.52-16.65,1.62-18.27,8.38a16.23,16.23,0,0,0,5.66,16.95A100.55,100.55,0,0,1,509,330.8"></path>
+                        <path class="cls-16" d="M511.39,296.18s-17.56-12.72-20-14.13-11.81-10.4-13.12-13"></path>
+                        <path class="cls-16"
+                              d="M508.67,294.06c-3.94-.81-8.38-2.12-11.2-1.92s-20.19.41-24.63,0-17.36-4.34-30.28-15.44"></path>
+                        <path class="cls-22" d="M601.46,626.27c-1.92,6.86-7.1,23.36-4.28,36.38"></path>
+                        <path class="cls-16"
+                              d="M640.48,799.4c6.16,1.82,21.28,2.32,21-10.5-1.48-5-7.87-25.06-10.23-32.46-.73-2.29-2.1-5.32-4-6.79a11.88,11.88,0,0,0-10.09-1.82c-7.37,1.71-7.23,11.06-5.92,16.92"></path>
+                        <path class="cls-16" d="M643.37,747.7c-2.63-1.21-16.54-2.6-20.47-11.18"></path>
+                        <path class="cls-16" d="M660.65,786.18a44.71,44.71,0,0,0,29.66,26"></path>
+                        <path class="cls-16"
+                              d="M677.91,809.8c-5.76.3-19.79,2.92-16.06,18,3.17,12.78,10.21,33.8,12.25,39.82a20.93,20.93,0,0,1,.86,3.49c.38,2.48,1,6.89,1.32,9.68.41,4,1.11,27.45,1.31,29"></path>
+                        <path class="cls-16"
+                              d="M611.21,792.74c6.06,1.62,13.51,5.25,17.44,10.19,4.85,6.36,5.66,8.48,8,16.05s11.7,33.31,11.7,33.31,4.74,10.29,6.56,12.51,9.89,16,10.09,16.35,4.35,10,4.75,11.21"></path>
+                        <line class="cls-8" x1="586.15" y1="669.27" x2="616.3" y2="648.68"></line>
+                        <path class="cls-23" d="M299.55,546.71,268.37,567s-14.19,14.85-20.15,24.64"></path>
+                        <path class="cls-24"
+                              d="M225.17,4.5c3.63,4.64,11.7,14.53,13.72,17.56s30.58,40.78,31.89,42.69,15.75,21,17.47,23.62,23.51,31.09,25.33,34.21,64.49,87.71,64.49,87.71,29.67,35.32,32.8,38,40,41,59.35,55.41c19.86,14.79,41.69,33,57.93,42.19,16.65,9.38,54,31,69,37s35.33,17.56,79.33,30.78,77.72,18.17,90.23,19.68c36.44,4.14,93,6.66,113,5.35"></path>
+                        <path class="cls-25"
+                              d="M680.32,918.09c-.71-2.32-7.67-23.51-9.49-29.37S649,827,645,812.32s-14.57-42.85-16.59-50.72-11.77-39.26-14.29-45.72c0,.13-29.35-68.76-26.94-121.56,0,0,1.12-45.52-1-67.93s-4.94-41.68-10.49-63.58-20.29-58.34-25.44-75.19"></path>
+                        <line class="cls-26" x1="694.06" y1="717.56" x2="665.26" y2="751.53"></line>
+                        <line class="cls-27" x1="774.6" y1="788.75" x2="762.3" y2="831.39"></line>
+                        <line class="cls-28" x1="722.4" y1="767.42" x2="706.27" y2="785.79"></line>
+                        <path class="cls-29" d="M553.62,654.73l.51,14.76a3.15,3.15,0,0,0,.6,1.74l9.54,13.16"></path>
+                        <polyline class="cls-30" points="534.2 632.98 556.6 631.52 576.96 628.95"></polyline>
+                        <line class="cls-31" x1="532.96" y1="593.37" x2="573.81" y2="592.24"></line>
+                        <path class="cls-32"
+                              d="M210.76,623.38l29-92.7a27.93,27.93,0,0,0,.63-4.21l2.81-28.55c.31-2.65,1.9-6,4.26-7.2l18.86-9.47"></path>
+                        <line class="cls-33" x1="293.23" y1="334.61" x2="320.34" y2="310.22"></line>
+                        <line class="cls-34" x1="314.39" y1="382.81" x2="354.29" y2="347.12"></line>
+                        <line class="cls-35" x1="292.58" y1="433.37" x2="370.32" y2="363.37"></line>
+                        <path class="cls-36"
+                              d="M592.27,726.89l3.12-2.42a12.55,12.55,0,0,1,4.82-2.36l.14,0a13.94,13.94,0,0,1,12.9,4.12l3.52,3.63"></path>
+                        <path class="cls-37"
+                              d="M593.27,722.92l4.31-12.84a29.59,29.59,0,0,0,1.19-9.06l-1.5-27.69"></path>
+                        <line class="cls-38" x1="460.65" y1="324.78" x2="464.18" y2="451.76"></line>
+                        <line class="cls-39" x1="308.68" y1="498.18" x2="409.71" y2="404.07"></line>
+                      </g>
+                    </g>
+                    <g id="Подписи">
+                      <g id="Символы">
+                        <g id="Самолет">
+                          <path class="cls-40"
+                                d="M775,234.11a2.25,2.25,0,0,0-3.23,0h0l-4.85,5L755,235.22l-2.52,2.52,9.89,6.06-5,5.25-3.23-.51-2.22,2.22,4.75,1.62,1.61,4.74,2.22-2.22-.5-3.23,5.25-5,6,9.89,2.53-2.52-3.94-11.91,5-4.84A2.24,2.24,0,0,0,775,234.11Z"></path>
+                        </g>
+                        <line class="cls-41" x1="435.6" y1="25.69" x2="435.6" y2="36.59"></line>
+                        <polygon points="430.96 31.45 435.6 21.76 440.14 31.45 435.6 29.73 430.96 31.45"></polygon>
+                        <line class="cls-41" x1="986.05" y1="433.44" x2="975.15" y2="434.15"></line>
+                        <polygon points="980 429.2 989.99 433.24 980.61 438.28 982.02 433.74 980 429.2"></polygon>
+                        <line class="cls-41" x1="794.29" y1="213.92" x2="786.62" y2="221.59"></line>
+                        <polygon
+                                points="786.93 214.73 797.12 211.2 793.49 221.19 791.47 216.75 786.93 214.73"></polygon>
+                      </g>
+                      <g id="Текст">
+                        <text class="cls-42" transform="matrix(0.76, 0.65, -0.65, 0.76, 828.61, 822.16)">пос.
+                          Полевой
+                        </text>
+                        <text class="cls-43" transform="matrix(1, 0, 0, 1, 470.66, 880)">На автомобильную дорогу
+                        </text>
+                        <text class="cls-43" transform="matrix(1, 0, 0, 1, 470.68, 894.53)">“Дорога на Верхний Уфалей”
+                        </text>
+                        <text class="cls-44" transform="translate(203.93 814.83) rotate(-68.8)">пос. Шабровский</text>
+                        <text class="cls-44" transform="translate(189.91 807.97) rotate(-68.8)">Верхний Уфалей</text>
+                        <text class="cls-44" transform="matrix(0.37, -0.93, 0.93, 0.37, 126.13, 798.09)">Ж/Д Станция
+                          <tspan x="0" y="14.53">Сысерть</tspan>
+                        </text>
+                        <text class="cls-45" transform="translate(5 592.43) rotate(15.71)">на а/д г. Екатеринбург
+                        </text>
+                        <text class="cls-45" transform="translate(1.07 606.38) rotate(15.71)">— г. Полевской</text>
+                        <text class="cls-46" transform="translate(218.64 484.75) rotate(-85.43)">Ж/Д Екатеринбург —
+                          Верхний
+                          Уфалей
+                        </text>
+                        <text class="cls-47" transform="matrix(1, -0.05, 0.05, 1, 887.53, 443.12)">Челябинск</text>
+                        <text class="cls-48" transform="translate(686.92 282.55) rotate(0.36)">Аэропорт “Кольцово”
+                        </text>
+                        <text class="cls-48" transform="translate(384.05 61.26) rotate(0.36)">Екатеринбург</text>
+                        <text class="cls-49" transform="matrix(0.63, 0.78, -0.78, 0.63, 565.59, 287.99)">р-н “Горный
+                          Ковыль”
+                        </text>
+                        <text class="cls-50" transform="translate(484.45 428.91) rotate(-91.45)">Линии ЛЭП</text>
+                        <text class="cls-51" transform="matrix(0.8, -0.59, 0.59, 0.8, 841.15, 383)">ж.р. “Попов Лог”
+                        </text>
+                        <text class="cls-48" transform="translate(405.83 229.33) rotate(47.25)">ЕКАД</text>
+                        <text class="cls-42" transform="matrix(0.76, 0.65, -0.65, 0.76, 804.36, 820.92)">Челябинский
+                          тракт
+                        </text>
+                      </g>
+                      <g id="Подписи_к_дорогам" data-name="Подписи к дорогам">
+                        <text class="cls-53" transform="translate(326.51 312.71) rotate(48.95)">улица ПРОФЕССИОНАЛОВ
+                        </text>
+                        <text class="cls-53" transform="translate(267.34 234.13) rotate(-85.54)">улица
+                          ПРОФЕССИОНАЛОВ
+                        </text>
+                        <text class="cls-53" transform="translate(253.85 455.39) rotate(65.19)">проезд 1-й "ЕКАД
+                          Южный"
+                        </text>
+                        <text class="cls-53" transform="translate(311.8 589.35) rotate(74.09)">проезд 1-й "ЕКАД
+                          Южный"
+                        </text>
+                        <text class="cls-53" transform="translate(379.03 569.95) rotate(-1.35)">проезд 2-й "ЕКАД
+                          Южный"
+                        </text>
+                        <text class="cls-53" transform="translate(424.85 586.62) rotate(88.68)">улица ПРОФЕССИОНАЛОВ
+                        </text>
+                        <text class="cls-53" transform="translate(420.79 460.49) rotate(88.68)">улица ПРОФЕССИОНАЛОВ
+                        </text>
+                        <text class="cls-53" transform="matrix(0.61, 0.79, -0.79, 0.61, 352.49, 199.16)">проезд 5-й
+                          "ЕКАД
+                          Южный
+                        </text>
+                        <text class="cls-53" transform="matrix(0.31, 0.95, -0.95, 0.31, 537.05, 388.4)">проезд 5-й
+                          "ЕКАД
+                          Южный
+                        </text>
+                        <text class="cls-53" transform="translate(494.14 493.09) rotate(88.99)">проезд 3-й "ЕКАД
+                          Южный"
+                        </text>
+                        <text class="cls-53" transform="translate(497.68 600.56) rotate(88.78)">проезд 3-й "ЕКАД
+                          Южный"
+                        </text>
+                        <text class="cls-53" transform="translate(503.16 568.53) rotate(2.1)">проезд 2-й "ЕКАД
+                          Южный"
+                        </text>
+                        <text class="cls-53" transform="translate(525.62 713.51) rotate(-34.95)">проезд 4-й "ЕКАД
+                          Южный"
+                        </text>
+                        <text class="cls-53" transform="translate(571.51 574.94) rotate(85.82)">проезд 5-й "ЕКАД
+                          Южный
+                        </text>
+                        <text class="cls-53" transform="translate(594.81 711.11) rotate(104.86)">проезд 5-й "ЕКАД
+                          Южный
+                        </text>
+                        <text class="cls-53" transform="matrix(0.29, 0.96, -0.96, 0.29, 590.07, 470.74)">Дорога №4
+                        </text>
+                        <text class="cls-53" transform="matrix(0.9, -0.43, 0.43, 0.9, 651.1, 624.05)">проезд 4-й "ЕКАД
+                          Южный"
+                        </text>
+                        <text class="cls-53" transform="matrix(0.31, 0.95, -0.95, 0.31, 603.63, 652.86)">проезд 6-й
+                          "ЕКАД
+                          Южный"
+                        </text>
+                        <text class="cls-53" transform="matrix(0.76, 0.64, -0.64, 0.76, 666.25, 754.54)">проезд 6-й
+                          "ЕКАД
+                          Южный"
+                        </text>
+                        <text class="cls-53" transform="translate(257.91 344.51) rotate(-85.43)">проезд 1-й "ЕКАД
+                          Южный"
+                        </text>
+                        <text class="cls-54" transform="matrix(0.84, 0.56, -0.55, 0.83, 510.62, 467.16)">п</text>
+                        <text class="cls-54" transform="matrix(0.84, 0.56, -0.55, 0.83, 512.87, 468.66)">р</text>
+                        <text class="cls-54" transform="translate(515.33 470.29) rotate(33.67) scale(1.01 1)">о</text>
+                        <text class="cls-54" transform="translate(517.75 471.91) rotate(33.67) scale(1.01 1)">е</text>
+                        <text class="cls-54" transform="translate(520.14 473.5) rotate(33.68) scale(1.01 1)">з</text>
+                        <text class="cls-54" transform="matrix(0.82, 0.6, -0.59, 0.81, 521.84, 474.56)">д</text>
+                        <text class="cls-54" transform="translate(524.12 476.3) rotate(39.76) scale(1.01 1)"></text>
+                        <text class="cls-54" transform="translate(525.08 477.08) rotate(41.3) scale(1.01 1)">7</text>
+                        <text class="cls-54" transform="translate(526.94 478.71) rotate(44.59) scale(1.01 1)">-</text>
+                        <text class="cls-54" transform="matrix(0.69, 0.74, -0.73, 0.68, 528.27, 480.01)">й</text>
+                        <text class="cls-54" transform="matrix(0.67, 0.76, -0.75, 0.66, 530.08, 481.98)"></text>
+                        <text class="cls-54" transform="translate(530.91 482.92) rotate(49.66) scale(1.01 1)">"</text>
+                        <text class="cls-54" transform="matrix(0.64, 0.79, -0.77, 0.63, 531.94, 484.14)">Е</text>
+                        <text class="cls-54" transform="matrix(0.63, 0.8, -0.79, 0.62, 533.42, 485.94)">К</text>
+                        <text class="cls-54" transform="matrix(0.61, 0.81, -0.8, 0.6, 535.13, 488.12)">А</text>
+                        <text class="cls-54" transform="translate(537.12 490.77) rotate(54.56) scale(1.01 1)">Д</text>
+                        <text class="cls-54" transform="translate(539.1 493.57) rotate(55.81) scale(1.01 1)"></text>
+                        <text class="cls-54" transform="translate(539.8 494.62) rotate(56.85) scale(1.01 1)">Ю</text>
+                        <text class="cls-54" transform="matrix(0.56, 0.85, -0.84, 0.55, 542.51, 498.77)">ж</text>
+                        <text class="cls-54" transform="matrix(0.56, 0.85, -0.84, 0.55, 544.49, 501.8)">н</text>
+                        <text class="cls-54" transform="translate(545.97 504.05) rotate(56.85) scale(1.01 1)">ы</text>
+                        <text class="cls-54" transform="translate(547.87 506.96) rotate(56.85) scale(1.01 1)">й</text>
+                        <text class="cls-54" transform="matrix(0.56, 0.85, -0.84, 0.55, 549.34, 509.22)">"</text>
+                        <text class="cls-55" transform="matrix(0.66, 0.75, -0.75, 0.66, 674.26, 421.59)">п</text>
+                        <text class="cls-55" transform="translate(676.25 423.87) rotate(48.9)">р</text>
+                        <text class="cls-55" transform="matrix(0.66, 0.75, -0.75, 0.66, 678.42, 426.36)">о</text>
+                        <text class="cls-55" transform="matrix(0.66, 0.75, -0.75, 0.66, 680.51, 428.76)">е</text>
+                        <text class="cls-55" transform="matrix(0.66, 0.75, -0.75, 0.66, 682.62, 431.18)">з</text>
+                        <text class="cls-55" transform="translate(684.1 432.88) rotate(48.9)">д</text>
+                        <text class="cls-55" transform="translate(686.24 435.33) rotate(48.9)"></text>
+                        <text class="cls-55" transform="translate(687.16 436.38) rotate(48.9)">7</text>
+                        <text class="cls-55" transform="matrix(0.66, 0.75, -0.75, 0.66, 689, 438.49)">-</text>
+                        <text class="cls-55" transform="matrix(0.66, 0.75, -0.75, 0.66, 690.38, 440.07)">й</text>
+                        <text class="cls-55" transform="translate(692.36 442.35) rotate(48.9)"></text>
+                        <text class="cls-55" transform="translate(693.28 443.4) rotate(48.9)">"</text>
+                        <text class="cls-55" transform="translate(694.46 444.76) rotate(48.9)">Е</text>
+                        <text class="cls-55" transform="matrix(0.66, 0.75, -0.75, 0.66, 696.19, 446.73)">К</text>
+                        <text class="cls-55" transform="translate(698.22 449.06) rotate(48.9)">А</text>
+                        <text class="cls-55" transform="translate(700.66 451.86) rotate(48.9)">Д</text>
+                        <text class="cls-55" transform="translate(703.19 454.76) rotate(48.9)"></text>
+                        <text class="cls-55" transform="matrix(0.66, 0.75, -0.75, 0.66, 704.1, 455.8)">Ю</text>
+                        <text class="cls-55" transform="matrix(0.64, 0.77, -0.77, 0.64, 707.71, 459.93)">ж</text>
+                        <text class="cls-55" transform="matrix(0.64, 0.77, -0.77, 0.64, 710.27, 463.04)">н</text>
+                        <text class="cls-55" transform="matrix(0.63, 0.77, -0.77, 0.63, 712.18, 465.36)">ы</text>
+                        <text class="cls-55" transform="matrix(0.63, 0.78, -0.78, 0.63, 714.62, 468.33)">й</text>
+                        <text class="cls-55" transform="matrix(0.63, 0.78, -0.78, 0.63, 716.5, 470.65)">"</text>
+                        <text class="cls-56" transform="matrix(0.31, 0.95, -0.95, 0.31, 591.36, 651.87)">Магистральная
+                          автомобильная дорога скоростного назначения
+                        </text>
+                      </g>
+                      <path class="cls-40"
+                            d="M166.74,741.88l.32-.84a.5.5,0,0,0-.28-.65l-9-3.49a1.26,1.26,0,0,0-1.62.72l-1,2.56-.66-.26-1.16,3,.67.26-1,2.56a1.24,1.24,0,0,0,.72,1.61l9,3.49a.5.5,0,0,0,.65-.29l.33-.84,1.28,4.38.84-2.17-1.57-3.64,1.92-4.94,3.62-1.63.84-2.16Zm-2,.86a.76.76,0,1,1,.55-1.42.76.76,0,1,1-.55,1.42Zm-1.46,5.88a.77.77,0,0,1-1,.44.78.78,0,0,1-.44-1,.77.77,0,0,1,1.43.56Zm-4-.75a.24.24,0,0,1-.32.14l-4.51-1.75a.24.24,0,0,1-.14-.32l3-7.64a.25.25,0,0,1,.32-.14l4.51,1.75a.26.26,0,0,1,.15.33l-3,7.63Z"></path>
+                      <polygon class="cls-1"
+                               points="493.07 473.95 501.68 477.66 501.68 480.77 493.37 481.07 493.07 473.95"></polygon>
+                    </g>
+                    <g id="places">
+                      <g id="waterfill">
+                        <g id="Слой_18" data-name="Слой 18">
+                          <path class="cls-57" d="M672,495.81a12,12,0,1,0-2,0v9h2Z"></path>
+                          <circle class="cls-58" cx="671.04" cy="483.85" r="10"></circle>
+                          <g class="cls-59">
+                            <path class="cls-57"
+                                  d="M672.33,478.4l-.88-1.32a.53.53,0,0,0-.15-.15.5.5,0,0,0-.68.15c-.25.4-.54.82-.88,1.32-1.5,2.2-3.74,5.53-3.74,7.43a5,5,0,0,0,10.08,0C676.08,483.91,673.83,480.6,672.33,478.4Zm1.58,10.28a4,4,0,0,1-2.87,1.18,4.09,4.09,0,0,1-2.88-1.18,4,4,0,0,1-1.18-2.87c0-1.6,2.15-4.77,3.58-6.88.17-.25.32-.5.48-.71.15.21.3.46.47.71,1.43,2.13,3.58,5.28,3.58,6.88A4.11,4.11,0,0,1,673.91,488.68Z"></path>
+                            <path class="cls-57"
+                                  d="M674,485.47a.49.49,0,0,0-.51.46,2.51,2.51,0,0,1-.36,1.16,2.27,2.27,0,0,1-.88.83.52.52,0,0,0-.19.67.5.5,0,0,0,.69.21,3.45,3.45,0,0,0,1.22-1.18,3.31,3.31,0,0,0,.49-1.64A.49.49,0,0,0,674,485.47Z"></path>
+                          </g>
+                        </g>
+                      </g>
+                      <g id="waterout">
+                        <g id="Слой_17" data-name="Слой 17">
+                          <path class="cls-60" d="M332.19,613.84a12,12,0,1,0-2,0v9h2Z"></path>
+                          <circle class="cls-58" cx="331.19" cy="601.88" r="10"></circle>
+                          <path class="cls-60"
+                                d="M340.47,608.24h-4.09v-4.47H342a.22.22,0,0,0,0-.44h-5.62a1.14,1.14,0,0,0-1.09-1h-1a1.15,1.15,0,0,0-1.1,1,3,3,0,0,0-.45-.35v-.93a1,1,0,0,0-.13-1.58v-.65a.89.89,0,0,0-.67-.88v-.44H335a1,1,0,0,0,0-1.93H333.7a.22.22,0,0,0,0,.44H335a.53.53,0,0,1,0,1h-7.74a.53.53,0,0,1,0-1h5.61a.22.22,0,0,0,0-.44h-.95v-.15a.79.79,0,1,0-1.58,0v.15h-3.08a1,1,0,0,0,0,1.93h3.08V599a.89.89,0,0,0-.68.88v.65a1,1,0,0,0-.47.83,1,1,0,0,0,.35.75V603a3.18,3.18,0,0,0-.37.27,1.13,1.13,0,0,0-1.08-.95h-1a1.14,1.14,0,0,0-1.09,1h-5.62a.22.22,0,0,0,0,.44H326v4.47h-4.08a.22.22,0,0,0,0,.44H326a1.14,1.14,0,0,0,1.09,1h1a1.13,1.13,0,0,0,1.08-.95,3,3,0,0,0,2,.72,3.06,3.06,0,0,0,2-.8,1.15,1.15,0,0,0,1.1,1h1a1.14,1.14,0,0,0,1.09-1h4.11a.22.22,0,0,0,0-.44Zm-9.72-11.76a.4.4,0,0,1,.39-.41.39.39,0,0,1,.38.41v.15h-.77Zm.77,2.08V599h-.77v-.42Zm-1,.86h1.25a.45.45,0,0,1,.43.46v.55h-2.11v-.55A.45.45,0,0,1,330.51,599.42Zm-.44,1.45h2.14a.48.48,0,0,1,.46.49.49.49,0,0,1-.46.5h-2.14a.48.48,0,0,1-.46-.5A.47.47,0,0,1,330.07,600.87Zm-.11,1.42h2.36v.54a3,3,0,0,0-1.18-.24,2.93,2.93,0,0,0-1.18.24Zm-3.56,6.17v-4.91a.73.73,0,0,1,.65-.75v6.41A.73.73,0,0,1,326.4,608.46Zm1.75.75V608a.21.21,0,1,0-.41,0v1.19h-.28V602.8h.28v4.35a.2.2,0,0,0,.2.21.21.21,0,0,0,.21-.21V602.8a.73.73,0,0,1,.64.75v.23h0v4.45h0v.23A.73.73,0,0,1,328.15,609.21Zm3-.23a2.68,2.68,0,0,1-1.94-.84v-4.27a2.72,2.72,0,0,1,.63-.5h0a2.6,2.6,0,0,1,1.28-.33,2.67,2.67,0,0,1,2,1v4A2.67,2.67,0,0,1,331.14,609Zm2.44-.52v-4.91a.73.73,0,0,1,.65-.75v6.41A.73.73,0,0,1,333.58,608.46Zm1.06.75V602.8h.28v6.41Zm.69,0V602.8a.73.73,0,0,1,.64.75v4.91A.73.73,0,0,1,335.33,609.21Z"></path>
+                        </g>
+                        <g id="Слой_17_копия_" data-name="Слой 17 (копия)">
+                          <path class="cls-60" d="M461.32,731.19a12,12,0,1,0-2,0v9h2Z"></path>
+                          <circle class="cls-58" cx="460.32" cy="719.23" r="10"></circle>
+                          <path class="cls-60"
+                                d="M469.6,725.59h-4.08v-4.47h5.6a.22.22,0,0,0,0-.44H465.5a1.14,1.14,0,0,0-1.09-1h-1a1.14,1.14,0,0,0-1.1,1,3.1,3.1,0,0,0-.46-.35v-.93a1,1,0,0,0,.35-.75,1,1,0,0,0-.47-.83v-.65a.89.89,0,0,0-.68-.88v-.44h3.08a1,1,0,0,0,0-1.93h-1.3a.22.22,0,0,0,0,.44h1.3a.53.53,0,0,1,0,1.05H456.4a.53.53,0,0,1,0-1.05H462a.22.22,0,0,0,0-.44h-1v-.15a.79.79,0,1,0-1.58,0V714H456.4a1,1,0,0,0,0,1.93h3.08v.44a.89.89,0,0,0-.67.88v.65a1,1,0,0,0-.13,1.58v.93a3.07,3.07,0,0,0-.36.27,1.14,1.14,0,0,0-1.09-.95h-1a1.14,1.14,0,0,0-1.09,1h-5.62a.22.22,0,0,0,0,.44h5.6v4.47h-4.08a.22.22,0,0,0,0,.44h4.1a1.14,1.14,0,0,0,1.09,1h1a1.14,1.14,0,0,0,1.09-1,3,3,0,0,0,1.95.72,3,3,0,0,0,2.05-.8,1.14,1.14,0,0,0,1.1,1h1a1.14,1.14,0,0,0,1.09-1h4.1a.22.22,0,0,0,0-.44Zm-9.71-11.76a.38.38,0,1,1,.76,0V714h-.76Zm.76,2.08v.42h-.76v-.42Zm-1,.86h1.25a.45.45,0,0,1,.43.46v.55h-2.11v-.55A.45.45,0,0,1,459.65,716.77Zm-.45,1.45h2.14a.5.5,0,0,1,0,1H459.2a.5.5,0,0,1,0-1Zm-.11,1.42h2.36v.54a3,3,0,0,0-2.36,0Zm-3.55,6.17V720.9a.73.73,0,0,1,.64-.75v6.41A.73.73,0,0,1,455.54,725.81Zm1.75.75v-1.19a.22.22,0,0,0-.21-.22.21.21,0,0,0-.2.22v1.19h-.29v-6.41h.29v4.35a.21.21,0,0,0,.2.22.22.22,0,0,0,.21-.22v-4.35a.73.73,0,0,1,.64.75v.23h0v4.45h0v.23A.73.73,0,0,1,457.29,726.56Zm3-.23a2.62,2.62,0,0,1-1.93-.84v-4.27a2.68,2.68,0,0,1,.63-.49l0,0a2.56,2.56,0,0,1,1.27-.33,2.69,2.69,0,0,1,2,1v4A2.69,2.69,0,0,1,460.27,726.33Zm2.45-.52V720.9a.73.73,0,0,1,.64-.75v6.41A.73.73,0,0,1,462.72,725.81Zm1,.75v-6.41h.28v6.41Zm.69,0v-6.41a.73.73,0,0,1,.65.75v4.91A.73.73,0,0,1,464.46,726.56Z"></path>
+                        </g>
+                        <g id="Слой_17_копия2_" data-name="Слой 17 (копия2)">
+                          <path class="cls-60" d="M647.64,624.89a12,12,0,1,0-2,0v9h2Z"></path>
+                          <circle class="cls-58" cx="646.64" cy="612.93" r="10"></circle>
+                          <path class="cls-60"
+                                d="M655.92,619.29h-4.09v-4.48h5.6a.22.22,0,0,0,0-.44h-5.62a1.12,1.12,0,0,0-1.09-1h-1a1.14,1.14,0,0,0-1.1,1,3,3,0,0,0-.45-.34v-.93a1,1,0,0,0,.35-.75,1,1,0,0,0-.48-.83v-.65a.9.9,0,0,0-.67-.89v-.44h3.08a1,1,0,0,0,0-1.92h-1.31a.22.22,0,0,0,0,.44h1.31a.52.52,0,0,1,0,1h-7.74a.52.52,0,0,1,0-1h5.62a.22.22,0,0,0,0-.44h-1v-.16a.79.79,0,1,0-1.58,0v.16h-3.08a1,1,0,0,0,0,1.92h3.08V610a.9.9,0,0,0-.68.89v.65a.94.94,0,0,0-.47.83,1,1,0,0,0,.35.75v.93c-.13.08-.25.17-.37.26a1.12,1.12,0,0,0-1.08-.94h-1a1.13,1.13,0,0,0-1.09,1h-5.62a.22.22,0,0,0,0,.44h5.61v4.48h-4.09a.22.22,0,0,0,0,.44h4.1a1.13,1.13,0,0,0,1.09,1h1a1.12,1.12,0,0,0,1.08-.94,3,3,0,0,0,4-.08,1.14,1.14,0,0,0,1.1,1h1a1.12,1.12,0,0,0,1.09-1h4.11a.22.22,0,0,0,0-.44Zm-9.71-11.77a.38.38,0,1,1,.76,0v.16h-.76Zm.76,2.08V610h-.76v-.43Zm-1,.86h1.25a.45.45,0,0,1,.43.47v.55h-2.11v-.55A.45.45,0,0,1,646,610.46Zm-.44,1.45h2.14a.49.49,0,0,1,.46.5.48.48,0,0,1-.46.49h-2.14a.47.47,0,0,1-.46-.49A.48.48,0,0,1,645.52,611.91Zm-.11,1.42h2.36v.55a2.91,2.91,0,0,0-2.36,0Zm-3.56,6.18v-4.92a.73.73,0,0,1,.65-.74v6.4A.72.72,0,0,1,641.85,619.51Zm1.75.74v-1.18a.21.21,0,1,0-.41,0v1.19h-.28v-6.42h.28v4.35a.21.21,0,1,0,.41,0v-4.34a.72.72,0,0,1,.64.74v.23h0v4.44h0v.23A.72.72,0,0,1,643.6,620.25Zm3-.22a2.68,2.68,0,0,1-1.94-.84v-4.28a3,3,0,0,1,.63-.49l0,0a2.71,2.71,0,0,1,1.28-.33,2.68,2.68,0,0,1,2,1v4.05A2.7,2.7,0,0,1,646.59,620Zm2.44-.52v-4.92a.73.73,0,0,1,.65-.74v6.4A.72.72,0,0,1,649,619.51Zm1.06.75v-6.42h.28v6.42Zm.69,0v-6.4a.72.72,0,0,1,.64.74v4.92A.72.72,0,0,1,650.78,620.25Z"></path>
+                        </g>
+                      </g>
+                      <g id="raindrop" class="active">
+                        <g id="Слой_16" data-name="Слой 16">
+                          <path class="cls-61" d="M273.31,273.51a12,12,0,1,0-2,0v9h2Z"></path>
+                          <circle class="cls-58" cx="272.31" cy="261.55" r="10"></circle>
+                          <path class="cls-61"
+                                d="M275.1,264.17a4.74,4.74,0,0,0-.89-.81.25.25,0,0,0-.36.09.29.29,0,0,0,.09.38,3.54,3.54,0,0,1,1.54,2.55.27.27,0,1,0,.53,0A3.43,3.43,0,0,0,275.1,264.17Z"></path>
+                          <path class="cls-61"
+                                d="M269.38,260.18h-4.81a.27.27,0,0,0-.26.27.28.28,0,0,0,.26.28h4.81a.28.28,0,0,0,.26-.28A.27.27,0,0,0,269.38,260.18Z"></path>
+                          <path class="cls-61"
+                                d="M282.05,267.32H278.4l-.64-2.3a6,6,0,0,0-2.05-3.11,5.46,5.46,0,0,0-3.14-1.18v-2.07a.27.27,0,0,0-.26-.28h-1.84a.27.27,0,0,0-.27.28v.42h-8.67c-.15,0-.16.11-.16.11s0,.44.11.44h8.72V264h-8.83c-.14,0,0,.13,0,.29s-.14.26,0,.26h8.83V265a.27.27,0,0,0,.27.27h1.84a.27.27,0,0,0,.26-.27v-.42c.42.27,1.11,1,1.14,2.74H262.82a.28.28,0,0,0,0,.55h19.23a.28.28,0,0,0,0-.55Zm-10-2.6h-1.32v-5.79h1.32Zm2.18,2.6a4.23,4.23,0,0,0-.9-2.79,2.22,2.22,0,0,0-.76-.56v-2.69a5,5,0,0,1,2.83,1.07,5.45,5.45,0,0,1,1.86,2.82l.59,2.15Z"></path>
+                        </g>
+                      </g>
+                      <g id="electro">
+                        <g id="Слой_14" data-name="Слой 14">
+                          <path class="cls-62" d="M281.83,514.36a12,12,0,1,0-2,0v9h2Z"></path>
+                          <circle class="cls-58" cx="280.83" cy="502.4" r="10"></circle>
+                          <path class="cls-62"
+                                d="M284.8,500.63a.24.24,0,0,0-.21-.14h-2.77l2.75-4.23a.22.22,0,0,0,0-.22.26.26,0,0,0-.21-.12H280.6a.23.23,0,0,0-.21.12l-3.53,6.85a.24.24,0,0,0,0,.23.29.29,0,0,0,.21.12h2.42l-2.63,6.1a.22.22,0,0,0,.1.27s.07,0,.11,0a.32.32,0,0,0,.19-.07l7.52-8.69A.23.23,0,0,0,284.8,500.63Zm-6.9,7.47,2.16-5a.23.23,0,0,0,0-.21.24.24,0,0,0-.18-.09h-2.4l3.29-6.4h3.19l-2.77,4.23a.2.2,0,0,0,0,.23.27.27,0,0,0,.21.11h2.73Z"></path>
+                        </g>
+                        <g id="Слой_15" data-name="Слой 15">
+                          <path class="cls-62" d="M285.31,276.94a12,12,0,1,0-2,0v9h2Z"></path>
+                          <circle class="cls-58" cx="284.31" cy="264.98" r="10"></circle>
+                          <path class="cls-62"
+                                d="M288.28,263.21a.22.22,0,0,0-.21-.14H285.3l2.75-4.22a.2.2,0,0,0,0-.23.26.26,0,0,0-.21-.12h-3.76a.26.26,0,0,0-.21.12l-3.52,6.85a.2.2,0,0,0,0,.23.27.27,0,0,0,.21.12H283l-2.63,6.1a.22.22,0,0,0,.09.27s.07,0,.12,0a.27.27,0,0,0,.18-.07l7.52-8.69A.23.23,0,0,0,288.28,263.21Zm-6.9,7.48,2.16-5a.26.26,0,0,0,0-.21.34.34,0,0,0-.19-.09h-2.4l3.29-6.4h3.2l-2.78,4.23a.24.24,0,0,0,0,.23.25.25,0,0,0,.22.11h2.72Z"></path>
+                        </g>
+                        <g id="Слой_15_копия_" data-name="Слой 15 (копия)">
+                          <path class="cls-62" d="M419.25,564a12,12,0,1,0-2,0v9h2Z"></path>
+                          <circle class="cls-58" cx="418.25" cy="552.01" r="10"></circle>
+                          <path class="cls-62"
+                                d="M422.22,550.25a.21.21,0,0,0-.21-.14h-2.77l2.75-4.23a.24.24,0,0,0,0-.23.25.25,0,0,0-.21-.11H418a.22.22,0,0,0-.21.11l-3.53,6.86a.24.24,0,0,0,0,.23.28.28,0,0,0,.21.11h2.42l-2.63,6.1a.23.23,0,0,0,.1.28s.07,0,.11,0a.24.24,0,0,0,.19-.07l7.52-8.68A.23.23,0,0,0,422.22,550.25Zm-6.9,7.47,2.16-5a.21.21,0,0,0,0-.2.25.25,0,0,0-.18-.1h-2.4l3.29-6.4h3.19l-2.77,4.23a.2.2,0,0,0,0,.23.26.26,0,0,0,.21.12h2.73Z"></path>
+                        </g>
+                        <g id="Слой_15_копия2_" data-name="Слой 15 (копия2)">
+                          <path class="cls-62" d="M531.79,705.58a12,12,0,1,0-2,0v9h2Z"></path>
+                          <circle class="cls-58" cx="530.79" cy="693.62" r="10"></circle>
+                          <path class="cls-62"
+                                d="M534.77,691.86a.22.22,0,0,0-.21-.14h-2.77l2.74-4.23a.2.2,0,0,0,0-.23.22.22,0,0,0-.21-.11h-3.76a.25.25,0,0,0-.21.11l-3.52,6.86a.2.2,0,0,0,0,.23.28.28,0,0,0,.21.11h2.42l-2.63,6.1a.23.23,0,0,0,.09.28.22.22,0,0,0,.12,0,.26.26,0,0,0,.19-.07l7.52-8.68A.25.25,0,0,0,534.77,691.86Zm-6.91,7.47,2.16-5a.18.18,0,0,0,0-.2.3.3,0,0,0-.19-.1h-2.39l3.29-6.4h3.19l-2.77,4.23a.2.2,0,0,0,0,.23.24.24,0,0,0,.21.12h2.72Z"></path>
+                        </g>
+                        <g id="Слой_15_копия3_" data-name="Слой 15 (копия3)">
+                          <path class="cls-62" d="M647.64,718.57a12,12,0,1,0-2,0v9h2Z"></path>
+                          <circle class="cls-58" cx="646.64" cy="706.61" r="10"></circle>
+                          <path class="cls-62"
+                                d="M650.61,704.84a.22.22,0,0,0-.21-.14h-2.77l2.75-4.22a.24.24,0,0,0,0-.23.26.26,0,0,0-.21-.12h-3.76a.23.23,0,0,0-.21.12l-3.53,6.85a.24.24,0,0,0,0,.23.29.29,0,0,0,.21.12h2.42l-2.63,6.1a.22.22,0,0,0,.1.27s.07,0,.11,0a.27.27,0,0,0,.19-.07l7.52-8.69A.23.23,0,0,0,650.61,704.84Zm-6.9,7.48,2.16-5a.23.23,0,0,0,0-.21.28.28,0,0,0-.18-.09h-2.4l3.29-6.4h3.19L647,704.82a.2.2,0,0,0,0,.23.25.25,0,0,0,.21.11h2.73Z"></path>
+                        </g>
+                      </g>
+                      <g id="gas">
+                        <g id="Слой_12" data-name="Слой 12">
+                          <path class="cls-63" d="M273.31,285.33a12,12,0,1,0-2,0v9h2Z"></path>
+                          <circle class="cls-58" cx="272.31" cy="273.37" r="10"></circle>
+                          <path class="cls-63"
+                                d="M273.1,266.44h-1.6a.54.54,0,0,0-.54.53v.54a.54.54,0,0,0,.54.53h1.6a.53.53,0,0,0,.53-.53V267A.53.53,0,0,0,273.1,266.44Zm-1.6,1.07V267h1.6v.54Z"></path>
+                          <path class="cls-63"
+                                d="M273.9,265.37h-3.2a.8.8,0,0,0-.8.8v2.46a2.92,2.92,0,0,0-2.4,2.88v5.86a2.93,2.93,0,0,0,1.33,2.46v.48a1.06,1.06,0,0,0,1.07,1.06h4.8a1.05,1.05,0,0,0,1.06-1.06v-.48a2.91,2.91,0,0,0,1.34-2.46v-5.86a2.92,2.92,0,0,0-2.4-2.88v-2.46A.8.8,0,0,0,273.9,265.37Zm-3.47.8a.27.27,0,0,1,.27-.26h3.2a.26.26,0,0,1,.26.26v2.4h-3.73Zm4.8,13.94v.2a.53.53,0,0,1-.53.53h-4.8a.54.54,0,0,1-.54-.53v-.2l.12,0,.11,0,.16,0,.11,0,.18,0h.1l.29,0h3.73l.29,0h.11l.17,0,.12,0,.16,0,.1,0Zm1.33-8.6v5.86a2.41,2.41,0,0,1-1.47,2.22l-.06,0-.21.07-.08,0-.21,0-.08,0h-4.31l-.08,0-.2,0-.09,0-.21-.07-.06,0a2.43,2.43,0,0,1-1.47-2.22v-5.86a2.4,2.4,0,0,1,2.4-2.4h3.73A2.39,2.39,0,0,1,276.56,271.51Z"></path>
+                          <path class="cls-63"
+                                d="M273.14,273.5c-.48-.38-.9-.72-.9-1.12a.49.49,0,0,1,.23-.33.3.3,0,0,0-.21-.54c-1,.12-1.4,1.25-1.4,2a1.93,1.93,0,0,0,.34,1,1.11,1.11,0,0,1,.19.43c0,.24-.08.24-.16.24a.3.3,0,0,1-.2,0,.42.42,0,0,1,0-.29.26.26,0,0,0-.11-.32.27.27,0,0,0-.34,0,2.12,2.12,0,0,0-.7,1.5c0,1.18.89,1.89,2.4,1.89s2.4-.71,2.4-1.89A3.22,3.22,0,0,0,273.14,273.5Zm-.84,3.87c-.7,0-1.87-.17-1.87-1.35a1.33,1.33,0,0,1,.16-.62h0a.73.73,0,0,0,.63.27.67.67,0,0,0,.69-.77,1.36,1.36,0,0,0-.26-.7,1.54,1.54,0,0,1-.27-.72,2,2,0,0,1,.32-1c0,.61.55,1,1.09,1.46a2.7,2.7,0,0,1,1.36,2.1C274.16,277.2,273,277.37,272.3,277.37Z"></path>
+                        </g>
+                        <g id="Слой_12_копия_2" data-name="Слой 12 копия 2">
+                          <path class="cls-63" d="M293.58,418a12,12,0,1,0-2,0v9h2Z"></path>
+                          <circle class="cls-58" cx="292.58" cy="406.08" r="10"></circle>
+                          <path class="cls-63"
+                                d="M293.36,399.15h-1.6a.53.53,0,0,0-.53.53v.53a.54.54,0,0,0,.53.54h1.6a.54.54,0,0,0,.54-.54v-.53A.53.53,0,0,0,293.36,399.15Zm-1.6,1.06v-.53h1.6v.53Z"></path>
+                          <path class="cls-63"
+                                d="M294.16,398.08H291a.8.8,0,0,0-.8.8v2.45a2.94,2.94,0,0,0-2.4,2.88v5.87a2.93,2.93,0,0,0,1.34,2.45V413a1.06,1.06,0,0,0,1.06,1.07H295A1.07,1.07,0,0,0,296,413v-.48a2.92,2.92,0,0,0,1.33-2.45v-5.87a2.94,2.94,0,0,0-2.4-2.88v-2.45A.8.8,0,0,0,294.16,398.08Zm-3.46.8a.27.27,0,0,1,.26-.27h3.2a.27.27,0,0,1,.27.27v2.4H290.7Zm4.8,13.93v.2a.54.54,0,0,1-.54.54h-4.8a.54.54,0,0,1-.53-.54v-.2l.12,0,.1,0,.16,0,.12,0,.17,0,.11,0h4.31l.1,0a1.13,1.13,0,0,0,.18,0l.11,0,.16,0,.11,0Zm1.33-8.6v5.87a2.43,2.43,0,0,1-1.47,2.21l-.06,0-.21.07-.09,0-.2,0h-.08l-.29,0H290.7l-.29,0h-.08l-.2,0-.09,0-.21-.07-.06,0a2.41,2.41,0,0,1-1.47-2.21v-5.87a2.4,2.4,0,0,1,2.4-2.4h3.73A2.41,2.41,0,0,1,296.83,404.21Z"></path>
+                          <path class="cls-63"
+                                d="M293.4,406.21c-.48-.39-.89-.72-.89-1.12a.46.46,0,0,1,.23-.34.29.29,0,0,0,.1-.35.3.3,0,0,0-.31-.19c-1,.12-1.41,1.26-1.41,2a1.91,1.91,0,0,0,.35,1,1.23,1.23,0,0,1,.19.42c0,.24-.08.24-.16.24a.32.32,0,0,1-.2,0,.41.41,0,0,1,0-.29.28.28,0,0,0-.11-.33.32.32,0,0,0-.35,0,2.21,2.21,0,0,0-.7,1.51c0,1.18.9,1.88,2.4,1.88s2.4-.7,2.4-1.88A3.18,3.18,0,0,0,293.4,406.21Zm-.84,3.87c-.69,0-1.86-.18-1.86-1.35a1.26,1.26,0,0,1,.16-.63h0a.7.7,0,0,0,.63.28.69.69,0,0,0,.69-.78,1.39,1.39,0,0,0-.26-.7,1.32,1.32,0,0,1-.27-.71,1.93,1.93,0,0,1,.32-1c0,.62.55,1,1.09,1.46a2.72,2.72,0,0,1,1.36,2.11C294.43,409.9,293.26,410.08,292.56,410.08Z"></path>
+                        </g>
+                        <g id="Слой_12_копия_" data-name="Слой 12 (копия)">
+                          <path class="cls-63" d="M324.8,588.72a12,12,0,1,0-2,0v9h2Z"></path>
+                          <circle class="cls-58" cx="323.8" cy="576.76" r="10"></circle>
+                          <path class="cls-63"
+                                d="M324.59,569.83H323a.53.53,0,0,0-.53.53v.53a.53.53,0,0,0,.53.54h1.6a.54.54,0,0,0,.53-.54v-.53A.53.53,0,0,0,324.59,569.83Zm-1.6,1.06v-.53h1.6v.53Z"></path>
+                          <path class="cls-63"
+                                d="M325.39,568.76h-3.2a.8.8,0,0,0-.8.8V572a2.94,2.94,0,0,0-2.4,2.88v5.87a3,3,0,0,0,1.33,2.46v.47a1.07,1.07,0,0,0,1.07,1.07h4.8a1.07,1.07,0,0,0,1.07-1.07v-.47a3,3,0,0,0,1.33-2.46v-5.87a2.94,2.94,0,0,0-2.4-2.88v-2.45A.8.8,0,0,0,325.39,568.76Zm-3.47.8a.27.27,0,0,1,.27-.27h3.2a.27.27,0,0,1,.27.27V572h-3.74Zm4.8,13.93v.2a.54.54,0,0,1-.53.54h-4.8a.53.53,0,0,1-.53-.54v-.2l.11,0,.11,0,.16,0,.11,0,.18,0,.11,0h4.3l.11,0,.17,0,.12,0,.16,0,.1,0Zm1.34-8.6v5.87a2.44,2.44,0,0,1-1.47,2.21l-.07,0-.21.07-.08,0-.21,0h-.08l-.28,0h-3.74l-.28,0h-.09l-.2,0-.09,0-.21-.07-.06,0a2.43,2.43,0,0,1-1.47-2.21v-5.87a2.41,2.41,0,0,1,2.4-2.4h3.74A2.42,2.42,0,0,1,328.06,574.89Z"></path>
+                          <path class="cls-63"
+                                d="M324.63,576.89c-.48-.39-.89-.72-.89-1.12a.47.47,0,0,1,.22-.34.29.29,0,0,0,.11-.34.29.29,0,0,0-.31-.19c-1,.11-1.41,1.25-1.41,2a1.93,1.93,0,0,0,.34,1,1,1,0,0,1,.19.43c0,.24-.08.24-.16.24a.3.3,0,0,1-.2,0,.41.41,0,0,1,0-.29.29.29,0,0,0-.12-.33.3.3,0,0,0-.34,0,2.13,2.13,0,0,0-.7,1.51c0,1.18.9,1.88,2.4,1.88s2.4-.7,2.4-1.88A3.22,3.22,0,0,0,324.63,576.89Zm-.84,3.87c-.7,0-1.87-.18-1.87-1.35a1.4,1.4,0,0,1,.16-.63v0a.73.73,0,0,0,.63.27.68.68,0,0,0,.7-.78,1.51,1.51,0,0,0-.27-.7,1.5,1.5,0,0,1-.27-.71,2,2,0,0,1,.32-1c0,.62.56,1,1.1,1.46a2.75,2.75,0,0,1,1.36,2.11C325.66,580.58,324.49,580.76,323.79,580.76Z"></path>
+                        </g>
+                        <g id="Слой_12_копия2_" data-name="Слой 12 (копия2)">
+                          <path class="cls-63" d="M674.46,741.91a12,12,0,1,0-2,0v9h2Z"></path>
+                          <circle class="cls-58" cx="673.46" cy="729.95" r="10"></circle>
+                          <path class="cls-63"
+                                d="M674.25,723h-1.6a.54.54,0,0,0-.54.54v.53a.54.54,0,0,0,.54.53h1.6a.53.53,0,0,0,.53-.53v-.53A.54.54,0,0,0,674.25,723Zm-1.6,1.07v-.53h1.6v.53Z"></path>
+                          <path class="cls-63"
+                                d="M675.05,722h-3.2a.8.8,0,0,0-.8.8v2.45a2.94,2.94,0,0,0-2.4,2.88V734A2.92,2.92,0,0,0,670,736.4v.48a1.07,1.07,0,0,0,1.07,1.07h4.8a1.06,1.06,0,0,0,1.06-1.07v-.48a2.93,2.93,0,0,0,1.34-2.45v-5.87a2.94,2.94,0,0,0-2.4-2.88v-2.45A.8.8,0,0,0,675.05,722Zm-3.47.8a.27.27,0,0,1,.27-.27h3.2a.27.27,0,0,1,.26.27v2.4h-3.73Zm4.8,13.93v.2a.53.53,0,0,1-.53.53h-4.8a.54.54,0,0,1-.54-.53v-.2l.12,0,.11,0,.16,0,.11,0,.17,0h.11l.29,0h3.73l.29,0h.11l.17,0,.12,0,.16,0,.1,0Zm1.33-8.6V734a2.41,2.41,0,0,1-1.47,2.21l-.06,0-.21.07-.09,0-.2,0h-.08l-.29,0h-3.73l-.29,0h-.08l-.2,0-.09,0-.21-.07-.06,0a2.43,2.43,0,0,1-1.47-2.21v-5.87a2.4,2.4,0,0,1,2.4-2.4h3.73A2.39,2.39,0,0,1,677.71,728.08Z"></path>
+                          <path class="cls-63"
+                                d="M674.29,730.07c-.48-.38-.9-.72-.9-1.12a.46.46,0,0,1,.23-.33.3.3,0,0,0,.11-.35.32.32,0,0,0-.32-.19c-1,.12-1.4,1.25-1.4,2a1.93,1.93,0,0,0,.34,1,1.18,1.18,0,0,1,.19.43c0,.24-.08.24-.16.24s-.18,0-.2-.05a.39.39,0,0,1,0-.28.27.27,0,0,0-.11-.33.29.29,0,0,0-.34,0,2.12,2.12,0,0,0-.7,1.5c0,1.19.89,1.89,2.4,1.89s2.4-.7,2.4-1.89A3.24,3.24,0,0,0,674.29,730.07Zm-.84,3.88c-.7,0-1.87-.18-1.87-1.36a1.36,1.36,0,0,1,.16-.62h0a.7.7,0,0,0,.63.27.67.67,0,0,0,.69-.77,1.39,1.39,0,0,0-.26-.7,1.44,1.44,0,0,1-.27-.71,2,2,0,0,1,.32-1c0,.61.55,1,1.09,1.46a2.7,2.7,0,0,1,1.36,2.1C675.31,733.77,674.14,734,673.45,734Z"></path>
+                        </g>
+                        <g id="Слой_13" data-name="Слой 13">
+                          <path class="cls-63" d="M293.55,536.92a12,12,0,1,0-2,0v9h2Z"></path>
+                          <circle class="cls-58" cx="292.55" cy="524.96" r="10"></circle>
+                          <path class="cls-63"
+                                d="M293.34,518h-1.6a.53.53,0,0,0-.54.53v.53a.54.54,0,0,0,.54.54h1.6a.54.54,0,0,0,.53-.54v-.53A.53.53,0,0,0,293.34,518Zm-1.6,1.06v-.53h1.6v.53Z"></path>
+                          <path class="cls-63"
+                                d="M294.14,517h-3.2a.8.8,0,0,0-.8.8v2.45a2.94,2.94,0,0,0-2.4,2.88V529a2.92,2.92,0,0,0,1.33,2.45v.48a1.07,1.07,0,0,0,1.07,1.07h4.8a1.06,1.06,0,0,0,1.06-1.07v-.48a2.91,2.91,0,0,0,1.34-2.45v-5.87a2.94,2.94,0,0,0-2.4-2.88v-2.45A.8.8,0,0,0,294.14,517Zm-3.47.8a.27.27,0,0,1,.27-.27h3.2a.26.26,0,0,1,.26.27v2.4h-3.73Zm4.8,13.93v.2a.54.54,0,0,1-.53.54h-4.8a.54.54,0,0,1-.54-.54v-.2l.12,0,.11,0,.16,0,.11,0,.18,0,.1,0h4.31l.11,0,.17,0,.12,0,.16,0,.1,0Zm1.33-8.6V529a2.41,2.41,0,0,1-1.47,2.21l-.06,0-.21.07-.08,0-.21,0h-.08l-.29,0h-3.73l-.29,0h-.08l-.2,0-.09,0-.21-.07-.06,0a2.43,2.43,0,0,1-1.47-2.21v-5.87a2.41,2.41,0,0,1,2.4-2.4h3.73A2.4,2.4,0,0,1,296.8,523.09Z"></path>
+                          <path class="cls-63"
+                                d="M293.38,525.09c-.48-.39-.9-.72-.9-1.12a.51.51,0,0,1,.23-.34.29.29,0,0,0-.2-.53c-1,.11-1.41,1.25-1.41,2a2,2,0,0,0,.34,1,1.07,1.07,0,0,1,.19.42c0,.24-.08.24-.16.24a.32.32,0,0,1-.2,0,.41.41,0,0,1,0-.29.29.29,0,0,0-.12-.33.3.3,0,0,0-.34,0,2.13,2.13,0,0,0-.7,1.51c0,1.18.9,1.88,2.4,1.88s2.4-.7,2.4-1.88A3.2,3.2,0,0,0,293.38,525.09Zm-.84,3.87c-.7,0-1.87-.18-1.87-1.35a1.37,1.37,0,0,1,.16-.63v0a.73.73,0,0,0,.63.27.68.68,0,0,0,.69-.78,1.39,1.39,0,0,0-.26-.7,1.5,1.5,0,0,1-.27-.71,2,2,0,0,1,.32-1c0,.62.56,1,1.1,1.46a2.75,2.75,0,0,1,1.36,2.11C294.4,528.78,293.24,529,292.54,529Z"></path>
+                        </g>
+                      </g>
+                    </g>
+                    <path class="cls-3" d="M306.9,549.23l11.2.76a14.91,14.91,0,0,0,9.12-2.37L384.05,510"></path>
+                  </g>
+                </g>
+                <desc>Created with Snap</desc>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lessees_map_zoom_btns">
+      <div class="minus">
+        <img src="{{ asset('/build/zoom_out.svg') }}">
+      </div>
+      <div class="plus">
+        <img src="{{ asset('/build/zoom_in.svg') }}">
+      </div>
+    </div>
+    <div class="lessees_infrastructure">
+      <div class="title">Инфраструктура</div>
+      <label class="lessees_infrastructure_item"> <input value="electro" type="checkbox">
+        <div class="item_content electro"><span class="item_name">Электроснабжение</span>
+          <div class="icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <path d="M28 14C28 21.732 21.732 28 14 28C6.26801 28 0 21.732 0 14C0 6.26801 6.26801 0 14 0C21.732 0 28 6.26801 28 14Z"></path>
+              <circle cx="14" cy="14" r="11.6667" fill="white"></circle>
+              <path d="M18.6368 11.9378C18.5819 11.8311 18.4997 11.7778 18.3901 11.7778H15.1565L18.3627 6.84443C18.4176 6.76443 18.4176 6.65777 18.3627 6.57777C18.3079 6.49777 18.2257 6.44443 18.1161 6.44443H13.7316C13.622 6.44443 13.5398 6.49777 13.4849 6.57777L9.37443 14.5778C9.31961 14.6578 9.31961 14.7644 9.37443 14.8444C9.42924 14.9244 9.53885 14.9778 9.62106 14.9778H12.4436L9.37443 22.0978C9.31961 22.2044 9.37443 22.3378 9.48403 22.4178C9.51142 22.4444 9.56624 22.4444 9.62106 22.4444C9.70327 22.4444 9.78548 22.4178 9.8403 22.3644L18.6094 12.2311C18.6642 12.1511 18.6916 12.0444 18.6368 11.9378ZM10.5802 20.6578L13.1013 14.7911C13.1287 14.7111 13.1287 14.6311 13.0739 14.5511C13.0191 14.4978 12.9369 14.4445 12.8547 14.4445H10.0595L13.896 6.97777H17.6228L14.3893 11.9111C14.3344 11.9911 14.3344 12.0977 14.3893 12.1777C14.4441 12.2577 14.5263 12.3111 14.6359 12.3111H17.8147L10.5802 20.6578Z"></path>
+            </svg>
+          </div>
+        </div>
+      </label> <label class="lessees_infrastructure_item"> <input value="gas" type="checkbox">
+        <div class="item_content gas"><span class="item_name">Газоснабжение</span>
+          <div class="icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <path d="M28 14C28 21.732 21.732 28 14 28C6.26801 28 0 21.732 0 14C0 6.26801 6.26801 0 14 0C21.732 0 28 6.26801 28 14Z"></path>
+              <circle cx="14" cy="14" r="11.6667" fill="white"></circle>
+              <g clip-path="url(#clip0)">
+                <path d="M14.9188 5.9111H13.0521C12.7085 5.9111 12.4299 6.18967 12.4299 6.53332V7.15553C12.4299 7.49918 12.7085 7.77774 13.0521 7.77774H14.9188C15.2624 7.77774 15.541 7.49918 15.541 7.15553V6.53332C15.541 6.18967 15.2624 5.9111 14.9188 5.9111ZM13.0521 7.15553V6.53332H14.9188V7.15553H13.0521Z"></path>
+                <path d="M15.8521 4.66667H12.1187C11.6033 4.66667 11.1855 5.08452 11.1855 5.60006V8.45948C9.56449 8.76069 8.38814 10.1736 8.38544 11.8222V18.6667C8.38672 19.8231 8.97176 20.9006 9.94104 21.5314V22.0889C9.94104 22.7762 10.4982 23.3333 11.1855 23.3333H16.7854C17.4727 23.3333 18.0299 22.7762 18.0299 22.0889V21.5314C18.9991 20.9006 19.5843 19.8231 19.5854 18.6667V11.8222C19.5828 10.1736 18.4064 8.76069 16.7854 8.45948V5.60006C16.7854 5.08452 16.3675 4.66667 15.8521 4.66667ZM11.8077 5.60006C11.8077 5.42817 11.947 5.28888 12.1187 5.28888H15.8521C16.0239 5.28888 16.1632 5.42817 16.1632 5.60006V8.39995H11.8077V5.60006ZM17.4076 21.8552V22.0889C17.4076 22.4326 17.129 22.7111 16.7854 22.7111H11.1855C10.8418 22.7111 10.5633 22.4326 10.5633 22.0889V21.8552C10.608 21.8727 10.6544 21.8864 10.7001 21.9014C10.7458 21.9162 10.7829 21.9308 10.8246 21.9436C10.8868 21.9616 10.9468 21.9747 11.0084 21.9909C11.0544 22.002 11.0996 22.0143 11.1459 22.022C11.2122 22.0351 11.2795 22.0435 11.3463 22.0532C11.3885 22.059 11.4303 22.0668 11.4731 22.0711C11.5839 22.0818 11.6953 22.0879 11.807 22.0879H16.1632C16.275 22.0879 16.3863 22.0818 16.497 22.0711C16.54 22.0668 16.5817 22.059 16.624 22.0532C16.6908 22.0441 16.758 22.0356 16.8243 22.022C16.8707 22.0127 16.9158 22.0005 16.9618 21.9909C17.0241 21.9763 17.0863 21.9616 17.1457 21.9436C17.188 21.9308 17.2294 21.9156 17.2702 21.9014C17.3109 21.887 17.3629 21.8727 17.4076 21.8552ZM18.9632 11.8222V18.6667C18.9572 19.7922 18.2834 20.8067 17.2484 21.2489C17.2244 21.2589 17.1992 21.2663 17.1753 21.2756C17.0956 21.3068 17.0151 21.3344 16.9329 21.3578C16.8987 21.3674 16.8641 21.3758 16.8292 21.3845C16.7515 21.4035 16.6729 21.4191 16.5931 21.4315C16.5621 21.4362 16.5309 21.4421 16.4977 21.4462C16.3866 21.4596 16.275 21.4664 16.1632 21.4667H11.8077C11.6959 21.466 11.5842 21.4587 11.4731 21.4449C11.4421 21.4408 11.4095 21.4349 11.3777 21.4302C11.2981 21.4179 11.2194 21.4022 11.1416 21.3832C11.1067 21.3746 11.0722 21.3662 11.0379 21.3565C10.9559 21.3333 10.8753 21.3052 10.7957 21.2744C10.7716 21.265 10.7464 21.2576 10.7225 21.2477C9.68783 20.8057 9.0142 19.7918 9.00765 18.6667V11.8222C9.0095 10.2766 10.262 9.02415 11.8077 9.02216H16.1632C17.7088 9.02415 18.9613 10.2766 18.9632 11.8222Z"></path>
+                <path d="M14.967 14.149C14.407 13.6992 13.9232 13.309 13.9232 12.8423C13.9476 12.6784 14.0457 12.5344 14.1896 12.4519C14.3193 12.3619 14.3707 12.1949 14.3139 12.0475C14.2569 11.8982 14.1058 11.8069 13.9472 11.8259C12.8272 11.9598 12.3041 13.2864 12.3041 14.1406C12.3286 14.5541 12.4678 14.9528 12.7059 15.2917C12.8147 15.4404 12.8899 15.6109 12.9263 15.7914C12.9263 16.0714 12.8359 16.0714 12.7398 16.0714C12.6009 16.0714 12.531 16.0424 12.5113 16.015C12.4772 15.9042 12.4857 15.7846 12.5353 15.6796C12.584 15.5377 12.5299 15.3807 12.4041 15.2988C12.2768 15.2225 12.115 15.2356 12.0018 15.3316C11.5079 15.7866 11.2144 16.4188 11.1855 17.0897C11.1855 18.4666 12.2321 19.2889 13.9855 19.2889C15.7389 19.2889 16.7854 18.4666 16.7854 17.0897C16.7854 15.6106 15.7771 14.8002 14.967 14.149ZM13.9855 18.6667C13.1721 18.6667 11.8077 18.4616 11.8077 17.0897C11.8109 16.8349 11.8749 16.5847 11.9944 16.3598C11.9981 16.3654 12.0015 16.3706 12.0055 16.3756C12.1812 16.5989 12.4579 16.7181 12.7409 16.6926C13.132 16.6926 13.5498 16.4562 13.5498 15.7904C13.5225 15.4955 13.4162 15.2134 13.2422 14.9738C13.0645 14.7289 12.956 14.4406 12.9276 14.1394C12.9365 13.7095 13.0669 13.2908 13.3037 12.9319C13.3505 13.6475 13.9469 14.1279 14.5772 14.634C15.3568 15.2609 16.1639 15.9096 16.1639 17.0897C16.1632 18.4616 14.7987 18.6667 13.9855 18.6667Z"></path>
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="18.6667" height="18.6667" fill="white" transform="translate(4.66669 4.66667)"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </label> <label class="lessees_infrastructure_item"> <input value="waterfill" type="checkbox">
+        <div class="item_content waterfill"><span class="item_name">Водоснабжение</span>
+          <div class="icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <path d="M28 14C28 21.732 21.732 28 14 28C6.26801 28 0 21.732 0 14C0 6.26801 6.26801 0 14 0C21.732 0 28 6.26801 28 14Z"></path>
+              <circle cx="14" cy="14" r="11.6667" fill="white"></circle>
+              <g clip-path="url(#clip0)">
+                <path d="M15.5086 6.80075C15.1314 6.24608 14.7986 5.73577 14.488 5.26984C14.4436 5.20328 14.3771 5.13672 14.3105 5.09234C14.0443 4.91485 13.6893 5.0036 13.5118 5.26984C13.2233 5.73577 12.8905 6.22389 12.4912 6.80075C10.7384 9.37446 8.1203 13.2572 8.1203 15.4759C8.1203 17.0956 8.78591 18.5599 9.8509 19.6249C10.9159 20.6677 12.3802 21.3333 13.9999 21.3333C15.6195 21.3333 17.0839 20.6677 18.1489 19.6027C19.2139 18.5377 19.8795 17.0734 19.8795 15.4537C19.8795 13.235 17.2614 9.37446 15.5086 6.80075ZM17.3501 18.804C16.4848 19.6693 15.3089 20.1796 13.9999 20.1796C12.6908 20.1796 11.5149 19.6471 10.6496 18.804C9.78434 17.9387 9.27403 16.7628 9.27403 15.4537C9.27403 13.59 11.7812 9.88476 13.4452 7.42199C13.6449 7.13356 13.8224 6.84513 13.9999 6.60107C14.1774 6.84513 14.3549 7.13356 14.5546 7.42199C16.2186 9.90695 18.7257 13.59 18.7257 15.4537C18.7257 16.7628 18.1933 17.9387 17.3501 18.804Z"></path>
+                <path d="M17.439 15.0543C17.1283 15.0322 16.8621 15.2762 16.8399 15.5868C16.8177 16.075 16.6624 16.5409 16.4184 16.9403C16.1743 17.3396 15.8193 17.6946 15.3977 17.9165C15.1315 18.0718 15.0206 18.4268 15.1759 18.693C15.3534 19.0037 15.7084 19.0924 15.9746 18.9371C16.5737 18.6043 17.0618 18.1162 17.3946 17.5615C17.7496 17.0068 17.9493 16.3412 17.9715 15.6534C17.9936 15.3428 17.7496 15.0765 17.439 15.0543Z"
+                      fill="#4C9DE9"></path>
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="16.3333" height="16.3333" fill="white" transform="translate(5.83331 5)"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </label> <label class="lessees_infrastructure_item"> <input value="waterout" type="checkbox">
+        <div class="item_content waterout"><span class="item_name">Водоотведение</span>
+          <div class="icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <path d="M28 14C28 21.732 21.732 28 14 28C6.26801 28 0 21.732 0 14C0 6.26801 6.26801 0 14 0C21.732 0 28 6.26801 28 14Z"></path>
+              <circle cx="14" cy="14" r="11.6667" fill="white"></circle>
+              <path d="M24.825 21.423H20.0581V16.1988H26.5949C26.7266 16.1988 26.8333 16.0844 26.8333 15.9433C26.8333 15.8021 26.7266 15.6877 26.5949 15.6877H20.0357C19.9235 15.0461 19.3974 14.559 18.7669 14.559H17.6073C16.9542 14.559 16.4132 15.0816 16.3281 15.7572C16.1606 15.6067 15.9819 15.473 15.794 15.357V14.2665C16.0418 14.068 16.2026 13.7513 16.2026 13.3949C16.2026 12.9732 15.9772 12.607 15.6491 12.4268V11.6671C15.6491 11.1586 15.3103 10.7331 14.8621 10.6364V10.12H18.4549C19.0316 10.12 19.5009 9.61703 19.5009 8.99859C19.5009 8.38029 19.0316 7.87718 18.4549 7.87718H16.9335C16.8018 7.87718 16.6951 7.99159 16.6951 8.13271C16.6951 8.27383 16.8018 8.38824 16.9335 8.38824H18.4549C18.7689 8.38824 19.0242 8.66201 19.0242 8.99859C19.0242 9.33517 18.7689 9.60895 18.4549 9.60895H9.42564C9.11169 9.60895 8.85633 9.33517 8.85633 8.99859C8.85633 8.66214 9.11169 8.38824 9.42564 8.38824H15.9799C16.1117 8.38824 16.2183 8.27383 16.2183 8.13271C16.2183 7.99159 16.1117 7.87718 15.9799 7.87718H14.8621V7.69644C14.8621 7.15163 14.4486 6.70833 13.9404 6.70833C13.432 6.70833 13.0184 7.15163 13.0184 7.69644V7.87718H9.42552C8.84879 7.87718 8.37951 8.38029 8.37951 8.99859C8.37951 9.6169 8.84879 10.12 9.42552 10.12H13.0182V10.6364C12.57 10.7332 12.2314 11.1586 12.2314 11.6673V12.4268C11.9031 12.607 11.6777 12.9732 11.6777 13.395C11.6777 13.7513 11.8385 14.0682 12.0864 14.2665V15.354C11.9376 15.4462 11.7944 15.55 11.6576 15.6648C11.537 15.0345 11.0157 14.559 10.3926 14.559H9.233C8.60243 14.559 8.07638 15.0462 7.9642 15.6877H1.40497C1.27334 15.6877 1.16663 15.8021 1.16663 15.9433C1.16663 16.0845 1.27334 16.1989 1.40497 16.1989H7.94183V21.4232H3.17509C3.04346 21.4232 2.93674 21.5376 2.93674 21.6787C2.93674 21.8198 3.04346 21.9342 3.17509 21.9342H7.9642C8.07638 22.5759 8.60255 23.063 9.233 23.063H10.3926C11.0156 23.063 11.5369 22.5876 11.6576 21.9573C12.3067 22.5017 13.1007 22.7966 13.9403 22.7966C14.8189 22.7966 15.6632 22.4625 16.328 21.865C16.4132 22.5406 16.9542 23.063 17.6073 23.063H18.7668C19.3974 23.063 19.9234 22.5759 20.0356 21.9342H24.8248C24.9565 21.9342 25.0632 21.8198 25.0632 21.6787C25.0632 21.5376 24.9566 21.423 24.825 21.423ZM13.4951 7.69644C13.4951 7.43335 13.6948 7.21939 13.9403 7.21939C14.1857 7.21939 14.3853 7.43335 14.3853 7.69644V7.87718H13.4951V7.69644ZM14.3853 10.12V10.6156H13.4951V10.12H14.3853ZM13.2121 11.1268H14.6682C14.9461 11.1268 15.1723 11.3691 15.1723 11.6671V12.3077H12.7081V11.6671C12.7081 11.3691 12.9343 11.1268 13.2121 11.1268ZM12.6918 12.8189H15.1885C15.4847 12.8189 15.7258 13.0773 15.7258 13.3949C15.7258 13.7124 15.4847 13.9708 15.1885 13.9708H12.6918C12.3956 13.9708 12.1546 13.7124 12.1546 13.3949C12.1546 13.0773 12.3956 12.8189 12.6918 12.8189ZM12.5632 14.4729C12.6054 14.4788 12.6481 14.482 12.6918 14.482H15.1885C15.2322 14.482 15.275 14.4788 15.3171 14.4729V15.1096C14.8838 14.9241 14.4172 14.8256 13.9403 14.8256C13.4601 14.8256 12.9949 14.9221 12.5632 15.1063V14.4729ZM8.41853 21.6786V15.9433C8.41853 15.4842 8.75071 15.1071 9.17089 15.073V22.549C8.75071 22.5149 8.41853 22.1376 8.41853 21.6786ZM10.4548 22.549V21.1643C10.4548 21.0231 10.348 20.9087 10.2163 20.9087C10.0847 20.9087 9.97794 21.0231 9.97794 21.1643V22.5518H9.6477V15.0701H9.97794V20.142C9.97794 20.2831 10.0847 20.3975 10.2163 20.3975C10.348 20.3975 10.4548 20.2831 10.4548 20.142V15.0728C10.8749 15.107 11.2071 15.4842 11.2071 15.9433V16.2121V16.2172V21.4051V21.41V21.6786C11.2071 22.1376 10.8749 22.5149 10.4548 22.549ZM13.9403 22.2854C13.089 22.2854 12.2915 21.9379 11.6838 21.3046V16.3175C11.9048 16.0871 12.1509 15.8947 12.4158 15.743C12.4297 15.7367 12.4431 15.729 12.4557 15.7202C12.9086 15.4695 13.4141 15.3367 13.9404 15.3367C14.8426 15.3367 15.7034 15.7406 16.3161 16.4483V21.1739C15.7034 21.8815 14.8426 22.2854 13.9403 22.2854ZM16.7928 21.6786V15.9433C16.7928 15.4842 17.1251 15.107 17.5453 15.073V22.549C17.125 22.5149 16.7928 22.1376 16.7928 21.6786ZM18.022 22.5518V15.0701H18.3522V22.5518H18.022ZM18.8289 22.549V15.0728C19.2491 15.107 19.5814 15.4842 19.5814 15.9433V21.6786C19.5814 22.1376 19.2491 22.5149 18.8289 22.549Z"></path>
+            </svg>
+          </div>
+        </div>
+      </label> <label class="lessees_infrastructure_item"> <input value="raindrop" type="checkbox">
+        <div class="item_content raindrop"><span class="item_name">Ливневая канализация</span>
+          <div class="icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <path d="M28 14C28 21.732 21.732 28 14 28C6.26801 28 0 21.732 0 14C0 6.26801 6.26801 0 14 0C21.732 0 28 6.26801 28 14Z"></path>
+              <circle cx="14" cy="14" r="11.6667" fill="white"></circle>
+              <path d="M17.2589 17.0604C16.7489 16.4686 16.2408 16.1341 16.2195 16.1202C16.0764 16.0268 15.8886 16.073 15.7997 16.2235C15.7109 16.3739 15.7549 16.5715 15.898 16.6648C15.916 16.6765 17.7026 17.863 17.7026 19.6424C17.7026 19.8194 17.8391 19.9629 18.0074 19.9629C18.1758 19.9629 18.3123 19.8194 18.3123 19.6424C18.3123 18.7527 17.9481 17.8598 17.2589 17.0604Z"></path>
+              <path d="M10.5781 12.4025H4.96937C4.80103 12.4025 4.66455 12.5458 4.66455 12.7225C4.66455 12.8993 4.80103 13.0426 4.96937 13.0426H10.5781C10.7464 13.0426 10.8829 12.8993 10.8829 12.7225C10.8829 12.5458 10.7464 12.4025 10.5781 12.4025Z"></path>
+              <path d="M25.3618 20.7349H21.1008L20.3548 18.0467C19.9506 16.5893 19.1263 15.3376 17.9711 14.4268C16.8977 13.5805 15.6353 13.1052 14.3034 13.0422V10.6276C14.3034 10.4506 14.1669 10.3071 13.9986 10.3071H11.8478C11.6794 10.3071 11.543 10.4506 11.543 10.6276V11.122H1.41977C1.25143 11.122 1.24144 11.248 1.24144 11.248C1.24144 11.248 1.19333 11.763 1.36167 11.763H11.5429V16.8891H1.24144C1.0731 16.8891 1.24145 17.0426 1.24145 17.2196C1.24145 17.3966 1.0731 17.53 1.24144 17.53H11.5429V18.0244C11.5429 18.2014 11.6794 18.3449 11.8477 18.3449H13.9986C14.1669 18.3449 14.3034 18.2014 14.3034 18.0244V17.5422C14.7969 17.8538 15.6035 18.6768 15.6356 20.7348H2.92253C2.75419 20.7348 2.61771 20.8783 2.61771 21.0553C2.61771 21.2323 2.75419 21.3758 2.92253 21.3758H25.3618C25.5301 21.3758 25.6666 21.2323 25.6666 21.0553C25.6666 20.8783 25.5301 20.7349 25.3618 20.7349ZM13.6937 17.704H12.1526V10.9481H13.6937V17.704ZM16.2453 20.7348C16.2299 19.7342 16.0271 18.402 15.1904 17.4825C14.8584 17.1178 14.5211 16.9246 14.3034 16.8281V13.6839C15.5024 13.7464 16.6383 14.1771 17.6054 14.9396C18.6541 15.7665 19.4025 16.9029 19.7696 18.2261L20.4658 20.7348H16.2453Z"></path>
+            </svg>
+          </div>
+        </div>
+      </label></div>
+    <div class="lessees_legend">
+      <div class="legend_item">
+        <div class="icon"><img src="{{ asset('/build/shd_active.svg') }}"></div>
+        <div class="name">Действующие Ж\Д пути</div>
+      </div>
+      <div class="legend_item">
+        <div class="icon"><img src="{{ asset('/build/shd_planed.svg') }}"></div>
+        <div class="name">Планируемые Ж\Д пути</div>
+      </div>
+    </div>
+  </div>
+</div>
