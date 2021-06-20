@@ -1,8 +1,7 @@
 $(document).ready(function () {
-    /*
-    lightGallery(document.getElementById('lightGallery'), {
-        });
 
+    lightGallery(document.getElementById('lightGallery'), {});
+/*
     if ($('.lessees_infrastructure input[type="checkbox"]')) {
         var click = function() {
             $('.lessees_infrastructure input[type="checkbox"]').click();
@@ -32,5 +31,10 @@ $(document).ready(function () {
     $('.price-block__item').on('mouseover', function(){
         $('.price-block__item').removeClass('active')
         $(this).addClass('active')
+    })
+
+    $('.catalog-land__checkbox-wrap').on('click', function(){
+        $('.catalog-land__checkbox').prop('checked', false)
+        $(this).find('.catalog-land__checkbox').prop('checked', true)
     })
 });

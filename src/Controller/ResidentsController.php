@@ -6,13 +6,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class CatalogDetailedController extends AbstractController
+class ResidentsController extends AbstractController
 {
   /**
-   * @Route("/catalog/detailed")
+   * @Route("about/residents")
    */
-  public function catalogDetailed(): Response
+  public function residents(): Response
   {
-    return $this->render('catalog-detailed.html.twig', []);
+    return $this->render('residents.html.twig', []);
   }
 }

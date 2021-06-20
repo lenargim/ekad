@@ -1,0 +1,142 @@
+{% extends 'base.html.twig' %}
+{% block content %}
+  <div class="page catalog-land">
+  <div class="container">
+    <div class="breadcrumbs">
+      <a href="/" class="breadcrumbs__link">Главная</a>
+      <a href="/catalog" class="breadcrumbs__link">Объекты в продаже</a>
+      <a href="/catalog/land" class="breadcrumbs__link">Земельные участки промышленного назначения</a>
+    </div>
+    <h1 class="title">Земельные участки промышленного назначения</h1>
+    <form action="" class="catalog-land__filter">
+      <div class="catalog-land__activity">
+        <div class="catalog-land__filter-subtitle">Вид деятельности</div>
+        <div class="catalog-land__checkboxes">
+          <div class="catalog-land__checkbox-wrap">
+            <input type="checkbox" class="checkbox catalog-land__checkbox" id="activity-any">
+            <label class="label-checkbox" for="activity-any">Любой</label>
+          </div>
+          <div class="catalog-land__checkbox-wrap">
+            <input type="checkbox" class="checkbox catalog-land__checkbox" id="activity-manufacture">
+            <label class="label-checkbox" for="activity-manufacture">Производственная деятельность</label>
+          </div>
+          <div class="catalog-land__checkbox-wrap">
+            <input type="checkbox" class="checkbox catalog-land__checkbox" id="activity-store">
+            <label class="label-checkbox" for="activity-store">Логистика и склады</label>
+          </div>
+        </div>
+      </div>
+      <div class="catalog-land__square">
+        <div class="catalog-land__filter-subtitle">Площадь</div>
+        <div class="catalog-land__squarewrap">
+          <div class="labelwrap">
+            <input type="number" class="input catalog-land__input" step="0.1" min="0.3">
+            <label class="label">От <span>0.3 Га</span></label>
+          </div>
+          <div class="labelwrap">
+            <input type="number" class="input catalog-land__input" step="0.1" max="25">
+            <label class="label">До <span>25 Га</span></label>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="catalog-land__wrap block">
+    <div class="catalog-land__item">
+      <div class="container">
+        <div class="catalog-land__item-title">Участок 12</div>
+        <div class="catalog-land__item-box">
+          <div class="catalog-land__item-img img"><img src="{{ asset('build/download.jpg') }}" alt="Участок 12"></div>
+          <div class="catalog-land__item-info">
+            <div class="catalog-land__item-block">
+              <div class="catalog-land__item-subtitle">Расположение</div>
+              <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
+                aut cum cumque et facere labore magnam porro suscipit vel voluptate.
+            </span>
+            </div>
+            <div class="catalog-land__item-block">
+              <div class="catalog-land__item-subtitle">Площадь</div>
+              <div class="catalog-land__item-text">0.4 Га</div>
+            </div>
+            <div class="catalog-land__item-block">
+              <div class="catalog-land__item-subtitle">Стоимость</div>
+              <div class="catalog-land__item-text">10 467 200 ₽</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="catalog-land__item">
+      <div class="container">
+        <div class="catalog-land__item-title">Участок 12</div>
+        <div class="catalog-land__item-box">
+          <div class="catalog-land__item-img img"><img src="{{ asset('build/download.jpg') }}" alt="Участок 12"></div>
+          <div class="catalog-land__item-info">
+            <div class="catalog-land__item-block">
+              <div class="catalog-land__item-subtitle">Расположение</div>
+              <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
+                aut cum cumque et facere labore magnam porro suscipit vel voluptate.
+            </span>
+            </div>
+            <div class="catalog-land__item-block">
+              <div class="catalog-land__item-subtitle">Площадь</div>
+              <div class="catalog-land__item-text">0.4 Га</div>
+            </div>
+            <div class="catalog-land__item-block">
+              <div class="catalog-land__item-subtitle">Стоимость</div>
+              <div class="catalog-land__item-text">10 467 200 ₽</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="catalog-land__item">
+      <div class="container">
+        <div class="catalog-land__item-title">Участок 12</div>
+        <div class="catalog-land__item-box">
+          <div class="catalog-land__item-img img"><img src="{{ asset('build/download.jpg') }}" alt="Участок 12"></div>
+          <div class="catalog-land__item-info">
+            <div class="catalog-land__item-block">
+              <div class="catalog-land__item-subtitle">Расположение</div>
+              <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
+                aut cum cumque et facere labore magnam porro suscipit vel voluptate.
+            </span>
+            </div>
+            <div class="catalog-land__item-block">
+              <div class="catalog-land__item-subtitle">Площадь</div>
+              <div class="catalog-land__item-text">0.4 Га</div>
+            </div>
+            <div class="catalog-land__item-block">
+              <div class="catalog-land__item-subtitle">Стоимость</div>
+              <div class="catalog-land__item-text">10 467 200 ₽</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="catalog-land__item">
+      <div class="container">
+        <div class="catalog-land__item-title">Участок 12</div>
+        <div class="catalog-land__item-box">
+          <div class="catalog-land__item-img img"><img src="{{ asset('build/download.jpg') }}" alt="Участок 12"></div>
+          <div class="catalog-land__item-info">
+            <div class="catalog-land__item-block">
+              <div class="catalog-land__item-subtitle">Расположение</div>
+              <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
+                aut cum cumque et facere labore magnam porro suscipit vel voluptate.
+            </span>
+            </div>
+            <div class="catalog-land__item-block">
+              <div class="catalog-land__item-subtitle">Площадь</div>
+              <div class="catalog-land__item-text">0.4 Га</div>
+            </div>
+            <div class="catalog-land__item-block">
+              <div class="catalog-land__item-subtitle">Стоимость</div>
+              <div class="catalog-land__item-text">10 467 200 ₽</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

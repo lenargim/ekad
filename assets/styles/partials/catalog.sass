@@ -1,4 +1,4 @@
-.catalog-detailed
+.catalog-store
   &__img
     margin: 0 45px 45px 0
     width: 50%
@@ -8,3 +8,75 @@
     font-family: "Manrope", sans-serif
     p
       padding-bottom: 1.5em
+.catalog-land
+  &__filter
+    display: flex
+    align-items: flex-start
+    justify-content: flex-start
+    padding-bottom: 60px
+    &-subtitle
+      font: normal normal bold 20px/24px Manrope
+      text-transform: uppercase
+      padding-bottom: 2em
+      white-space: nowrap
+  &__activity
+    margin-right: 5%
+  &__checkboxes
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    label
+      color: $colorDark
+      font-size: 18px
+      font-family: "Manrope", sans-serif
+      white-space: nowrap
+      cursor: pointer
+  &__checkbox-wrap
+    margin-right: 45px
+    &:last-of-type
+      margin-right: 0
+  &__squarewrap
+    display: flex
+    align-items: flex-start
+    justify-content: flex-start
+    .labelwrap
+      margin-right: 30px
+      .label
+        font-size: 16px
+        &_filled
+          font-size: 14px
+  &__input
+    background-color: transparent
+    border-bottom: $border
+    position: relative
+    font-size: 20px
+    font-weight: 600
+    color: $colorDark
+  &__item
+    padding: 50px 0
+    &:nth-of-type(odd)
+      background-color: #fff
+    &-title
+      font: normal normal bold 28px/32px Manrope
+      padding-bottom: 2em
+    &-box
+      display: flex
+      align-items: center
+      justify-content: flex-start
+    &-block
+      max-width: 367px
+    &-img
+      min-width: 500px
+      max-height: 300px
+      margin-right: 50px
+    &-info
+      display: flex
+      gap: 50px
+      justify-content: flex-start
+      align-items: flex-start
+    &-subtitle
+      font: normal normal bold 16px/24px Manrope
+      padding-bottom: 1em
+    &-text
+      font: normal normal bold 28px/32px Manrope
+      color: $colorDark

@@ -11,3 +11,29 @@
     justify-content: space-between
   &__img
     overflow: hidden
+.residents-page
+  &__wrap
+    display: grid
+    grid-gap: 64px
+    grid-template-columns: repeat(4, 1fr)
+  &__item
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    height: 200px
+    overflow: hidden
+    padding-bottom: 3em
+    &:hover .residents-page__text
+      bottom: 0
+  &__text
+    position: absolute
+    left: 0
+    right: 0
+    bottom: -50%
+    text-align: center
+    font-weight: 600
+    font-size: 22px
+    font-family: "Manrope", sans-serif
+    transition: bottom 0.3s ease
+    white-space: nowrap
