@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <style>
+            .icon7-a,.icon7-b,.icon7-c{fill:none;}.icon7-c{stroke:#dddd8b;stroke-linecap:round;stroke-width:3px;}.icon7-d{fill:#dddd8b;}.icon7-e,.icon7-f{stroke:none;}.icon7-f{fill:#dddd8b;}
+        </style>
+    </defs>
+    <g transform="translate(-856 -265)">
+        <rect class="icon7-a" width="32" height="32" transform="translate(856 265)"/>
+        <g transform="translate(64 -102)">
+            <g transform="translate(-2 -3)">
+                <g class="icon7-b" transform="translate(798 371)">
+                    <path class="icon7-e"
+                          d="M2.231,4H21.077a2.231,2.231,0,0,1,2.231,2.231V26.769A2.231,2.231,0,0,1,21.077,29H2.231A2.231,2.231,0,0,1,0,26.769V6.231A2.231,2.231,0,0,1,2.231,4Z"/>
+                    <path class="icon7-f"
+                          d="M 2.999996185302734 7 L 2.999996185302734 26 L 20.30769538879395 26 L 20.30769538879395 7 L 2.999996185302734 7 M 2.230766296386719 4 L 21.07692527770996 4 C 22.30894660949707 4 23.30769538879395 4.998750686645508 23.30769538879395 6.230770111083984 L 23.30769538879395 26.76922988891602 C 23.30769538879395 28.00124931335449 22.30894660949707 29 21.07692527770996 29 L 2.230766296386719 29 C 0.9987449645996094 29 -3.814697265625e-06 28.00124931335449 -3.814697265625e-06 26.76922988891602 L -3.814697265625e-06 6.230770111083984 C -3.814697265625e-06 4.998750686645508 0.9987449645996094 4 2.230766296386719 4 Z"/>
+                </g>
+                <line class="icon7-c" y2="3" transform="translate(803 373)"/>
+                <path class="icon7-c" d="M1,0V3" transform="translate(815 373)"/>
+            </g>
+            <circle class="icon7-d" cx="1.5" cy="1.5" r="1.5" transform="translate(801 377)"/>
+            <circle class="icon7-d" cx="1.5" cy="1.5" r="1.5" transform="translate(801 381)"/>
+            <circle class="icon7-d" cx="1.5" cy="1.5" r="1.5" transform="translate(801 385)"/>
+            <circle class="icon7-d" cx="1.5" cy="1.5" r="1.5" transform="translate(801 389)"/>
+            <circle class="icon7-d" cx="1.5" cy="1.5" r="1.5" transform="translate(806 377)"/>
+            <circle class="icon7-d" cx="1.5" cy="1.5" r="1.5" transform="translate(806 381)"/>
+            <circle class="icon7-d" cx="1.5" cy="1.5" r="1.5" transform="translate(806 385)"/>
+            <circle class="icon7-d" cx="1.5" cy="1.5" r="1.5" transform="translate(806 389)"/>
+            <circle class="icon7-d" cx="1.5" cy="1.5" r="1.5" transform="translate(811 377)"/>
+            <circle class="icon7-d" cx="1.5" cy="1.5" r="1.5" transform="translate(811 381)"/>
+            <circle class="icon7-d" cx="1.5" cy="1.5" r="1.5" transform="translate(811 385)"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <style>.icon1-a,.icon1-b,.icon1-c{fill:none;}.icon1-b{stroke:#dddd8b;stroke-width:3px;}.icon1-d,.icon1-e{stroke:none;}.icon1-e{fill:#dddd8b;}</style>
+    </defs>
+    <g transform="translate(-993 -168)">
+        <rect class="icon1-a" width="32" height="32" transform="translate(993 168)"/>
+        <g transform="translate(202 -199)">
+            <line class="icon1-b" y2="27" transform="translate(795 370)"/>
+            <path class="icon1-b" d="M21,0H0" transform="translate(799 371.5)"/>
+            <g class="icon1-c" transform="translate(799 375)">
+                <path class="icon1-d" d="M0,0H21V18H16v4H0Z"/>
+                <path class="icon1-e"
+                      d="M 3 3 L 3 19 L 13 19 L 13 15 L 18 15 L 18 3 L 3 3 M 0 0 L 21 0 L 21 18 L 16 18 L 16 22 L 0 22 L 0 0 Z"/>
+            </g>
+        </g>
+    </g>
+</svg>

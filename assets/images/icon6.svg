@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <style>.icon6-a,.icon6-b,.icon6-c{fill:none;}.icon6-b,.icon6-c{stroke:#dddd8b;stroke-width:3px;}.icon6-c{stroke-linecap:round;}.icon6-d{stroke:none; fill:none;}
+        </style>
+    </defs>
+    <g transform="translate(-856 -123)">
+        <rect class="icon6-a" width="32" height="32" transform="translate(856 123)"/>
+        <g transform="translate(1250.659 -665.836) rotate(90)">
+            <g class="icon6-b" transform="translate(793.836 368.264)">
+                <circle class="icon6-d" cx="7.036" cy="7.036" r="7.036"/>
+                <circle class="icon6-a" cx="7.036" cy="7.036" r="5.536"/>
+            </g>
+            <path class="icon6-c" d="M-12.353,6.014l10.03,10.03" transform="translate(817.103 373.615)"/>
+            <path class="icon6-c" d="M-5.524,12.843l3.2,3.2" transform="translate(829.224 390.381) rotate(90)"/>
+            <path class="icon6-c" d="M-5.524,12.843l3.2,3.2" transform="translate(826.396 387.552) rotate(90)"/>
+        </g>
+    </g>
+</svg>
