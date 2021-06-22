@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+{% block content %}
+  <div class="page catalog-detailed">
+  <div class="container">
+    <div class="breadcrumbs">
+      <a href="/" class="breadcrumbs__link">Главная</a>
+      <a href="/catalog" class="breadcrumbs__link">Объекты в продаже</a>
+      <a href="/catalog/land" class="breadcrumbs__link">Земельные участки промышленного назначения</a>
+      <a href="/catalog/land/detailed" class="breadcrumbs__link">Участок №12</a>
+    </div>
+    <h1 class="title">Участок №12</h1>
+    <div class="catalog-detailed__wrap">
+      <div class="catalog-detailed__img img"><img src="{{ asset('build/scheme-templae.png') }}" alt="схема участка">
+      </div>
+      <div class="catalog-detailed__info">
+        <div class="catalog-detailed__info-box catalog-detailed__info-box_half">
+          <div class="catalog-detailed__subtitle">Площадь</div>
+          <div class="catalog-detailed__number">0.4 Га</div>
+        </div>
+        <div class="catalog-detailed__info-box catalog-detailed__info-box_half">
+          <div class="catalog-detailed__subtitle">Стоимость</div>
+          <div class="catalog-detailed__number">10 467 200 ₽</div>
+        </div>
+        <div class="catalog-detailed__info-box">
+          <div class="catalog-detailed__subtitle">Расположение</div>
+          <p>Участок расположен в первой очереди бизнес-парка</p>
+        </div>
+        <button class="catalog-detailed__button button open-modal">Оформить заявку</button>
+      </div>
+    </div>
+    <div class="catalog-detailed__specifications block">
+      <div class="catalog-detailed__specifications-item">
+        <div class="catalog-detailed__subtitle">Газоснабжение</div>
+        <div class="catalog-detailed__number">1 м<sup>3</sup> /час &mdash; 27000 ₽</div>
+      </div>
+      <div class="catalog-detailed__specifications-item">
+        <div class="catalog-detailed__subtitle">Электроснабжение</div>
+        <div class="catalog-detailed__number">1 кВт/час &mdash; 15000 ₽</div>
+      </div>
+      <div class="catalog-detailed__specifications-item">
+        <div class="catalog-detailed__subtitle">Возможность организации Ж/Д тупика</div>
+        <div class="catalog-detailed__number">Да</div>
+      </div>
+    </div>
+    <div class="block">
+      <h1 class="title catalog-detailed__title">Промышленный участок в Екатеринбурге</h1>
+      <div class="catalog-detailed__desc">
+        <p>Политическое учение Н. Макиавелли означает онтологический тоталитарный тип политической культуры. Политическое манипулирование теоретически интегрирует идеологический
+          авторитаризм. Политическая культура вероятна.
+        </p>
+        <p>Моханизм власти формируот институциональный постиндустриализм. Управление политическими конфликтами, хорочо говоря, ворифицирует культ личности, хотя на порвый
+          взтляд, российские власти тугни при чем. Как уже отмечалось, многопартийная система ограничивает функциональный культ личности. Политическое учение Н. Макиавелли
+          ‘доказывает тоталитарный тип политической культуры.</p>
+        <p>
+          "Референдум представляет собой доиндустриальный тип политической культуры. Правовое государство, особенно в условиях политической нестабильности, отражает марксизм, о
+          че будет подробнее сказано нике. Феномен толпы однозначно вызывает гуманизм. Политический процесс в современной России, тем более в условиях социально-экономического
+          кризиса, формирувт фуниционапьный социализм, очем будет подробнее сказано нике. Политическое учение Августина, короче поворя, представляет собой эмпирический
+          континентально-ввропейский тип политической культуры
+        </p>
+      </div>
+    </div>
+  </div>
+{% endblock %}

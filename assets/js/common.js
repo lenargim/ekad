@@ -15,7 +15,7 @@ $(document).ready(function () {
         $(this).toggleClass('active')
         $(this).siblings('.faq__item-answer').slideToggle()
     })
-
+    /*  Input animation Start  */
     $('.labelwrap').on('focusout', function () {
       let $label = $(this).find('.label'),
         $input = $(this).find('.input, .textarea');
@@ -23,6 +23,7 @@ $(document).ready(function () {
     }).on('click focusin', function () {
       $(this).find('.label').addClass('label_filled');
     });
+    /*  Input animation End  */
 
     $('.types__item').on('mouseover', function(){
         $('.types__item').removeClass('active')
@@ -37,4 +38,23 @@ $(document).ready(function () {
         $('.catalog-land__checkbox').prop('checked', false)
         $(this).find('.catalog-land__checkbox').prop('checked', true)
     })
+
+    /*  Modal logic Start  */
+    $('.modal__close').on('click', function(){
+        $('.overlay').removeClass('active')
+        $('.modal').removeClass('active')
+    })
+    $('.open-modal').on('click', function(){
+        $('.overlay').addClass('active')
+        $('.modal').addClass('active')
+    })
+    $('body').mouseup(function (e) { // событие клика по веб-документу
+      let div = $('.modal'); // тут указываем элемент
+      if (!div.is(e.target) // если клик был не по нашему блоку
+        && div.has(e.target).length === 0) { // и не по его дочерним элементам
+        $('.overlay').removeClass('active')
+        div.removeClass('active')
+      }
+    });
+    /*  Modal logic End  */
 });

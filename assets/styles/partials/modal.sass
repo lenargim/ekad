@@ -1,0 +1,79 @@
+.overlay
+  position: fixed
+  top: 0
+  bottom: -5vh
+  left: 0
+  right: 0
+  z-index: 5
+  background-color: rgba(24, 38, 56, 0.9)
+  display: none
+  overflow-y: auto
+  &.active
+    display: block
+.modal
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  display: none
+  background-color: $colorBg
+  padding: 56px 56px 66px
+  width: 100%
+  max-width: 767px
+  border-radius: 5px
+  overflow: hidden
+  &.active
+    display: block
+  &__close
+    position: absolute
+    right: 20px
+    top: 20px
+    cursor: pointer
+    background-color: $colorDark
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 44px
+    height: 44px
+    border-radius: 50%
+    overflow: hidden
+    z-index: 2
+    &:before, &:after
+      content: ""
+      background-color: #fff
+      display: block
+      width: 25px
+      height: 3px
+      transform-origin: center center
+      position: absolute
+    &:before
+      transform: rotate(45deg)
+    &:after
+      transform: rotate(-45deg)
+  &__title
+    font: normal normal bold 48px/64px Manrope
+    padding-bottom: 2em
+    color: $colorDark
+    text-align: center
+  .labelwrap
+    margin-bottom: 45px
+    border-bottom: $border
+  .input
+    font-size: 20px
+    background-color: transparent
+  .label
+    font-size: 20px
+    color: $colorDark
+    &_filled
+      font-size: 14px
+  &__submit
+    text-transform: uppercase
+    color: $colorDark
+    border: none
+    box-shadow: 0 0 0 0 $colorDark inset, 0 0 0 2px $colorDark
+    margin: 0 auto
+    display: block
+    padding: 15px 50px
+    &:hover
+      box-shadow: 0 0 40px 40px $colorDark inset, 0 0 0 0
+      color: $colorMain

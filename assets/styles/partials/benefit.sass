@@ -8,23 +8,28 @@
     width: 100%
   &__item
     background-color: #fff
-    padding: 40px 68px 76px 32px
+    padding: 40px 68px 76px 95px
     display: flex
     align-items: flex-start
     justify-content: flex-start
-  &__icon
-    min-width: 100px
-    height: 100px
-    margin-right: 24px
-    border-radius: 50%
-    border: 5px solid #000
     position: relative
-    overflow: hidden
-    &:after
-      content: "icon"
-      position: absolute
-      top: 50%
-      left: 50%
-      transform: translate(-50%,-50%)
-      font-weight: 700
-      font-size: 22px
+    &::before
+      content: ''
+      display: block
+      min-width: 6px
+      height: 39px
+      background-color: $colorMain
+      margin-right: 32px
+      position: relative
+      z-index: 1
+      top: 3px
+  &__info
+    z-index: 1
+    color: #fff
+  &__img
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    z-index: 0

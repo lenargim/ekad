@@ -53,7 +53,9 @@
     font-weight: 600
     color: $colorDark
   &__item
+    display: block
     padding: 50px 0
+    color: $colorDark
     &:nth-of-type(odd)
       background-color: #fff
     &-title
@@ -75,8 +77,53 @@
       justify-content: flex-start
       align-items: flex-start
     &-subtitle
-      font: normal normal bold 16px/24px Manrope
+      font: normal normal bold 20px/30px Manrope
       padding-bottom: 1em
     &-text
       font: normal normal bold 28px/32px Manrope
       color: $colorDark
+.catalog-detailed
+  &__wrap
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    padding-bottom: 60px
+    border-bottom: $border
+  &__img
+    width: 50%
+  &__info
+    display: flex
+    align-items: stretch
+    justify-content: space-between
+    width: calc(50% - 64px)
+    flex-wrap: wrap
+    &-box
+      width: 100%
+      padding-bottom: 60px
+      &_half
+        width: calc(50% - 16px)
+  &__subtitle
+    font: normal normal bold 26px/40px Manrope
+    padding-bottom: 1em
+  &__number
+    font: normal normal bold 28px/32px Manrope
+    color: $colorDark
+  &__button
+    padding: 15px 40px
+    display: block
+    color: $colorDark
+    border: none
+    box-shadow: 0 0 0 0 $colorDark inset, 0 0 0 2px $colorDark
+    &:hover
+      box-shadow: 0 0 40px 40px $colorDark inset, 0 0 0 0
+      color: #fff
+  &__specifications
+    padding-top: 60px
+    display: grid
+    grid-gap: 64px
+    grid-template-columns: repeat(3, 1fr)
+  &__title
+    padding-bottom: 60px
+  &__desc
+    p
+      padding-bottom: 1.5em
