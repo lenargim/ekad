@@ -8,9 +8,9 @@
     top: 0
     bottom: 0
     animation-name: slide
-    animation-duration: 16s
+    animation-duration: 20s
     animation-iteration-count: infinite
-    animation-delay: 2s
+    transform-origin: left
   &__wrap
     height: 100vh
     padding-top: 260px
@@ -38,9 +38,11 @@
     span:nth-of-type(2):after
       width: 100px
 @keyframes slide
-  0%
+  5%
     transform: translateX(0)
-  50%
-    transform: translateX(calc(100vw - 100%))
-  100%
+  45%
+    transform: translateX(calc(-100% + 100vw))
+  55%
+    transform: translateX(calc(-100% + 100vw))
+  95%
     transform: translateX(0)

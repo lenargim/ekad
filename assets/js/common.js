@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+    $('input[type="tel"]').mask('+7(Z00) 000-00-00', { translation: { 'Z': { pattern: /[0-79]/ } } })
     lightGallery(document.getElementById('lightGallery'), {});
 /*
     if ($('.lessees_infrastructure input[type="checkbox"]')) {
@@ -40,13 +40,17 @@ $(document).ready(function () {
     })
 
     /*  Modal logic Start  */
+    $('.open-order').on('click', function(){
+        $('.overlay').addClass('active')
+        $('.modal_order').addClass('active')
+    })
+    $('.open-callback').on('click', function(){
+        $('.overlay').addClass('active')
+        $('.modal_callback').addClass('active')
+    })
     $('.modal__close').on('click', function(){
         $('.overlay').removeClass('active')
         $('.modal').removeClass('active')
-    })
-    $('.open-modal').on('click', function(){
-        $('.overlay').addClass('active')
-        $('.modal').addClass('active')
     })
     $('body').mouseup(function (e) { // событие клика по веб-документу
       let div = $('.modal'); // тут указываем элемент

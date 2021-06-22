@@ -21,13 +21,13 @@
     <div class="header__wrap">
       <a href="/" class="header__logo"><img src="{{ asset('build/logo.svg') }}" alt="logo"></a>
       <nav class="header__menu">
-        <li><a href="#" class="header__navlink">О компании</a></li>
-        <li><a href="#" class="header__navlink">Инфраструктура</a></li>
+        <li><a href="/catalog/store" class="header__navlink">О компании</a></li>
+        <li><a href="/catalog/store" class="header__navlink">Инфраструктура</a></li>
         <li><a href="/catalog" class="header__navlink">Объекты в продаже</a></li>
-        <li><a href="/contact" class="header__navlink">Контактная информация</a></li>
+        <li><a href="/contacts" class="header__navlink">Контактная информация</a></li>
       </nav>
       <a href="tel:73432269222" class="header__phone">+7 343 226 92 22</a>
-      <div class="header__callback button open-modal">Заказать звонок</div>
+      <div class="header__callback button open-callback">Заказать звонок</div>
     </div>
   </div>
 </header>
@@ -51,7 +51,7 @@
           <label class="label">Телефон</label>
         </div>
         <input type="submit" class="footer__form-submit button" value="Заказть звонок">
-        <span class="footer__form-policy">Я соглашаюсь с <a href="#">условиями</a> обработки и использования персональных данных</span>
+        <span class="footer__form-policy">Я соглашаюсь с <a class="red" href="#">условиями</a> обработки и использования персональных данных</span>
       </div>
     </form>
     <div class="footer__box">
@@ -92,7 +92,19 @@
   </div>
 </footer>
 <div class="overlay">
-  <div class="modal">
+  <div class="modal modal_callback">
+    <div class="modal__close"></div>
+    <div class="modal__title">Обратный звонок</div>
+    <form class="modal__form">
+      <div class="labelwrap"><input type="text" class="input"><label class="label">Имя</label></div>
+      <div class="labelwrap"><input type="tel" class="input"><label class="label">Телефон</label></div>
+      <div class="modal__submit-wrap">
+        <input type="submit" class="modal__submit button" value="Отправить">
+        <span>Я соглашаюсь с <a href="#" class="red">условиями</a> обработки и использования персональных данных</span>
+      </div>
+    </form>
+  </div>
+  <div class="modal modal_order">
     <div class="modal__close"></div>
     <div class="modal__title">Оформление заказа</div>
     <form class="modal__form">
@@ -102,6 +114,7 @@
       <div class="labelwrap"><input type="text" class="input"><label class="label">Комментарий к заказу</label></div>
       <div class="modal__submit-wrap">
         <input type="submit" class="modal__submit button" value="Отправить">
+        <span>Я соглашаюсь с <a href="#" class="red">условиями</a> обработки и использования персональных данных</span>
       </div>
     </form>
   </div>

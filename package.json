@@ -19,6 +19,7 @@
         "file-loader": "^6.2.0",
         "imports-loader": "^3.0.0",
         "jquery": "^3.6.0",
+        "jquery-mask-plugin": "^1.14.16",
         "lightgallery.js": "^1.4.0",
         "sass": "^1.34.1",
         "sass-loader": "^12.1.0"
