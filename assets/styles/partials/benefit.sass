@@ -1,6 +1,8 @@
 .benefit
   &__title
     padding-bottom: 70px
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      padding-bottom: 60px
   &__wrap
     display: grid
     grid-gap: 32px
@@ -13,6 +15,9 @@
     align-items: flex-start
     justify-content: flex-start
     position: relative
+    overflow: hidden
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      padding: 30px 50px 60px 70px
     &::before
       content: ''
       display: block

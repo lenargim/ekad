@@ -1,6 +1,8 @@
 .indicators
   &__title
     padding-bottom: 90px
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      padding-bottom: 70px
   &__desc
     max-width: 367px
   &__info
@@ -15,17 +17,27 @@
     align-items: flex-start
     justify-content: flex-start
     margin-bottom: 36px
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      padding-bottom: 20px
+      margin-bottom: 25px
   &__item
     position: relative
     margin-right: 100px
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      margin-right: 60px
     &:last-of-type
       margin-right: 0
   &__number
-    font: normal normal 800 96px/96px Manrope
+    font: normal normal 800 96px/1 Manrope
     padding: 0 45px 15px 0
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      font-size: 60px
   &__unit
-    font: normal normal 800 28px/38px Manrope
+    font: normal normal 800 28px/1.35 Manrope
     position: absolute
     top: 0
     right: 0
     color: #EA2727
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      font-size: 20px
+      max-width: 30px

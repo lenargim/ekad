@@ -1,6 +1,8 @@
 .activity
   &__title
     padding-bottom: 143px
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      padding-bottom: 70px
   &__desc
     max-width: 500px
   &__box
@@ -17,6 +19,9 @@
     align-items: flex-start
     justify-content: space-between
     width: 100%
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      padding-bottom: 30px
+      margin-bottom: 40px
     &:last-of-type
       margin-bottom: 0
       border-bottom: unset
@@ -24,6 +29,9 @@
     &_half
       width: calc(50% - 16px)
     &-title
-      font: normal normal bold 28px/32px Manrope
+      font: normal normal bold 28px/1.15 Manrope
       padding-bottom: 23px
       max-width: 633px
+      @media screen and (min-width: 1366px) and (max-width: 1919px)
+        font-size: 20px
+        padding-bottom: 20px

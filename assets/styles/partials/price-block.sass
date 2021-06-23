@@ -8,6 +8,8 @@
   &__title
     text-align: center
     padding-bottom: 96px
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      padding-bottom: 60px
   &__box
     width: 100%
     display: grid
@@ -18,6 +20,8 @@
     padding: 60px 30px 68px
     text-align: center
     transition: all 0.3s ease
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      padding: 40px 15px 40px
     &.active
       background-color: #2C3338
       color: #fff
@@ -25,15 +29,19 @@
         opacity: 1
     &-icon
       width: 118px
-      height: 93px
+      max-height: 93px
       overflow: hidden
       margin: 0 auto 30px
+      @media screen and (min-width: 1366px) and (max-width: 1919px)
+        width: 85px
     &-title
       max-width: 264px
-      font: normal normal bold 28px/32px Manrope
+      font: normal normal bold 28px/1.15 Manrope
       padding-bottom: 20px
       border-bottom: $border
       margin: 0 auto 26px
+      @media screen and (min-width: 1366px) and (max-width: 1919px)
+        font-size: 24px
     &-desc
       font: normal normal bold 16px/24px Manrope
       text-transform: uppercase

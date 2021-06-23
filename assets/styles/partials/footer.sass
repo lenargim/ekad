@@ -2,12 +2,19 @@
   background-color: $colorDark
   padding: 93px 0 80px
   color: #fff
+  @media screen and (min-width: 1366px) and (max-width: 1919px)
+    padding: 60px 0
   &__form
     border-bottom: $border
     padding-bottom: 90px
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      padding-bottom: 60px
     &-title
-      font: normal normal bold 28px/32px Manrope
+      font: normal normal bold 28px/1.15 Manrope
       padding-bottom: 22px
+      @media screen and (min-width: 1366px) and (max-width: 1919px)
+        font-size: 22px
+        padding-bottom: 20px
     &-desc
       max-width: 627px
       padding-bottom: 60px
@@ -20,16 +27,20 @@
       border-bottom: $border
       width: 367px
       transition: all 0.3s ease
+      @media screen and (min-width: 1366px) and (max-width: 1919px)
+        width: 300px
       &:hover
         .label
           color: #000
     &-input
       background-color: transparent
-      font: normal normal normal 16px/24px Roboto
+      font: normal normal normal 16px/1.5 Roboto
     &-submit
       color: $colorMain
       box-shadow: 0 0 0 0 $colorMain inset, 0 0 0 2px $colorMain
       margin: 0 85px 0 63px
+      @media screen and (min-width: 1366px) and (max-width: 1919px)
+        margin: 0 50px
       border: none
       &:hover
         box-shadow: 0 0 40px 40px $colorMain inset, 0 0 0 0
@@ -41,11 +52,17 @@
     display: grid
     grid-gap: 116px
     grid-template-columns: 1fr 1fr 1fr 367px
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      padding-top: 60px
+      grid-gap: 40px
   &__col
     position: relative
     &-title
-      font: normal normal bold 28px/32px Manrope
+      font: normal normal bold 28px/1.15 Manrope
       padding-bottom: 31px
+      @media screen and (min-width: 1366px) and (max-width: 1919px)
+        font-size: 22px
+        padding-bottom: 20px
     &-link
       display: block
       margin-bottom: 1.5em
@@ -68,9 +85,17 @@
     display: flex
     align-items: center
     justify-content: space-between
+  &__social
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      transform: scale(0.7)
+      transform-origin: top
   &__dev
     display: flex
     align-items: center
     justify-content: flex-end
     a
       margin-left: 7px
+  &__logo
+    max-width: 164px
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      max-width: 120px

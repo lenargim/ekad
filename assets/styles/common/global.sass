@@ -14,6 +14,10 @@ body
   min-width: 100%
   background-color: $colorBg
   color: #000
+  @media screen and (min-width: 1366px) and (max-width: 1919px)
+    font-size: 14px
+  @media screen and (min-width: 1280px) and (max-width: 1365px)
+    font-size: 13px
 
 main
   min-height: 100vh
@@ -26,6 +30,9 @@ section
 .container
   width: 1564px
   margin: 0 auto
+  @media screen and (min-width: 1280px) and (max-width: 1919px)
+    width: 100%
+    padding: 0 30px
 
 
 ul, li, p, h1, h2, h3
@@ -92,26 +99,46 @@ select
   border-radius: 5px
   white-space: nowrap
   font-size: 16px
-  line-height: 24px
+  line-height: 1.5
   padding: 11px 32px
   cursor: pointer
   transition: all 0.5s ease
   background-color: transparent
   overflow: hidden
   border: none
+  @media screen and (min-width: 1366px) and (max-width: 1919px)
+    padding: 8px 20px
+    font-size: 14px
+  @media screen and (min-width: 1280px) and (max-width: 1365px)
+    padding: 7px 15px
+    font-size: 13px
   &:hover
     outline: none
 .block
   margin-bottom: 124px
+  @media screen and (min-width: 1366px) and (max-width: 1919px)
+    margin-bottom: 80px
+  @media screen and (min-width: 1280px) and (max-width: 1365px)
+    margin-bottom: 60px
   &__wrap
     display: flex
     align-items: flex-start
     justify-content: flex-start
   &__title
-    font: normal normal bold 48px/64px Manrope
+    font: normal normal bold 48px/1.33 Manrope
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      font-size: 40px
+    @media screen and (min-width: 1280px) and (max-width: 1365px)
+      font-size: 36px
   &__text
     width: 42%
     margin-right: 165px
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      margin-right: 5%
+      width: 45%
+    @media screen and (min-width: 1280px) and (max-width: 1365px)
+      margin-right: 7px
+      width: 43%
 .breadcrumbs
   display: flex
   align-items: center
@@ -150,9 +177,16 @@ select
         content: unset
 .page
   padding-top: 60px
+  @media screen and (min-width: 1280px) and (max-width: 1365px)
+    padding-top: 40px
 h1.title
-  font: normal normal bold 56px/64px Manrope
+  font: normal normal bold 56px/1.15 Manrope
   padding-bottom: 60px
+  @media screen and (min-width: 1366px) and (max-width: 1919px)
+    font-size: 40px
+  @media screen and (min-width: 1280px) and (max-width: 1365px)
+    font-size: 36px
+    padding-bottom: 40px
 .map
   height: 100vh
 a.red

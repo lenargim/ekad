@@ -1,5 +1,6 @@
 .banner
   color: #FFFFFF
+  position: relative
   &__img
     height: 100vh
     object-fit: cover
@@ -15,17 +16,26 @@
     height: 100vh
     padding-top: 260px
     position: relative
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      padding-top: 200px
   &__title
-    font: normal normal bold 56px/88px Manrope
+    font: normal normal bold 56px/1.56 Manrope
     letter-spacing: 2.8px
     text-transform: uppercase
     max-width: 1165px
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      font-size: 40px
+      max-width: 80%
   &__footer
     position: absolute
     left: 0
     bottom: 102px
     font: normal normal bold 28px/32px Manrope
     letter-spacing: 0
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      bottom: 60px
+      font-size: 24px
+      line-height: 28px
     span:after
       content: ""
       height: 1px
@@ -35,8 +45,12 @@
       margin: 0 30px
     span:first-of-type:after
       width: 200px
+      @media screen and (min-width: 1366px) and (max-width: 1919px)
+        width: 160px
     span:nth-of-type(2):after
       width: 100px
+      @media screen and (min-width: 1366px) and (max-width: 1919px)
+        width: 80px
 @keyframes slide
   5%
     transform: translateX(0)

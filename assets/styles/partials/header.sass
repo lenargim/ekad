@@ -13,15 +13,28 @@
     align-items: center
     justify-content: flex-start
     color: #fff
+    @media screen and (min-width: 1280px) and (max-width: 1919px)
+      padding: 30px 0
   &__logo
     max-width: 164px
     margin-right: 102px
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      max-width: 120px
+      margin-right: 60px
+    @media screen and (min-width: 1280px) and (max-width: 1365px)
+      max-width: 100px
+      margin-right: 50px
   &__menu
     display: flex
     align-items: center
     justify-content: flex-start
   li
     margin-right: 40px
+    white-space: nowrap
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      margin-right: 25px
+    @media screen and (min-width: 1280px) and (max-width: 1365px)
+      margin-right: 20px
     &:last-of-type
       margin-right: 0
   &__navlink
@@ -36,14 +49,23 @@
       left: 0
       bottom: -12px
       transition: width 0.3s ease
+      @media screen and (min-width: 1366px) and (max-width: 1919px)
+        bottom: -8px
+      @media screen and (min-width: 1280px) and (max-width: 1365px)
+        bottom: -6px
     &:hover
       &:after
         width: 100%
   &__phone
     margin-left: auto
     font-size: 26px
-    line-height: 34px
+    line-height: 1.3
     color: #fff
+    white-space: nowrap
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      font-size: 20px
+    @media screen and (min-width: 1280px) and (max-width: 1365px)
+      font-size: 16px
   &__callback
     color: $colorMain
     margin-left: 63px

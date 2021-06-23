@@ -22,6 +22,9 @@
   max-width: 767px
   border-radius: 5px
   overflow: hidden
+  @media screen and (min-width: 1366px) and (max-width: 1919px)
+    padding: 32px 32px 40px
+    width: 40%
   &.active
     display: block
   &__close
@@ -38,6 +41,11 @@
     border-radius: 50%
     overflow: hidden
     z-index: 2
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      right: 15px
+      top: 15px
+      width: 30px
+      height: 30px
     &:before, &:after
       content: ""
       background-color: #fff
@@ -46,34 +54,45 @@
       height: 3px
       transform-origin: center center
       position: absolute
+      @media screen and (min-width: 1366px) and (max-width: 1919px)
+        width: 20px
     &:before
       transform: rotate(45deg)
     &:after
       transform: rotate(-45deg)
   &__title
-    font: normal normal bold 48px/64px Manrope
+    font: normal normal bold 48px/1.6 Manrope
     padding-bottom: 2em
     color: $colorDark
     text-align: center
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      font-size: 34px
   .labelwrap
     margin-bottom: 45px
     border-bottom: $border
   .input
     font-size: 20px
     background-color: transparent
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      font-size: 16px
   .label
     font-size: 20px
     color: $colorDark
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      font-size: 16px
     &_filled
       font-size: 14px
+      @media screen and (min-width: 1366px) and (max-width: 1919px)
+        font-size: 12px
   &__submit
     text-transform: uppercase
     color: $colorDark
-    border: none
     box-shadow: 0 0 0 0 $colorDark inset, 0 0 0 2px $colorDark
     margin: 0 auto 45px
     display: block
     padding: 15px 50px
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      padding: 10px 40px
     &:hover
       box-shadow: 0 0 40px 40px $colorDark inset, 0 0 0 0
       color: $colorMain

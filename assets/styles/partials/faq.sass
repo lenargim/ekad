@@ -6,22 +6,33 @@
   &__text
     max-width: 500px
     &-question
-      font: normal normal normal 20px/32px Manrope
+      font: normal normal normal 20px/1.6 Manrope
       padding-bottom: 209px
+      @media screen and (min-width: 1366px) and (max-width: 1919px)
+        font-size: 18px
+        padding-bottom: 100px
   &__title
     padding-bottom: 25px
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      padding-bottom: 20px
   &__box
     width: 766px
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      width: 60%
   &__item
     border-bottom: $border
     padding: 44px 32px 32px
+    @media screen and (min-width: 1366px) and (max-width: 1919px)
+      padding: 30px 15px 15px
     &-question
       display: flex
       align-items: center
       justify-content: flex-start
-      font: normal normal bold 16px/24px Manrope
+      font: normal normal bold 16px/1.5 Manrope
       text-transform: uppercase
       cursor: pointer
+      @media screen and (min-width: 1366px) and (max-width: 1919px)
+        font-size: 14px
       &.active
         .faq__item-arrow span
           top: -7px
@@ -37,6 +48,10 @@
       display: flex
       justify-content: center
       align-items: center
+      @media screen and (min-width: 1366px) and (max-width: 1919px)
+        min-width: 40px
+        height: 40px
+        margin-right: 50px
       span
         border: solid #707070
         border-width: 0 4px 4px 0
@@ -62,6 +77,8 @@
     &-answer
       display: none
       padding: 43px 0 0 105px
+      @media screen and (min-width: 1366px) and (max-width: 1919px)
+        padding: 15px 0 0 90px
       p
         padding-bottom: 1.5em
         &:last-of-type
