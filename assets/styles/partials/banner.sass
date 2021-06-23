@@ -18,6 +18,8 @@
     position: relative
     @media screen and (min-width: 1366px) and (max-width: 1919px)
       padding-top: 200px
+    @media screen and (min-width: 1280px) and (max-width: 1365px)
+      padding-top: 150px
   &__title
     font: normal normal bold 56px/1.56 Manrope
     letter-spacing: 2.8px
@@ -26,16 +28,21 @@
     @media screen and (min-width: 1366px) and (max-width: 1919px)
       font-size: 40px
       max-width: 80%
+    @media screen and (min-width: 1280px) and (max-width: 1365px)
+      font-size: 36px
+      max-width: 80%
   &__footer
     position: absolute
     left: 0
     bottom: 102px
-    font: normal normal bold 28px/32px Manrope
+    font: normal normal bold 28px/1.15 Manrope
     letter-spacing: 0
     @media screen and (min-width: 1366px) and (max-width: 1919px)
       bottom: 60px
       font-size: 24px
-      line-height: 28px
+    @media screen and (min-width: 1280px) and (max-width: 1365px)
+      bottom: 50px
+      font-size: 22px
     span:after
       content: ""
       height: 1px
@@ -47,10 +54,14 @@
       width: 200px
       @media screen and (min-width: 1366px) and (max-width: 1919px)
         width: 160px
+      @media screen and (min-width: 1280px) and (max-width: 1365px)
+        width: 150px
     span:nth-of-type(2):after
       width: 100px
       @media screen and (min-width: 1366px) and (max-width: 1919px)
         width: 80px
+      @media screen and (min-width: 1280px) and (max-width: 1365px)
+        width: 70px
 @keyframes slide
   5%
     transform: translateX(0)

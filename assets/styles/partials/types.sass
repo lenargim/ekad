@@ -3,6 +3,8 @@
     padding-bottom: 97px
     @media screen and (min-width: 1366px) and (max-width: 1919px)
       padding-bottom: 80px
+    @media screen and (min-width: 1280px) and (max-width: 1365px)
+      padding-bottom: 60px
   &__wrap
     display: grid
     grid-gap: 32px
@@ -17,6 +19,9 @@
     @media screen and (min-width: 1366px) and (max-width: 1919px)
       height: 700px
       padding: 30px 32px 40px
+    @media screen and (min-width: 1280px) and (max-width: 1365px)
+      height: 650px
+      padding: 20px 20px 30px
     &.active
       background-color: #2C3338
       color: #fff
@@ -33,15 +38,20 @@
       left: 32px
       @media screen and (min-width: 1366px) and (max-width: 1919px)
         top: 310px
+      @media screen and (min-width: 1280px) and (max-width: 1365px)
+        top: 280px
     &-title
       font: normal normal bold 28px/1.15 Manrope
       padding-bottom: 24px
       @media screen and (min-width: 1366px) and (max-width: 1919px)
         font-size: 22px
         padding-bottom: 20px
+      @media screen and (min-width: 1280px) and (max-width: 1365px)
+        font-size: 20px
+        padding-bottom: 15px
     &-desc
       padding-bottom: 30px
-      @media screen and (min-width: 1366px) and (max-width: 1919px)
+      @media screen and (min-width: 1280px) and (max-width: 1919px)
         padding-bottom: 20px
     &-list
       position: absolute
@@ -50,17 +60,19 @@
       top: 407px
       @media screen and (min-width: 1366px) and (max-width: 1919px)
         top: 350px
+      @media screen and (min-width: 1280px) and (max-width: 1365px)
+        top: 330px
     &-li
       margin-bottom: 25px
       display: flex
       align-items: center
       justify-content: flex-start
-      @media screen and (min-width: 1366px) and (max-width: 1919px)
+      @media screen and (min-width: 1280px) and (max-width: 1919px)
         margin-bottom: 20px
     &-icon
       margin-right: 16px
       background-color: transparent
-      @media screen and (min-width: 1366px) and (max-width: 1919px)
+      @media screen and (min-width: 1280px) and (max-width: 1919px)
         margin-right: 10px
     &-link
       position: absolute
@@ -72,6 +84,8 @@
       box-shadow: 0 0 0 0 $colorMain inset, 0 0 0 2px $colorMain
       @media screen and (min-width: 1366px) and (max-width: 1919px)
         bottom: 40px
+      @media screen and (min-width: 1280px) and (max-width: 1365px)
+        bottom: 30px
       &:hover
         box-shadow: 0 0 40px 40px $colorMain inset, 0 0 0 0
         color: #000
