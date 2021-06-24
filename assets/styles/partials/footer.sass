@@ -4,24 +4,36 @@
   color: #fff
   @media screen and (min-width: 1280px) and (max-width: 1919px)
     padding: 60px 0
+  @media screen and (max-width: 1279px)
+    padding: 30px 0
   &__form
     border-bottom: $border
     padding-bottom: 90px
     @media screen and (min-width: 1280px) and (max-width: 1919px)
       padding-bottom: 60px
+    @media screen and (max-width: 1279px)
+      padding-bottom: 45px
     &-title
       font: normal normal bold 28px/1.15 Manrope
       padding-bottom: 22px
       @media screen and (min-width: 1280px) and (max-width: 1919px)
         font-size: 22px
         padding-bottom: 20px
+      @media screen and (max-width: 1279px)
+        font-size: 18px
+        padding-bottom: 20px
     &-desc
       max-width: 627px
       padding-bottom: 60px
+      @media screen and (max-width: 1279px)
+        max-width: unset
+        padding-bottom: 45px
     &-row
       display: flex
       align-items: center
       justify-content: flex-start
+      @media screen and (max-width: 1279px)
+        flex-direction: column
     & .labelwrap
       margin-right: 40px
       border-bottom: $border
@@ -29,6 +41,9 @@
       transition: all 0.3s ease
       @media screen and (min-width: 1280px) and (max-width: 1919px)
         width: 300px
+      @media screen and (max-width: 1279px)
+        width: 100%
+        margin: 0 0 30px
       &:hover
         .label
           color: #000
@@ -41,12 +56,16 @@
       margin: 0 85px 0 63px
       @media screen and (min-width: 1280px) and (max-width: 1919px)
         margin: 0 50px
+      @media screen and (max-width: 1279px)
+        margin: 0 0 30px
       border: none
       &:hover
         box-shadow: 0 0 40px 40px $colorMain inset, 0 0 0 0
         color: #000
     &-policy
       max-width: 309px
+      @media screen and (max-width: 766px)
+        max-width: unset
   &__box
     padding-top: 111px
     display: grid
@@ -55,6 +74,10 @@
     @media screen and (min-width: 1280px) and (max-width: 1919px)
       padding-top: 60px
       grid-gap: 40px
+    @media screen and (max-width: 1279px)
+      padding-top: 45px
+      grid-template-columns: 1fr
+      grid-gap: 32px
   &__col
     position: relative
     &-title
@@ -62,6 +85,9 @@
       padding-bottom: 31px
       @media screen and (min-width: 1280px) and (max-width: 1919px)
         font-size: 22px
+        padding-bottom: 20px
+      @media screen and (max-width: 1279px)
+        font-size: 18px
         padding-bottom: 20px
     &-link
       display: block
@@ -81,6 +107,9 @@
     left: 0
     bottom: 0
     right: 0
+    @media screen and (max-width: 1279px)
+      position: unset
+      padding-top: 25px
   &__socials
     display: flex
     align-items: center
@@ -88,6 +117,9 @@
   &__social
     @media screen and (min-width: 1280px) and (max-width: 1919px)
       transform: scale(0.7)
+      transform-origin: top
+    @media screen and (max-width: 1279px)
+      transform: scale(0.8)
       transform-origin: top
   &__dev
     display: flex
@@ -99,3 +131,6 @@
     max-width: 164px
     @media screen and (min-width: 1280px) and (max-width: 1919px)
       max-width: 120px
+    @media screen and (max-width: 1279px)
+      max-width: 30vw
+      margin: 0 auto

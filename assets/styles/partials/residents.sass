@@ -5,17 +5,33 @@
     padding: 60px 0
     border-bottom: $border
     border-top: $border
+    @media screen and (max-width: 1279px)
+      padding: 45px 0
   &__box
     display: flex
     align-items: center
     justify-content: space-between
+    @media screen and (max-width: 1279px)
+      display: grid
+      grid-gap: 32px
+      grid-template-columns: repeat(2, 1fr)
     img
       margin: 0 10px
+      @media screen and (max-width: 1279px)
+        margin: 0 auto
+        width: 80%
+        max-width: 150px
 .residents-page
   &__wrap
     display: grid
     grid-gap: 64px
     grid-template-columns: repeat(4, 1fr)
+    @media screen and (max-width: 767px) and (max-width: 1279px)
+      grid-template-columns: repeat(2, 1fr)
+      grid-gap: 32px
+    @media screen and (max-width: 766px)
+      grid-template-columns: 1fr
+      grid-gap: 40px
   &__item
     display: flex
     align-items: center
@@ -24,6 +40,11 @@
     height: 200px
     overflow: hidden
     padding-bottom: 3em
+    @media screen and (max-width: 766px)
+      margin: 0 auto
+      flex-direction: column
+      height: auto
+      padding-bottom: 0
     &:hover .residents-page__text
       bottom: 0
   &__text
@@ -37,3 +58,10 @@
     font-family: "Manrope", sans-serif
     transition: bottom 0.3s ease
     white-space: nowrap
+    @media screen and (max-width: 766px)
+      font-size: 20px
+      position: unset
+      padding-top: 15px
+  &__img
+    @media screen and (max-width: 766px)
+      max-width: 400px

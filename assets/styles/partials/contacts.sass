@@ -5,6 +5,9 @@
     @media screen and (min-width: 1280px) and (max-width: 1919px)
       font-size: 28px
       padding-bottom: 60px
+    @media screen and (max-width: 1279px)
+      font-size: 18px
+      padding-bottom: 45px
   &__wrap
     display: grid
     grid-gap: 64px
@@ -12,18 +15,26 @@
     margin-bottom: 100px
     @media screen and (min-width: 1280px) and (max-width: 1919px)
       margin-bottom: 60px
+    @media screen and (max-width: 1279px)
+      margin-bottom: 45px
+      grid-template-columns: 1fr
+      grid-gap: 32px
   &__item
     &-name
       font: normal normal bold 28px/1.15 Manrope
       padding-bottom: 30px
       @media screen and (min-width: 1280px) and (max-width: 1919px)
         font-size: 20px
+      @media screen and (max-width: 1279px)
+        font-size: 18px
     &-link
       position: relative
       color: $colorDark
       font: normal normal bold 28px/1.15 Manrope
       @media screen and (min-width: 1280px) and (max-width: 1919px)
         font-size: 22px
+      @media screen and (max-width: 1279px)
+        font-size: 20px
       &:after
         content: ''
         width: 0
@@ -33,6 +44,8 @@
         left: 0
         bottom: -10px
         transition: width 0.3s ease
+        @media screen and (max-width: 1279px)
+          content: unset
     &:hover
       .contacts__item-link:after
         width: 100%
@@ -41,6 +54,8 @@
       font: normal normal bold 26px/1.15 Manrope
       @media screen and (min-width: 1280px) and (max-width: 1919px)
         font-size: 20px
+      @media screen and (max-width: 1279px)
+        font-size: 18px
       address
         margin-bottom: 1em
         font-style: normal

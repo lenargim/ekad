@@ -3,11 +3,15 @@
     padding-bottom: 70px
     @media screen and (min-width: 1280px) and (max-width: 1919px)
       padding-bottom: 60px
+    @media screen and (max-width: 1279px)
+      padding-bottom: 0
   &__wrap
     display: grid
     grid-gap: 32px
     grid-template-columns: repeat(2, 1fr)
     width: 100%
+    @media screen and (max-width: 1279px)
+      grid-template-columns: 1fr
   &__item
     background-color: #fff
     padding: 40px 68px 76px 95px
@@ -20,6 +24,8 @@
       padding: 30px 50px 60px 70px
     @media screen and (min-width: 1280px) and (max-width: 1365px)
       padding: 30px 40px 50px 60px
+    @media screen and (max-width: 1279px)
+      padding: 30px 20px
     &::before
       content: ''
       display: block
@@ -30,6 +36,8 @@
       position: relative
       z-index: 1
       top: 3px
+      @media screen and (max-width: 1279px)
+        margin-right: 16px
   &__info
     z-index: 1
     color: #fff
@@ -37,6 +45,7 @@
     position: absolute
     left: 0
     width: 100%
+    min-height: 100%
     top: 0
     bottom: 0
     z-index: 0

@@ -12,6 +12,8 @@
     animation-duration: 20s
     animation-iteration-count: infinite
     transform-origin: left
+    @media screen and (max-width: 1279px)
+      animation-duration: 30s
   &__wrap
     height: 100vh
     padding-top: 260px
@@ -20,6 +22,9 @@
       padding-top: 200px
     @media screen and (min-width: 1280px) and (max-width: 1365px)
       padding-top: 150px
+    @media screen and (max-width: 1279px)
+      padding: 20vh 0
+      text-align: center
   &__title
     font: normal normal bold 56px/1.56 Manrope
     letter-spacing: 2.8px
@@ -31,6 +36,11 @@
     @media screen and (min-width: 1280px) and (max-width: 1365px)
       font-size: 36px
       max-width: 80%
+    @media screen and (max-width: 1279px)
+      font-size: 26px
+      max-width: unset
+      margin: 0 auto
+      text-align: center
   &__footer
     position: absolute
     left: 0
@@ -43,6 +53,8 @@
     @media screen and (min-width: 1280px) and (max-width: 1365px)
       bottom: 50px
       font-size: 22px
+    @media screen and (max-width: 1279px)
+      display: none
     span:after
       content: ""
       height: 1px

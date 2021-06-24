@@ -5,11 +5,22 @@
       padding-bottom: 80px
     @media screen and (min-width: 1280px) and (max-width: 1365px)
       padding-bottom: 60px
+    @media screen and (max-width: 1279px)
+      padding-bottom: 45px
   &__wrap
     display: grid
     grid-gap: 32px
     grid-template-columns: repeat(3, 1fr)
     width: 100%
+    @media screen and (max-width: 1279px)
+      overflow-x: auto
+      grid-gap: 15px
+      &::-webkit-scrollbar
+        width: 0
+        background: transparent
+        -ms-overflow-style: none
+        scrollbar-width: none
+        overflow: -moz-scrollbars-none
   &__item
     position: relative
     padding: 40px 32px 48px
@@ -22,6 +33,13 @@
     @media screen and (min-width: 1280px) and (max-width: 1365px)
       height: 650px
       padding: 20px 20px 30px
+    @media screen and (max-width: 1279px)
+      height: auto
+      padding: 20px 15px 60px
+      width: 76vw
+      max-width: 500px
+      background-color: #2C3338
+      color: #fff
     &.active
       background-color: #2C3338
       color: #fff
@@ -40,6 +58,8 @@
         top: 310px
       @media screen and (min-width: 1280px) and (max-width: 1365px)
         top: 280px
+      @media screen and (max-width: 1279px)
+        content: none
     &-title
       font: normal normal bold 28px/1.15 Manrope
       padding-bottom: 24px
@@ -49,10 +69,17 @@
       @media screen and (min-width: 1280px) and (max-width: 1365px)
         font-size: 20px
         padding-bottom: 15px
+      @media screen and (max-width: 1279px)
+        font-size: 19px
+        text-align: center
+        padding-bottom: 20px
     &-desc
       padding-bottom: 30px
       @media screen and (min-width: 1280px) and (max-width: 1919px)
         padding-bottom: 20px
+      @media screen and (max-width: 1279px)
+        padding-bottom: 25px
+        text-align: center
     &-list
       position: absolute
       left: 32px
@@ -62,6 +89,8 @@
         top: 350px
       @media screen and (min-width: 1280px) and (max-width: 1365px)
         top: 330px
+      @media screen and (max-width: 1279px)
+        position: unset
     &-li
       margin-bottom: 25px
       display: flex
@@ -69,11 +98,17 @@
       justify-content: flex-start
       @media screen and (min-width: 1280px) and (max-width: 1919px)
         margin-bottom: 20px
+      @media screen and (max-width: 1279px)
+        margin-bottom: 15px
     &-icon
       margin-right: 16px
       background-color: transparent
       @media screen and (min-width: 1280px) and (max-width: 1919px)
         margin-right: 10px
+      @media screen and (max-width: 1279px)
+        margin-right: 0
+        transform: scale(0.7)
+        transform-origin: left
     &-link
       position: absolute
       bottom: 48px
@@ -86,6 +121,11 @@
         bottom: 40px
       @media screen and (min-width: 1280px) and (max-width: 1365px)
         bottom: 30px
+      @media screen and (max-width: 1279px)
+        bottom: 15px
+        right: 15px
+        z-index: 1
+        opacity: 1
       &:hover
         box-shadow: 0 0 40px 40px $colorMain inset, 0 0 0 0
         color: #000

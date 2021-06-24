@@ -53,37 +53,49 @@
         <div class="indicators__info">
           <div class="indicators__row">
             <div class="indicators__item">
-              <div class="indicators__number">2 000 000</div>
-              <div class="indicators__unit">М2</div>
+              <div class="indicators__number">
+                <span>2 000 000</span>
+                <span class="indicators__unit">М<sup>2</sup></span>
+              </div>
               <div class="indicators__name">Общая площадь</div>
             </div>
           </div>
           <div class="indicators__row">
             <div class="indicators__item">
-              <div class="indicators__number">36</div>
-              <div class="indicators__unit img"><img src="{{ asset('build/people.svg') }}" alt=""></div>
+              <div class="indicators__number">
+                <span>36</span>
+                <span class="indicators__unit img"><img src="{{ asset('build/people.svg') }}" alt=""></span>
+              </div>
               <div class="indicators__name">Резидентов</div>
             </div>
             <div class="indicators__item">
-              <div class="indicators__number">50</div>
-              <div class="indicators__unit">%</div>
+              <div class="indicators__number">
+                <span>50</span>
+                <span class="indicators__unit">%</span>
+              </div>
               <div class="indicators__name">Реализации проекта</div>
             </div>
             <div class="indicators__item">
-              <div class="indicators__number">11.5</div>
-              <div class="indicators__unit">Км</div>
+              <div class="indicators__number">
+                <span>11.5</span>
+                <span class="indicators__unit">Км</span>
+              </div>
               <div class="indicators__name">Дорог</div>
             </div>
           </div>
           <div class="indicators__row">
             <div class="indicators__item">
-              <div class="indicators__number">80</div>
-              <div class="indicators__unit">%</div>
+              <div class="indicators__number">
+                <span>80</span>
+                <span class="indicators__unit">%</span>
+              </div>
               <div class="indicators__name">Застройки земельного<br> участка</div>
             </div>
             <div class="indicators__item">
-              <div class="indicators__number">500</div>
-              <div class="indicators__unit">М</div>
+              <div class="indicators__number">
+                <span>500</span>
+                <span class="indicators__unit">М</span>
+              </div>
               <div class="indicators__name">Согласованная санитарная<br> зона</div>
             </div>
           </div>
@@ -257,7 +269,7 @@
     </div>
   </section>
   {{ include('partials/types.html.twig') }}
-  {#  {{ include('partials/scheme.html.twig') }}#}
+  {{ include('partials/scheme.html.twig') }}
   <section class="activity block">
     <div class="container">
       <div class="block__wrap">

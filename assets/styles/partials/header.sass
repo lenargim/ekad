@@ -13,8 +13,12 @@
     align-items: center
     justify-content: flex-start
     color: #fff
+    position: relative
     @media screen and (min-width: 1280px) and (max-width: 1919px)
       padding: 30px 0
+    @media screen and (max-width: 1279px)
+      padding: 25px 0
+      justify-content: space-between
   &__logo
     max-width: 164px
     margin-right: 102px
@@ -24,10 +28,18 @@
     @media screen and (min-width: 1280px) and (max-width: 1365px)
       max-width: 100px
       margin-right: 50px
+    @media screen and (min-width: 767px) and (max-width: 1279px)
+      max-width: 20vw
+      margin: 0
+    @media screen and (max-width: 766px)
+      max-width: 25vw
+      margin: 0
   &__menu
     display: flex
     align-items: center
     justify-content: flex-start
+    @media screen and (max-width: 1279px)
+      display: none
   li
     margin-right: 40px
     white-space: nowrap
@@ -66,12 +78,88 @@
       font-size: 20px
     @media screen and (min-width: 1280px) and (max-width: 1365px)
       font-size: 16px
+    @media screen and (max-width: 1279px)
+      display: none
   &__callback
     color: $colorMain
     margin-left: 63px
     box-shadow: 0 0 0 0 $colorMain inset, 0 0 0 2px $colorMain
     @media screen and (min-width: 1280px) and (max-width: 1365px)
       margin-left: 50px
+    @media screen and (max-width: 1279px)
+      margin-left: initial
     &:hover
       box-shadow: 0 0 40px 40px $colorMain inset, 0 0 0 0
       color: #000
+.header-mobile
+  display: none
+  &.active
+    .header-mobile__burger
+      position: fixed
+      top: 25px
+      left: 15px
+      span
+        display: none
+      &::before
+        background-color: $colorRed
+        transform: rotate(45deg)
+      &::after
+        transform: rotate(-45deg)
+        background-color: $colorRed
+    .header-mobile__menu
+      left: 0
+  @media screen and (max-width: 1279px)
+    display: flex
+    &__burger
+      cursor: pointer
+      width: 38px
+      height: 30px
+      position: relative
+      z-index: 3
+      transition: height 0.3s ease-in-out
+      span
+        position: absolute
+        top: calc(50% - 2px)
+        left: 0
+        right: 0
+        height: 4px
+        background-color: $colorMain
+      &:before, &:after
+        content: ""
+        position: absolute
+        left: 0
+        background-color: $colorMain
+        display: block
+        width: 100%
+        height: 4px
+        transition: all 0.3s ease
+      &:before
+        top: 0
+        transform-origin: left top
+      &:after
+        bottom: 0
+        transform-origin: left bottom
+    &__menu
+      position: fixed
+      left: -100vw
+      top: 0
+      width: 100vw
+      height: 100vh
+      background-color: $colorBg
+      transition: all 0.3s ease
+      z-index: 2
+      padding: 10vh 5vw
+    &__nav
+      margin: 0 auto 45px
+      li
+        margin: 0 auto 1em
+        text-align: center
+    &__navlink
+      font-size: 20px
+      color: $colorDark
+    &__phone
+      font-size: 22px
+      font-weight: 700
+      color: $colorDark
+      text-align: center
+      display: block

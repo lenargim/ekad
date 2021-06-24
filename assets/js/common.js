@@ -61,4 +61,7 @@ $(document).ready(function () {
       }
     });
     /*  Modal logic End  */
+    $('.header-mobile__burger').on('click', function(){
+        $('.header-mobile').toggleClass('active')
+    })
 });

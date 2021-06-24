@@ -3,6 +3,10 @@
     display: grid
     grid-gap: 32px
     grid-template-columns: repeat(3, 1fr)
+    @media screen and (min-width: 767px) and (max-width: 1279px)
+      grid-template-columns: repeat(2, 1fr)
+    @media screen and (max-width: 766px)
+      grid-template-columns: 1fr
   &__item
     position: relative
     overflow: hidden
@@ -12,6 +16,8 @@
         top: 32px
         @media screen and (min-width: 1280px) and (max-width: 1365px)
           top: 20px
+        @media screen and (max-width: 1279px)
+          top: 15px
       &:hover .team__text
         top: -100%
     &:after
@@ -41,6 +47,10 @@
       left: 20px
       right: 20px
       bottom: 20px
+    @media screen and (max-width: 1279px)
+      left: 15px
+      right: 15px
+      bottom: 15px
   &__name
     font-size: 18px
     padding-bottom: 1em

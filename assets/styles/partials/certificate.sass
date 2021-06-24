@@ -6,11 +6,21 @@
       width: 30%
     @media screen and (min-width: 1280px) and (max-width: 1365px)
       width: 40%
+    @media screen and (min-width: 767px) and (max-width: 1279px)
+      width: 60%
+      margin: 0 auto
+    @media screen and (max-width: 766px)
+      width: 80%
+      margin: 0 auto
   &__title
     padding-bottom: 113px
     @media screen and (min-width: 1366px) and (max-width: 1919px)
       padding-bottom: 80px
     @media screen and (min-width: 1280px) and (max-width: 1365px)
       padding-bottom: 70px
+    @media screen and (max-width: 1279px)
+      padding-bottom: 45px
   &__desc
     max-width: 500px
+    @media screen and (max-width: 1279px)
+      max-width: unset
