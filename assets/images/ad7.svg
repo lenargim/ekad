@@ -1,36 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="69" height="86.5" viewBox="0 0 69 86.5">
     <defs>
-        <style>.a-red{fill:none;stroke:#d83824;stroke-width:3px;}.b{fill:#d83824;}</style>
+        <style>.ad7-a{fill:none;stroke:#d83824;stroke-width:3px;}.ad7-b{fill:#d83824;}</style>
     </defs>
     <g transform="translate(-412.5 -266.5)">
         <g transform="translate(75.5 -646.845)">
-            <path class="a-red"
+            <path class="ad7-a"
                   d="M4.634,0H59.366A1.627,1.627,0,0,1,61,1.621v8.1a1.627,1.627,0,0,1-1.634,1.621H4.634A1.627,1.627,0,0,1,3,9.724v-8.1A1.627,1.627,0,0,1,4.634,0Z"
                   transform="translate(343.5 987)"/>
-            <line class="a-red" y2="11.345" transform="translate(375.5 987.5)"/>
-            <line class="a-red" y2="11.345" transform="translate(384.5 987.5)"/>
-            <line class="a-red" y2="11.345" transform="translate(366.5 987.5)"/>
-            <line class="a-red" y2="11.345" transform="translate(358.5 987.5)"/>
-            <line class="a-red" y2="11.345" transform="translate(351.5 987.5)"/>
-            <line class="a-red" y2="11.345" transform="translate(392.5 987.5)"/>
-            <line class="a-red" y2="11.345" transform="translate(399.5 987.5)"/>
+            <line class="ad7-a" y2="11.345" transform="translate(375.5 987.5)"/>
+            <line class="ad7-a" y2="11.345" transform="translate(384.5 987.5)"/>
+            <line class="ad7-a" y2="11.345" transform="translate(366.5 987.5)"/>
+            <line class="ad7-a" y2="11.345" transform="translate(358.5 987.5)"/>
+            <line class="ad7-a" y2="11.345" transform="translate(351.5 987.5)"/>
+            <line class="ad7-a" y2="11.345" transform="translate(392.5 987.5)"/>
+            <line class="ad7-a" y2="11.345" transform="translate(399.5 987.5)"/>
         </g>
         <g transform="translate(72.5 -658.845)">
-            <path class="a-red"
+            <path class="ad7-a"
                   d="M4.634,0H59.366A1.627,1.627,0,0,1,61,1.621v8.1a1.627,1.627,0,0,1-1.634,1.621H4.634A1.627,1.627,0,0,1,3,9.724v-8.1A1.627,1.627,0,0,1,4.634,0Z"
                   transform="translate(343.5 987)"/>
-            <line class="a-red" y2="11.345" transform="translate(375.5 987.5)"/>
-            <line class="a-red" y2="11.345" transform="translate(384.5 987.5)"/>
-            <line class="a-red" y2="11.345" transform="translate(366.5 987.5)"/>
-            <line class="a-red" y2="11.345" transform="translate(358.5 987.5)"/>
-            <line class="a-red" y2="11.345" transform="translate(351.5 987.5)"/>
-            <line class="a-red" y2="11.345" transform="translate(392.5 987.5)"/>
-            <line class="a-red" y2="11.345" transform="translate(399.5 987.5)"/>
+            <line class="ad7-a" y2="11.345" transform="translate(375.5 987.5)"/>
+            <line class="ad7-a" y2="11.345" transform="translate(384.5 987.5)"/>
+            <line class="ad7-a" y2="11.345" transform="translate(366.5 987.5)"/>
+            <line class="ad7-a" y2="11.345" transform="translate(358.5 987.5)"/>
+            <line class="ad7-a" y2="11.345" transform="translate(351.5 987.5)"/>
+            <line class="ad7-a" y2="11.345" transform="translate(392.5 987.5)"/>
+            <line class="ad7-a" y2="11.345" transform="translate(399.5 987.5)"/>
         </g>
-        <circle class="a-red" cx="29" cy="29" r="29" transform="translate(414 268)"/>
-        <path class="b"
+        <circle class="ad7-a" cx="29" cy="29" r="29" transform="translate(414 268)"/>
+        <path class="ad7-b"
               d="M15.559,55.477H9.112v5.292H5.437V55.477H1.453V52.436H5.437V49.8H1.453V46.779H5.437V32.75H15.771a10.513,10.513,0,0,1,7.139,2.29,7.787,7.787,0,0,1,2.636,6.2,7.967,7.967,0,0,1-2.531,6.322q-2.531,2.223-7.188,2.242H9.112v2.636h6.447Zm-6.447-8.7h6.658a6.571,6.571,0,0,0,4.542-1.4,5.235,5.235,0,0,0,1.559-4.1,5.162,5.162,0,0,0-1.616-3.955,6.209,6.209,0,0,0-4.368-1.53H9.112Z"
               transform="translate(431 250.865)"/>
-        <circle class="a-red" cx="22" cy="22" r="22" transform="translate(421 275)"/>
+        <circle class="ad7-a" cx="22" cy="22" r="22" transform="translate(421 275)"/>
     </g>
 </svg>
