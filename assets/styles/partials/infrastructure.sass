@@ -24,23 +24,42 @@
   &__item
     overflow: hidden
     position: relative
-    &:hover
-      .infrastructure
-        &__img
-          filter: brightness(1)
-        &__box
-          &:before
-            max-height: 300px
-        &__item
-          &-title
-            color: #000
-            padding-bottom: 18px
+    @media screen and (min-width: 1280px)
+      &:hover
+        .infrastructure
+          &__img
+            filter: brightness(1)
+          &__box
             &:before
-              background-color: $colorRed
-          &-desc
-            padding: 0 32px 32px
-            bottom: 0
-            height: calc(6em + 16px)
+              max-height: 300px
+          &__item
+            &-title
+              color: #000
+              padding-bottom: 18px
+              &:before
+                background-color: $colorRed
+            &-desc
+              padding: 0 32px 32px
+              bottom: 0
+              height: calc(6em + 16px)
+    @media screen and (max-width: 1279px)
+      &.active
+        .infrastructure
+          &__img
+            filter: brightness(1)
+          &__box
+            &:before
+              max-height: 300px
+          &__item
+            &-title
+              color: #000
+              padding-bottom: 18px
+              &:before
+                background-color: $colorRed
+            &-desc
+              padding: 0 32px 32px
+              bottom: 0
+              height: calc(6em + 16px)
     &-title
       display: inline-flex
       color: #FFFFFF
@@ -111,7 +130,7 @@
       left: calc(100% + 14px)
       white-space: nowrap
       font: normal normal 800 32px/44px Manrope
-    &:first-of-type
+    &:nth-of-type(2)
       & .infrastructure__block
         &-number
           font: normal normal 800 96px/1 Manrope
@@ -122,7 +141,7 @@
             font-size: 60px
           @media screen and (max-width: 1279px)
             font-size: 40px
-    &:nth-of-type(2)
+    &:nth-of-type(8)
       & .infrastructure__block
         &-number
           font: normal normal 800 62px/1 Manrope

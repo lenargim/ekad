@@ -64,4 +64,8 @@ $(document).ready(function () {
     $('.header-mobile__burger').on('click', function(){
         $('.header-mobile').toggleClass('active')
     })
+
+    $('.infrastructure__item').on('click', function() {
+        $(this).toggleClass('active')
+    } )
 });
