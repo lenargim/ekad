@@ -225,9 +225,21 @@ h1.title
 h2
   font: normal normal bold 48px/64px Manrope
   padding-bottom: 25px
+  @media screen and (min-width: 1366px) and (max-width: 1919px)
+    font-size: 36px
+  @media screen and (min-width: 1280px) and (max-width: 1365px)
+    font-size: 34px
+  @media screen and (max-width: 1279px)
+    font-size: 22px
 h3
   font: normal normal bold 28px/32px Manrope
   padding-bottom: 23px
+  @media screen and (min-width: 1366px) and (max-width: 1919px)
+    font-size: 24px
+  @media screen and (min-width: 1280px) and (max-width: 1365px)
+    font-size: 22px
+  @media screen and (max-width: 1279px)
+    font-size: 20px
 p
   font: normal normal normal 16px/1.5 Roboto
   padding-bottom: 1.5em
@@ -270,6 +282,15 @@ table
   border-collapse: collapse
   font: normal normal normal 16px/24px Roboto
   margin-bottom: 1.5em
+.table-wrap
+  overflow-x: auto
+  &::-webkit-scrollbar
+    width: 0
+    height: 0
+    background: transparent
+    -ms-overflow-style: none
+    scrollbar-width: none
+    overflow: -moz-scrollbars-none
 thead
   background-color: $colorMain
 th
@@ -291,5 +312,7 @@ blockquote
   letter-spacing: 0.38px
   padding: 42px 48px 48px 50px
   margin: 0 0 1.5em
+  @media screen and (max-width: 1279px)
+    padding: 20px
   p
     max-width: 100%
