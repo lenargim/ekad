@@ -130,28 +130,26 @@
       left: calc(100% + 14px)
       white-space: nowrap
       font: normal normal 800 32px/44px Manrope
-    &:nth-of-type(2)
-      & .infrastructure__block
-        &-number
-          font: normal normal 800 96px/1 Manrope
-          padding-bottom: 17.5px
-          @media screen and (min-width: 1366px) and (max-width: 1919px)
-            font-size: 70px
-          @media screen and (min-width: 1280px) and (max-width: 1365px)
-            font-size: 60px
-          @media screen and (max-width: 1279px)
-            font-size: 40px
-    &:nth-of-type(8)
-      & .infrastructure__block
-        &-number
-          font: normal normal 800 62px/1 Manrope
-          padding-bottom: 27.5px
-          @media screen and (min-width: 1366px) and (max-width: 1919px)
-            font-size: 40px
-          @media screen and (min-width: 1280px) and (max-width: 1365px)
-            font-size: 36px
-          @media screen and (max-width: 1279px)
-            font-size: 34px
+    &_big
+      .infrastructure__block-number
+        font: normal normal 800 96px/1 Manrope
+        padding-bottom: 17.5px
+        @media screen and (min-width: 1366px) and (max-width: 1919px)
+          font-size: 70px
+        @media screen and (min-width: 1280px) and (max-width: 1365px)
+          font-size: 60px
+        @media screen and (max-width: 1279px)
+          font-size: 40px
+    &_small
+      .infrastructure__block-number
+        font: normal normal 800 62px/1 Manrope
+        padding-bottom: 27.5px
+        @media screen and (min-width: 1366px) and (max-width: 1919px)
+          font-size: 40px
+        @media screen and (min-width: 1280px) and (max-width: 1365px)
+          font-size: 36px
+        @media screen and (max-width: 1279px)
+          font-size: 34px
   &__button
     margin: 0 auto
     box-shadow: 0 0 0 0 $colorRed inset, 0 0 0 2px $colorRed
