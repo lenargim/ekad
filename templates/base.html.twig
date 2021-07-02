@@ -36,7 +36,15 @@
       </div>
       <a href="/" class="header__logo img"><img src="{{ asset('build/logo.svg') }}" alt="logo"></a>
       <nav class="header__menu">
-        <li><a href="/about" class="header__navlink">О компании</a></li>
+        <li>
+          <a href="/about" class="header__navlink">О компании</a>
+          <ul class="header__submenu">
+            <li><a href="/about/team" class="header__sublink">Наша команда</a></li>
+            <li><a href="/about/residents" class="header__sublink">Резиденты парка</a></li>
+            <li><a href="#" class="header__sublink">Управляющая компания</a></li>
+            <li><a href="#" class="header__sublink">Документы</a></li>
+          </ul>
+        </li>
         <li><a href="/catalog/store" class="header__navlink">Инфраструктура</a></li>
         <li><a href="/catalog" class="header__navlink">Объекты в продаже</a></li>
         <li><a href="/contacts" class="header__navlink">Контактная информация</a></li>
