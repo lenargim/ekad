@@ -4,6 +4,11 @@
   width: 100%
   height: 100vh
   overflow: hidden
+  background: url("../../../public/build/banner.jpg") 0 0 no-repeat
+  background-size: cover
+  animation-name: slideBanner
+  animation-duration: 40s
+  animation-iteration-count: infinite
   &__img
     min-height: 100vh
     object-fit: cover
@@ -89,3 +94,17 @@
     transform: translateX(0)
   100%
     transform: translateX(0)
+
+@keyframes slideBanner
+  0%
+    background-position: 0 0
+  5%
+    background-position: 0 0
+  45%
+    background-position: 100% 0
+  55%
+    background-position: 100% 0
+  95%
+    background-position: 0 0
+  100%
+    background-position: 0 0
