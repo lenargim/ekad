@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('input[type="tel"]').mask('+7(Z00) 000-00-00', { translation: { 'Z': { pattern: /[0-79]/ } } })
+    $('.phone-mask').mask('+7(Z00) 000-00-00', { translation: { 'Z': { pattern: /[0-79]/ } } })
     lightGallery(document.getElementById('lightGallery'), {});
 /*
     if ($('.lessees_infrastructure input[type="checkbox"]')) {
