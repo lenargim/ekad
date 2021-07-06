@@ -105,10 +105,14 @@
     display: flex
     align-items: center
     justify-content: flex-start
+    flex-wrap: wrap
     padding-top: 17px
     transition: all .3s ease
+    @media screen and (max-width: 1279px)
+      display: none
     li
       margin-right: 22px
+      margin-bottom: 0.5em
     &:hover
       top: 100%
       opacity: 1
