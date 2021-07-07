@@ -207,6 +207,25 @@ select
     padding-top: 40px
   @media screen and (max-width: 1279px)
     padding-top: 35px
+.page-text
+  padding: 60px 0
+  @media screen and (min-width: 1280px) and (max-width: 1365px)
+    padding: 40px
+  @media screen and (max-width: 1279px)
+    padding: 35px
+  ul
+    padding-bottom: 1em
+    li
+      padding: 0 0 1.5em 0
+      list-style-type: initial
+      &:last-of-type
+        padding-bottom: 0
+      &::marker
+        color: #D0D02C
+        font-size: 24px
+        line-height: 32px
+      ul
+        padding: 1em 0 1.5em 1.5em
 h1.title
   font: normal normal bold 56px/1.57 Manrope
   letter-spacing: 2.8px
@@ -263,18 +282,6 @@ ol
     ol
       padding-top: 1.5em
       padding-left: 1em
-.ul
-  li
-    padding: 0 0 1.5em 0
-    list-style-type: initial
-    &:last-of-type
-      padding-bottom: 0
-    &::marker
-      color: #D0D02C
-      font-size: 24px
-      line-height: 32px
-    ul
-      padding: 1em 0 1.5em 1.5em
 
 table
   border-collapse: collapse
