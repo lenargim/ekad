@@ -7,6 +7,11 @@
     right: 0
     z-index: 1
     background-color: transparent
+    .header__callback
+      color: $colorRed
+      box-shadow: 0 0 0 0 $colorRed inset, 0 0 0 2px $colorRed
+      &:hover
+        box-shadow: 0 0 40px 40px $concrete inset, 0 0 0 0
   &__wrap
     padding: 80px 0
     display: flex
@@ -89,13 +94,13 @@
   &__callback
     color: $colorMain
     margin-left: 63px
-    box-shadow: 0 0 0 0 $colorMain inset, 0 0 0 2px $colorMain
+    box-shadow: 0 0 0 0 $concrete inset, 0 0 0 2px $concrete
     @media screen and (min-width: 1280px) and (max-width: 1365px)
       margin-left: 50px
     @media screen and (max-width: 1279px)
       margin-left: initial
     &:hover
-      box-shadow: 0 0 40px 40px $colorMain inset, 0 0 0 0
+      box-shadow: 0 0 40px 40px $concrete inset, 0 0 0 0
       color: #000
   &__submenu
     position: absolute

@@ -1,1 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="61.464" height="61.464" viewBox="0 0 61.464 61.464"><defs><style>.a{fill:none;stroke:#dddd8b;stroke-width:3px;}</style></defs><g transform="translate(-965.768 -3957.615)"><rect class="a" width="40.461" height="40.461" rx="4" transform="translate(996.5 3959.736) rotate(45)"/><rect class="a" width="26.461" height="26.461" rx="4" transform="translate(996.5 3969.635) rotate(45)"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="61.464" height="61.464" viewBox="0 0 61.464 61.464">
+    <defs>
+        <style>.a{fill:none;stroke:#979587;stroke-width:3px;}</style>
+    </defs>
+    <g transform="translate(-965.768 -3957.615)">
+        <rect class="a" width="40.461" height="40.461" rx="4" transform="translate(996.5 3959.736) rotate(45)"/>
+        <rect class="a" width="26.461" height="26.461" rx="4" transform="translate(996.5 3969.635) rotate(45)"/>
+    </g>
+</svg>

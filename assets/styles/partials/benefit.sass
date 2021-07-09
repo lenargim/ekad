@@ -15,16 +15,16 @@
       grid-template-columns: 1fr
   &__item
     background-color: #fff
-    padding: 40px 68px 76px 95px
+    padding: 40px 68px 34px 95px
     display: flex
     align-items: flex-start
     justify-content: flex-start
     position: relative
     overflow: hidden
     @media screen and (min-width: 1366px) and (max-width: 1919px)
-      padding: 30px 50px 60px 70px
+      padding: 30px 50px 30px 50px
     @media screen and (min-width: 1280px) and (max-width: 1365px)
-      padding: 30px 40px 50px 60px
+      padding: 30px 40px 30px 40px
     @media screen and (max-width: 1279px)
       padding: 30px 20px
     &::before
@@ -32,23 +32,31 @@
       display: block
       min-width: 6px
       height: 39px
-      background-color: $colorMain
+      background-color: $concrete
       margin-right: 32px
       position: relative
       z-index: 1
-      top: 3px
+      top: 8px
       @media screen and (max-width: 1279px)
         margin-right: 16px
   &__info
     width: 500px
     z-index: 1
     color: #fff
+    list-style-type: disc
+    li
+      margin: 0 0 0.4em 1.5em
+      font-size: 16px
+      line-height: 20px
+      &::marker
+        color: $concrete
+        font-size: 1.9em
     @media screen and (max-width: 1919px)
       width: unset
   &__img
     position: absolute
     left: 0
-    width: 100%
+    min-width: 100%
     min-height: 100%
     top: 0
     bottom: 0

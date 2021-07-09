@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="45" height="59" viewBox="0 0 45 59"><defs><style>.a,.b{fill:none;stroke:#dddd8b;stroke-width:3px;}.b{stroke-linecap:round;}</style></defs><g transform="translate(-1241.5 -3958.5)"><rect class="a" width="42" height="56" rx="4" transform="translate(1243 3960)"/><line class="b" y2="42" transform="translate(1250.5 3967.5)"/><line class="b" y2="42" transform="translate(1259.5 3967.5)"/><line class="b" y2="42" transform="translate(1268.5 3967.5)"/><line class="b" y2="42" transform="translate(1277.5 3967.5)"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="59" viewBox="0 0 45 59">
+    <defs>
+        <style>.a,.b{fill:none;stroke:#979587;stroke-width:3px;}.b{stroke-linecap:round;}</style>
+    </defs>
+    <g transform="translate(-1241.5 -3958.5)">
+        <rect class="a" width="42" height="56" rx="4" transform="translate(1243 3960)"/>
+        <line class="b" y2="42" transform="translate(1250.5 3967.5)"/>
+        <line class="b" y2="42" transform="translate(1259.5 3967.5)"/>
+        <line class="b" y2="42" transform="translate(1268.5 3967.5)"/>
+        <line class="b" y2="42" transform="translate(1277.5 3967.5)"/>
+    </g>
+</svg>

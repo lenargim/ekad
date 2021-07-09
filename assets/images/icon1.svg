@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
     <defs>
-        <style>.icon1-a,.icon1-b,.icon1-c{fill:none;}.icon1-b{stroke:#dddd8b;stroke-width:3px;}.icon1-d,.icon1-e{stroke:none;}.icon1-e{fill:#dddd8b;}</style>
+        <style>.icon1-a,.icon1-b,.icon1-c{fill:none;}.icon1-b{stroke:#979587;stroke-width:3px;}.icon1-d,.icon1-e{stroke:none;}.icon1-e{fill:#979587;}</style>
     </defs>
     <g transform="translate(-993 -168)">
         <rect class="icon1-a" width="32" height="32" transform="translate(993 168)"/>

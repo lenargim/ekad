@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
     <defs>
         <style>
-            .icon4-a,.icon4-b,.icon4-c{fill:none;}.icon4-c{stroke:#dddd8b;stroke-linecap:round;stroke-width:3px;}.icon4-d{fill:#dddd8b;}.icon4-e,.icon4-f{stroke:none;}.icon4-f{fill:#dddd8b;}
+            .icon4-a,.icon4-b,.icon4-c{fill:none;}.icon4-c{stroke:#979587;stroke-linecap:round;stroke-width:3px;}.icon4-d{fill:#979587;}.icon4-e,.icon4-f{stroke:none;}.icon4-f{fill:#979587;}
         </style>
     </defs>
     <g transform="translate(-856 -168)">
