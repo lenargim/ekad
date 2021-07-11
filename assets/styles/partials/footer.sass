@@ -44,6 +44,8 @@
       @media screen and (max-width: 1279px)
         width: 100%
         margin: 0 0 30px
+      &:last-of-type
+        margin-right: 0
       &:hover
         .label
           color: #fff
@@ -59,7 +61,7 @@
     &-submit
       color: $colorRed
       box-shadow: 0 0 0 0 $colorRed inset, 0 0 0 2px $colorRed
-      margin: 0 85px 0 63px
+      margin: 0 85px 0 auto
       @media screen and (min-width: 1280px) and (max-width: 1919px)
         margin: 0 50px
       @media screen and (max-width: 1279px)
@@ -69,7 +71,7 @@
         box-shadow: 0 0 40px 40px $concrete inset, 0 0 0 0
         color: #000
     &-policy
-      max-width: 309px
+      max-width: 500px
       @media screen and (max-width: 766px)
         max-width: unset
   &__box

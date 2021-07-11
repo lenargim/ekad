@@ -174,7 +174,8 @@
     <div class="container">
       <div class="block__wrap">
         <div class="block__text">
-          <h2 class="block__title advantages__title">Преимущества <span style="white-space: nowrap">для резидентов</span> индустриального парка</h2>
+          <h2 class="block__title advantages__title">Преимущества <span
+                    style="white-space: nowrap">для резидентов</span> индустриального парка</h2>
           <div class="advantages__desc">Содействие резидентам в размещении создаваемых ими объектов на территории
             промышленного парка, включая вопросы землеустроительного характера, проектирования, строительства, ввода в
             эксплуатацию объектов капитального строительства и технологическое присоединения к инженерным сетям.
@@ -212,7 +213,9 @@
           <div class="advantages__row">
             <div class="advantages__item">
               <div class="advantages__svg">{{ source('@build'~asset('ad7.svg')) }}</div>
-              <div class="advantages__name">Тех присоединение <span style="white-space: nowrap">к энергоресурсам</span> по доступным ценам</div>
+              <div class="advantages__name">Тех присоединение <span style="white-space: nowrap">к энергоресурсам</span>
+                по доступным ценам
+              </div>
             </div>
             <div class="advantages__item">
               <div class="advantages__svg">{{ source('@build'~asset('ad8.svg')) }}</div>
@@ -236,9 +239,9 @@
         <div class="benefit__item">
           <img class="benefit__img" src="{{ asset('build/benefit-1.jpg') }}">
           <ul class="benefit__info">
-            <li>Высокая ликвидность приобретенного объекта </li>
-            <li>Отсутствие рисков связанных с техприсоединением к энергоносителям </li>
-            <li>Не лимитированные объемы энергоносителей </li>
+            <li>Высокая ликвидность приобретенного объекта</li>
+            <li>Отсутствие рисков связанных с техприсоединением к энергоносителям</li>
+            <li>Не лимитированные объемы энергоносителей</li>
             <li>Возможность приобретения готового здания, построенного по требованиям заказчика</li>
           </ul>
         </div>
@@ -254,7 +257,21 @@
     </div>
   </section>
   {{ include('partials/types.html.twig') }}
-  {{ include('partials/scheme.html.twig') }}
+  <section class="scheme block">
+    <div class="container">
+      <div class="block__title scheme__title">Схема участков</div>
+      <div class="scheme__wrap">
+        <div class="scheme__item">
+          <div class="scheme__item-title">Участки крупной нарезки</div>
+          <div class="scheme__item-img img"></div>
+        </div>
+        <div class="scheme__item">
+          <div class="scheme__item-title">Участки мелкой нарезки</div>
+          <div class="scheme__item-img img"></div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="activity block">
     <div class="container">
       <div class="block__wrap">
@@ -268,21 +285,27 @@
         <div class="activity__box">
           <div class="activity__row">
             <div class="activity__item">
-              <div class="activity__item-title">Сборочное и машиностроительное производство</div>
-              <div class="activity__item-desc">Предприятия обслуживающие нефте, газо и горнодобывающую отрасли,
-                изготавливающие медицинское оборудование, мебельные предприятия, и тд.
+              <div class="activity__item-title">Тяжелая и легкая промышленность</div>
+              <div class="activity__item-desc">Предприятия с санитарно-защитной зоной
+                <span style="white-space: nowrap">до 500 метров</span>
               </div>
             </div>
-          </div>
-          <div class="activity__row">
-            <div class="activity__item activity__item_half">
+            <div class="activity__item">
               <div class="activity__item-title">Логистические комплексы</div>
               <div class="activity__item-desc">Складские здания классов А и В, низко и средне температурные склады,
                 открытые площадки для хранения и перегрузки различных групп ТНП и продуктов питания, а так же продукции
                 НПЗ, металлургических и строительных предприятий
               </div>
             </div>
-            <div class="activity__item activity__item_half">
+          </div>
+          <div class="activity__row">
+            <div class="activity__item">
+              <div class="activity__item-title">Сборочное и машиностроительное производство</div>
+              <div class="activity__item-desc">Предприятия обслуживающие нефте, газо и горнодобывающую отрасли,
+                изготавливающие медицинское оборудование, мебельные предприятия, и тд.
+              </div>
+            </div>
+            <div class="activity__item">
               <div class="activity__item-title">Строительные предприятия</div>
               <div class="activity__item-desc">Заводы изготавливающие строительные смеси, утеплители, гидроизоляцию,
                 кровельные и отделочные материалы, деревообрабатывающие предприятия и т.д.
@@ -290,15 +313,11 @@
             </div>
           </div>
           <div class="activity__row">
-            <div class="activity__item activity__item_half">
+            <div class="activity__item">
               <div class="activity__item-title">Пищевая промышленность</div>
               <div class="activity__item-desc">Кейтеринговые компании, предприятия по изготовлению полуфабрикатов и
                 готовой продукции
               </div>
-            </div>
-            <div class="activity__item activity__item_half">
-              <div class="activity__item-title">Тяжелая и легкая промышленность</div>
-              <div class="activity__item-desc">Предприятия с санитарно-защитной зоной до 500 метров</div>
             </div>
           </div>
         </div>
@@ -327,9 +346,6 @@
           <h2 class="block__title faq__title">Часто задаваемые вопросы</h2>
           <div class="faq__text-question">Земельные участки в Индустриальном парке «ЕКАД:Южный» в собственности или в
             аренде?
-          </div>
-          <div class="faq__desc">Все земельные участки поставлены на кадастровый учет, зарегистрировано право<br>
-            собственности.
           </div>
         </div>
         <div class="faq__box">

@@ -15,7 +15,7 @@
       grid-template-columns: 1fr
   &__item
     background-color: #fff
-    padding: 40px 68px 34px 95px
+    padding: 48px 133px 34px 95px
     display: flex
     align-items: flex-start
     justify-content: flex-start
@@ -36,21 +36,27 @@
       margin-right: 32px
       position: relative
       z-index: 1
-      top: 8px
+      top: 6px
       @media screen and (max-width: 1279px)
         margin-right: 16px
   &__info
     width: 500px
     z-index: 1
     color: #fff
-    list-style-type: disc
     li
-      margin: 0 0 0.4em 1.5em
+      margin-bottom: 1.5em
       font-size: 16px
       line-height: 20px
-      &::marker
-        color: $concrete
-        font-size: 1.9em
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      &::before
+        content: ""
+        background-color: $concrete
+        border-radius: 50%
+        min-width: 12px
+        height: 12px
+        margin-right: 28px
     @media screen and (max-width: 1919px)
       width: unset
   &__img
