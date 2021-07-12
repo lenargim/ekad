@@ -7,7 +7,11 @@
       grid-template-columns: 1fr
   &__title
     padding-bottom: 85px
+    @media screen and (max-width: 1279px)
+      padding-bottom: 30px
   &__item
     &-title
       padding-bottom: 23px
-      font: normal normal bold 28px/32px Manrope
+      font: normal normal bold 28px/1.15 Manrope
+      @media screen and (max-width: 1279px)
+        font-size: 20px
