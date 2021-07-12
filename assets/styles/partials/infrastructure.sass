@@ -10,22 +10,25 @@
     display: grid
     grid-gap: 32px
     grid-template-columns: repeat(3, 1fr)
-    grid-template-rows: repeat(2, 384px)
     padding-bottom: 110px
     @media screen and (min-width: 1280px) and (max-width: 1919px)
-      grid-template-rows: repeat(2,300px)
       padding-bottom: 70px
     @media screen and (min-width: 767px) and (max-width: 1279px)
       grid-template-columns: repeat(2, 1fr)
-      grid-template-rows: repeat(3, 350px)
       padding-bottom: 45px
     @media screen and (max-width: 766px)
       grid-template-columns: 1fr
-      grid-template-rows: repeat(6, 80vw)
       padding-bottom: 45px
   &__item
     overflow: hidden
     position: relative
+    height: 384px
+    @media screen and (min-width: 1280px) and (max-width: 1919px)
+      height: 300px
+    @media screen and (min-width: 767px) and (max-width: 1279px)
+      height: 350px
+    @media screen and (max-width: 766px)
+      height: 80vw
     &-title
       display: inline-flex
       text-transform: uppercase
@@ -63,7 +66,7 @@
     background-color: #2C3338
     padding: 32px
     &-number
-      color: #DDDD8B
+      color: $concrete
       position: relative
       display: inline-flex
     &-text
